@@ -1,12 +1,21 @@
 # 🧠Automated software support with AI
 * **💭Concept**:
 The main concept is to replace the need to hire people to provide support and answer questions and problems from software customers
+## Índice
+- [Creation](#📎Creation-of-a-custom-assistant-with-the-open-ai-assistants-api)
+- [Node-farm](#Node-farm-ad-twitch)
 
+#
+#
 ## 📎Creation of a custom assistant with the open ai assistants api
 * **📂import keys and libraries**:
 * pip install openai
 * pip install python-telegram-bot
 * you will probably have problems when trying to use the newest version of this python-telegram-bot library like I did, if this happens just download the version and I will make it available
+  ```
+    python-telegram-bot.rar
+  ```
+  importing keys and libraries
   ```
   from openai import OpenAI
   from keys_def import chaves
@@ -114,8 +123,49 @@ run = client.beta.threads.runs.create(
 )
 ```
 
-* **10**:
+* **10**: Now let's wait for the status to be complete so we can capture the agent's message
+```
+    while True:
+        run_status = client.beta.threads.runs.retrieve(
+            thread_id=thread.id,
+            run_id=run.id
+        )
+        if run_status.status == 'completed': 
+            break
+        else:
+            print("Aguardando a execução ser completada...")
+        time.sleep(2)  
+    messages = client.beta.threads.messages.list(
+        thread_id=thread.id
+    )
+```
+* **11**: Now that the status is complete we are ready to fetch the last message from the created topic
+```
+    for message in messages:
+        for mensagem_contexto in message.content:  
+            valor_texto = mensagem_contexto.text.value
+            print(valor_texto)
+        break
+```
+* **11.5**: You can also save the thread_id and assistant_id so that we can use the already created version in our assistant
+* I recommend you save
+```
+    for message in messages:
+        for mensagem_contexto in message.content:  
+            valor_texto = mensagem_contexto.text.value
+            print(valor_texto)
+            thread_id = thread.id
+            assistant_id = assistant.id
+            run_id = run.id
+            name = "Assistente"
+            diretorio_script = os.path.dirname(os.path.abspath(__file__))
+            nome_arquivo_gerenciador = os.path.join(diretorio_script, 'gerenciador_agente_1.txt')
+            with open('gerenciador_agente_1.txt', 'a') as arquivo:
+                arquivo.write(f'Nome: {name} \n')
+                arquivo.write(f'thread_id:{thread_id}\n')
+                arquivo.write(f'assistant_id:{assistant_id}\n')
+                arquivo.write(f'------------------------\n')
+        break
 
-
-
-
+```
+* **12**: Finally our agent is created and ready to be used, let's see how it works :}
