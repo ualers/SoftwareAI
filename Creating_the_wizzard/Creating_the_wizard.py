@@ -1,9 +1,4 @@
-# ChatGPT + API KEY 5 USD
 
-# login: lilycuq@counsellor.com
-# passwordmail: jHlq6m5Io0
-# passwordaccount: 1GpKvwUxqw5x
-# API_KEY: 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
 from openai import OpenAI
 import requests
 
