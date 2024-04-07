@@ -3,7 +3,7 @@
 The main concept is to replace the need to hire people to provide support and answer questions and problems from software customers
 ## Índice
 - [Creation](#Creation)
-- [Node-farm](#Node-farm-ad-twitch)
+- [Support](#Support)
 #
 #
 #
@@ -25,6 +25,139 @@ The main concept is to replace the need to hire people to provide support and an
 #
 #
 #
+#
+#
+#
+#
+#
+# Support
+* **📎Support via Telegram using the library**:
+  * **📂install libraries**:
+  * pip install openai
+  * pip install python-telegram-bot
+  * you will probably have problems when trying to use the newest version of this python-telegram-bot library like I did, if this happens just download the version and I will make it available
+    ```
+      python-telegram-bot.rar
+    ```
+    ```
+  * **📂import keys and libraries**:
+    ```
+      import time
+      import random
+      from telegram.ext import Updater, CommandHandler, MessageHandler, filters, Filters
+      from openai import OpenAI
+      from keys_def import chaves
+      key_api = chaves.chaves_open_ai()
+      TOKEN, CHANNEL_ID = chaves.keys_bot_telegram()
+      
+      client = OpenAI(
+          api_key=key_api,
+      )
+    ```
+  * **1**: The first function we will discuss is main()
+    ```
+    def main():
+        updater = Updater(TOKEN, use_context=True)
+        dp = updater.dispatcher
+        dp.add_handler(CommandHandler("start", start))
+        dp.add_handler(MessageHandler(Filters.text & ~Filters.command, reply_message))
+        updater.start_polling()
+        updater.idle()
+    if __name__ == '__main__':
+        main()
+
+    ```
+    * **explaining**: the first line we call the Updater function of the telegram module we define our telegram bot token and then we define the context as True
+    ```
+    updater = Updater(TOKEN, use_context=True)
+    ```
+    * **BotFather**: To get your bot's TOKEN, you must open your Telegram and search in the magnifying glass for @BotFather or visit https://t.me/BotFather
+    * **BotFather**: When accessing BotFather, just type /start, then you can create your bot with the command /newbot
+    * **BotFather**: After that you define the name of your bot, it can be Assistant
+    * **BotFather**: After defining the name of the bot you will have to define the @ ending with bot for example Assistant_bot
+    * **BotFather**: if the message ''Done! Congratulations on your new bot.'' appears ready, your bot is created and you will have access to the token, just copy the token below the phrase ''Use this token to access the HTTP API:''
+    * **BotFather**: now you have your TOKEN place it in the keys_def.py module in
+    ```
+        def keys_bot_telegram():
+          TOKEN = "here"
+          CHANNEL_ID = 'advanced'
+          return TOKEN, CHANNEL_ID
+    ```
+   
+    * **dp**: Now let's create an updater dispatcher
+      ```
+        dp = updater.dispatcher
+      ```
+      * **explaining**: will be used to capture text messages
+    * **add_handler**: adding commands to the dispatcher
+      ```
+        dp.add_handler(CommandHandler("start", start))
+        dp.add_handler(MessageHandler(Filters.text & ~Filters.command, reply_message))
+      ```
+    * **start_polling**: now let's start
+      ```
+        updater.start_polling()
+        updater.idle()
+      ```
+  * **2**: Now let's discuss the function that observes customer messages and responds based on our assistant that we created in creation
+    ```
+      def reply_message(update, context):
+          user_message = update.message.text
+          asst, threead_id = chaves.asst_e_threead()
+          file_idx = chaves.file_id()
+          ferramentas = chaves.ferramentas()
+          modelo_de_IA = chaves.modelo_de_ia()
+      
+          openai_response = teste_mensagem_com_assistente_existente(user_message, threead_id, asst, file_idx, ferramentas, modelo_de_IA)
+          openai_response_com_emog = enviar_resposta_com_emoji(openai_response)
+          update.message.reply_text(openai_response_com_emog)
+    ```
+    * **user_message**: the first line is used to check if there is a message
+    ```
+      user_message = update.message.text
+    ```
+    * **assistant_id and threead_id**: Now let's get the assistant_id and threead_id that we created in creation
+      ```
+        asst, threead_id = chaves.asst_e_threead()
+      ```
+    * **explaining**: you must put the assistant_id and threead_id that we saved in that txt inside the key_def.py module in
+      ```
+        def asst_e_threead():
+            asst = 'here'
+            thread_id = 'here'
+            return asst, thread_id
+      ```
+    * **file_id**: Now let's get the file_id that we created at creation 
+      ```
+        file_idx = chaves.file_id()
+      ```
+    * **explaining**: Now we will put the file_id saved in that txt that we created in creation in the key_def.py module in
+      ```
+          def file_id(): 
+              file_id = ["here"]
+              return file_id
+      ```
+    * **tools**: Now let's get the tools like the doc reading tool
+      ```
+        ferramentas = chaves.ferramentas()
+      ```
+    * **explaining**: By default, I have already added the doc reading function, so there is no need to touch this part of the key_def.py module:
+      ```
+      def ferramentas():
+          tools = [{"type": "retrieval"}]
+          return tools
+      ```
+    * **model**: Now let's get the model
+      ```
+        modelo_de_IA = chaves.modelo_de_ia()
+      ```
+    * **explaining**: By default, we will use the gpt-3.5-turbo-1106 template, so there is no need to touch this part of the key_def.py module:
+      ```
+        def modelo_de_ia():
+            model = "gpt-3.5-turbo-1106"
+            return model
+      ```
+      
 #
 #
 #
@@ -173,7 +306,7 @@ run = client.beta.threads.runs.create(
             print(valor_texto)
         break
 ```
-* **11.5**: You can also save the thread_id and assistant_id so that we can use the already created version in our assistant
+* **11.5**: You can also save the thread_id and assistant_id and file_id so that we can use it in the version already created in our assistant
 * I recommend you save
 ```
     for message in messages:
@@ -182,6 +315,7 @@ run = client.beta.threads.runs.create(
             print(valor_texto)
             thread_id = thread.id
             assistant_id = assistant.id
+            file_1 = file.id
             run_id = run.id
             name = "Assistente"
             diretorio_script = os.path.dirname(os.path.abspath(__file__))
@@ -190,6 +324,7 @@ run = client.beta.threads.runs.create(
                 arquivo.write(f'Nome: {name} \n')
                 arquivo.write(f'thread_id:{thread_id}\n')
                 arquivo.write(f'assistant_id:{assistant_id}\n')
+                arquivo.write(f'file_id:{file_1}\n')
                 arquivo.write(f'------------------------\n')
         break
 
