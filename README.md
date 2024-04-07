@@ -4,7 +4,11 @@ The main concept is to replace the need to hire people to provide support and an
 ## Índice
 - [Creation](#📎Creation-of-a-custom-assistant-with-the-open-ai-assistants-api)
 - [Node-farm](#Node-farm-ad-twitch)
-
+#
+#
+#
+#
+#
 #
 #
 ## 📎Creation of a custom assistant with the open ai assistants api
