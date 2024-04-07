@@ -75,58 +75,6 @@ def creating_new_assistant():
         break
 
 
-### Modulo teste 1 ###
-def teste_mensagem_com_assistente_existente(mensagem, threead_id, asst):
-    message = client.beta.threads.messages.create(
-        thread_id=threead_id,
-        role="user",
-        content=mensagem
-    )
-    run = client.beta.threads.runs.create(
-        thread_id=threead_id,
-        assistant_id=asst,
-        
-    )
-    while True:
-        time.sleep(2)  
-        run_status = client.beta.threads.runs.retrieve(
-        thread_id=threead_id,
-        run_id=run.id
-        )
-        if run_status.status == 'completed': 
-            break
-        elif run_status.status == 'failed': 
-            print("Falha")
-            break
-        elif run_status.status == 'in_progress': 
-            print("in_progress")
-            
-        else:
-            print("Aguardando a execução ser completada...")
-        
-    messages = client.beta.threads.messages.list(
-    thread_id=threead_id
-    )
-    for message in messages:
-        for mensagem_contexto in message.content:
-            valor_texto = mensagem_contexto.text.value
-            
-            return valor_texto
-            
-        break
-
-asst = 'asst_pmiTNPaRaHZpMtBrFwjTJsKg'
-threead_id = 'thread_Ip7LB65PIgB3CJoyRvUqJImF'
-
-pergunta_do_cliente = "o modo download funciona?"
-#resposta_do_funcionario = teste_mensagem_com_assistente_existente(pergunta_do_cliente, threead_id, asst)
-#print(resposta_do_funcionario)
-
-criando_um_novo_assistente()
-
-
-
-
 
 
 
