@@ -2,7 +2,7 @@
 * **💭Concept**:
 The main concept is to replace the need to hire people to provide support and answer questions and problems from software customers
 ## Índice
-- [📎Creation](#📎Creation)
+- [Creation](#Creation)
 - [Node-farm](#Node-farm-ad-twitch)
 #
 #
@@ -32,7 +32,7 @@ The main concept is to replace the need to hire people to provide support and an
 #
 #
 #
-# 📎Creation
+# Creation
 * **📎Creation of a custom assistant with the open ai assistants api**:
 * **📂import keys and libraries**:
 * pip install openai
