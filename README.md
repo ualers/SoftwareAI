@@ -11,7 +11,8 @@ The main concept is to replace the need to hire people to provide support and an
 #
 #
 #
-## 📎Creation of a custom assistant with the open ai assistants api
+# 📎Creation of a custom assistant with the open ai assistants api
+* **📎Creation of a custom assistant with the open ai assistants api**:
 * **📂import keys and libraries**:
 * pip install openai
 * pip install python-telegram-bot
