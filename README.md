@@ -4,6 +4,7 @@ The main concept is to replace the need to hire people to provide support and an
 ## Index
 - [Creation](#Creation)
 - [Support](#Support)
+- [telegram-group-support](#telegram-group-support)
 #
 #
 #
@@ -27,8 +28,9 @@ The main concept is to replace the need to hire people to provide support and an
 #
 #
 #
-#
-#
+# telegram group support
+
+
 #
 # Support
 * **📎Support via Telegram using the library**:
@@ -286,10 +288,15 @@ The main concept is to replace the need to hire people to provide support and an
           break
     ```
     * **explaining**: Now that our assistant has responded, let's take the message and return it so we can add an emog before actually sending it to the customer
+#
   * **4**: Last but not least, you can configure a specific command for your Telegram bot, example
     ```
      def start(update, context):
          update.message.reply_text('Olá meu nome é Usuporte! Como posso ajudar você?')
+    ```
+  * **5**: Now your assistant is 100% just run and do a test by opening your Telegram and asking your assistant a question that we created :}
+    ```
+     Openai+ Telegram Support Assistant.py
     ```
 #
 #
