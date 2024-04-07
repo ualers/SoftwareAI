@@ -157,7 +157,140 @@ The main concept is to replace the need to hire people to provide support and an
             model = "gpt-3.5-turbo-1106"
             return model
       ```
+    * **openai_response**: now let's pass the question if it is detected in user_message
+      ```
+            openai_response = teste_mensagem_com_assistente_existente(user_message, threead_id, asst, file_idx, ferramentas, modelo_de_IA)
+
+      ```
+    * **explaining**: This function receives the following arguments user_message, threead_id, asst, file_idx, tools, IA_model
+    * **openai response with emoji**: let's pass the assistant's message to a function that will put emog
+      ```
+         openai_response_com_emog = enviar_resposta_com_emoji(openai_response)
+         
+      ```
+     * **explaining**: This is the function that will add emoji to the message
+      ```
+       emojis = ['😊', '🤖', '🚀', '💡', '🎉']
+       def enviar_resposta_com_emoji(resposta):
+           emoji = random.choice(emojis)  
+           resposta_com_emoji = f"{emoji} {resposta}"  
+           return resposta_com_emoji
+      ```
       
+    * **reply_text**: finally now the message is ready to be sent to the customer
+      ```
+ update.message.reply_text(openai_response_com_emog)
+
+      ```
+
+
+
+
+  * **3**: let's discuss the function test_mensagem_com_assistant_existente which will be used to interact with the assistant that we created in the creation and give the answer to the client based on our instructions and the doc.csv
+    ```
+    def teste_mensagem_com_assistente_existente(mensagem, threead_id, asst, file_idx, ferramentas, modelo_de_IA):
+    
+        message = client.beta.threads.messages.create(
+            thread_id=threead_id,
+            role="user",
+            content=mensagem,
+            file_ids=file_idx
+        )
+        run = client.beta.threads.runs.create(
+            thread_id=threead_id,
+            assistant_id=asst,
+            tools=ferramentas,
+            model=modelo_de_IA,
+            
+        )
+        while True:
+            time.sleep(2)  
+            run_status = client.beta.threads.runs.retrieve(
+            thread_id=threead_id,
+            run_id=run.id
+            )
+            if run_status.status == 'completed': 
+                break
+            elif run_status.status == 'failed': 
+                return "ocorreu um erro no servidor pergunte novamente"
+            elif run_status.status == 'in_progress': 
+                print("in_progress")
+            else:
+                print("Aguardando a execução ser completada...")
+            
+        messages = client.beta.threads.messages.list(
+        thread_id=threead_id
+        )
+        for message in messages:
+            for mensagem_contexto in message.content:
+                valor_texto = mensagem_contexto.text.value
+                
+                return valor_texto
+                
+            break
+    ```
+    * **message**: the first line we are creating a message
+    ```
+    message = client.beta.threads.messages.create(
+        thread_id=threead_id,
+        role="user",
+        content=mensagem,
+        file_ids=file_idx
+    )
+    ```
+    * **explaining**: the first line we are creating within the thread a message specifying the threead_id of our message and finally passing our file_id
+    * **run**: the first second line we are starting our thread
+    ```
+    run = client.beta.threads.runs.create(
+        thread_id=threead_id,
+        assistant_id=asst,
+        tools=ferramentas,
+        model=modelo_de_IA,
+        
+    )
+    ```
+    * **explaining**: the first second line we are starting our thread passing the arguments threead_id, assistant_id , tools and finally the model
+    * **run_status**: Now let's wait for the status of our run to be ''completed''
+    ```
+    while True:
+        time.sleep(2)  
+        run_status = client.beta.threads.runs.retrieve(
+        thread_id=threead_id,
+        run_id=run.id
+        )
+        if run_status.status == 'completed': 
+            break
+        elif run_status.status == 'failed': 
+            return "ocorreu um erro no servidor pergunte novamente"
+        elif run_status.status == 'in_progress': 
+            print("in_progress")
+        else:
+            print("Aguardando a execução ser completada...")
+        
+    messages = client.beta.threads.messages.list(
+    thread_id=threead_id
+    )
+    ```
+    * **explaining**: We wait for the status of our run to be ''completed'' so we can get the message from our assistant
+    * **messages**: message return
+    ```
+      messages = client.beta.threads.messages.list(
+      thread_id=threead_id
+      )
+      for message in messages:
+          for mensagem_contexto in message.content:
+              valor_texto = mensagem_contexto.text.value
+              
+              return valor_texto
+              
+          break
+    ```
+    * **explaining**: Now that our assistant has responded, let's take the message and return it so we can add an emog before actually sending it to the customer
+  * **4**: Last but not least, you can configure a specific command for your Telegram bot, example
+    ```
+     def start(update, context):
+         update.message.reply_text('Olá meu nome é Usuporte! Como posso ajudar você?')
+    ```
 #
 #
 #
