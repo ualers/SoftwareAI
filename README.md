@@ -88,7 +88,7 @@ message = client.beta.threads.messages.create(
 ```
 
 
-* **7**: Now we have another important step of printing
+* **8**: Now we have another important step of printing
   ```
   print(thread.id)
   print(assistant.id)
@@ -98,7 +98,7 @@ message = client.beta.threads.messages.create(
   ```
   keys_def.py
   ```
-* **8**: Now let's create the execution that will be used to define the instructions, tools and model for the second time and start our thread
+* **9**: Now let's create the execution that will be used to define the instructions, tools and model for the second time and start our thread
 ```
 run = client.beta.threads.runs.create(
     
@@ -114,7 +114,7 @@ run = client.beta.threads.runs.create(
 )
 ```
 
-* **9**:
+* **10**:
 
 
 
