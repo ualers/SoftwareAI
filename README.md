@@ -4,7 +4,7 @@ The main concept is to replace the need to hire people to provide support and an
 ## Index
 - [Creation](#Creation)
 - [Support](#Support)
-- [telegram-group-support](#telegram-group-support)
+- [Telegram-group-support](#Telegram-group-support)
 #
 #
 #
@@ -28,8 +28,10 @@ The main concept is to replace the need to hire people to provide support and an
 #
 #
 #
-# telegram group support
-
+# Telegram group support
+* **📎You can also support people in a Telegram group**:
+  * **To do this, simply add your assistant to the desired group and give him admin**:
+  * **With this he will be reading the group messages and will answer all the questions asked.**:
 
 #
 # Support
