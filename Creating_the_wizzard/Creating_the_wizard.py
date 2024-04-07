@@ -1,34 +1,7 @@
 
 from openai import OpenAI
-import requests
-
-
-
-from selenium_stealth import stealth
-from distutils.dir_util import copy_tree
-import pygetwindow as gw
-import requests
-import undetected_chromedriver as uc
-import threading
-import random
-import subprocess
-import psutil
 import os
-import json
-import sys
-import hashlib
-import string
-import platform
-import pyautogui
 import time
-import re
-import base64
-import uuid
-import shutil
-import time
-from datetime import datetime
-
-import telegram
 from telegram.ext import Updater, CommandHandler, JobQueue
 from telegram.ext import Updater, CommandHandler, Job
 from firebase_admin import credentials, initialize_app, storage
