@@ -1,6 +1,6 @@
 # 🧠Automated software support with AI
 * **💭Concept**:
-The main concept is to replace the need to hire people to provide support and answer questions and problems from software customers
+ The concept of an AI team within the company/organization in the support category is to replace the need to hire people to provide support and answer customer questions and problems
 ## Index
 - [Creation](#Creation)
 - [Support](#Support)
