@@ -2,7 +2,7 @@
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
 ## Index
-- [AI-Team-Company-Owners](AI-Team-Company-Owners)
+- [AI-Team-Company-Owners](#-AI-Team-Company-Owners)
 - [AI Team Company Managers](#🧠-AI-Team-Company-Managers)
 - [AI Team Company Accounting](#🧠-AI-Team-Company-Accounting)
 - [AI Team Pre-Project](#🧠-AI-Team-Pre-Project)
