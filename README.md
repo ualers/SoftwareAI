@@ -1,6 +1,25 @@
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
+## Index
+- [AI Team Company Owners](#🧠-AI-Team-Company-Owners)
+- [AI Team Company Managers](#🧠-AI-Team-Company-Managers)
+- [AI Team Company Accounting](#🧠-AI-Team-Company-Accounting)
+- [AI Team Pre-Project](#🧠-AI-Team-Pre-Project)
+- [AI Team Software Planning](#🧠-AI-Team-Software-Planning)
+- [AI Team Software Requirements Analysis](#🧠-AI-Team-Software-Requirements-Analysis)
+- [AI Team Software Development](#🧠-AI-Team-Software-Development)
+- [AI Team Security in Software Development](#🧠-AI-Team-Security-in-Software-Development)
+- [AI Team Testing in Software Development](#🧠-AI-Team-Testing-in-Software-Development)
+- [AI Team Pull Request Review and Approval](#🧠-AI-Team-Pull-Request-Review-and-Approval)
+- [AI Team Design Software Development](#🧠-AI-Team-Design-Software-Development)
+- [AI Team Production in Software Development](#🧠-AI-Team-Production-in-Software-Development)
+- [AI Team Monthly Report](#🧠-AI-Team-Monthly-Report)
+- [AI Team Weekly Report](#🧠-AI-Team-Weekly-Report)
+- [AI Team Support](#🧠-AI-Team-Weekly-Report)
+
+
+
 
 
 
@@ -8,7 +27,7 @@
 # 
 # 
 # 
-# 🧠 AI Team Company Owners 
+# 🧠 AI Team Company Managers
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Company Managers category is to replace the need to hire people to be the Company Managers
 
@@ -137,7 +156,7 @@ Send sales/profit reports via email
 
 
 
-# 🧠 AI team category support
+# 🧠 AI Team Support
 * **💭Concept**:
  The concept of an AI team within the company/organization in the support category is to replace the need to hire people to provide support and answer customer questions and problems
 
