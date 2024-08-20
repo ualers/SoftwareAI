@@ -1,6 +1,7 @@
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
+# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.0.4
 ## Index
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
@@ -16,13 +17,17 @@
 - [AI Team Production in Software Development](#AI-Team-Production-in-Software-Development)
 - [AI Team Monthly Report](#AI-Team-Monthly-Report)
 - [AI Team Weekly Report](#AI-Team-Weekly-Report)
-- [AI Team Support](#AI-Team-Weekly-Report)
+- [AI Team Support](#AI-Team-Support)
 
 
 
 
 
+# AI Team Company Owners
+* **💭Concept**:
+The concept of an AI team within the company/organization in the Company Owners category is to replace the need to hire people to be the Company Owners
 
+#
 # 
 # 
 # 
@@ -32,12 +37,6 @@
 The concept of an AI team within the company/organization in the Company Managers category is to replace the need to hire people to be the Company Managers
 
 #
-#
-#
-# AI Team Company Owners
-* **💭Concept**:
-The concept of an AI team within the company/organization in the Company Owners category is to replace the need to hire people to be the Company Owners
-
 #
 #
 #
