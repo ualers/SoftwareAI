@@ -1,7 +1,7 @@
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
-![Alt Text](mindmap/Mind Map 2.jpg)
+![Alt Text](mindmap/MindMap2.jpg)
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.0.8
 ## Index
