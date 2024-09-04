@@ -3,7 +3,7 @@
 
 ![Alt Text](mindmap/MindMap2.jpg)
 
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.0.8
+# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.0.9
 ## Index
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
