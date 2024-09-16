@@ -1,9 +1,14 @@
+### Launch of the application core : 0.1.0
+***(16/09/2024)***
+
+* 
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
 ![Alt Text](mindmap/MindMap2.jpg)
 
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.0.9
+# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
+
 ## Index
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
