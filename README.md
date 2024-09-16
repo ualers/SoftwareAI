@@ -1,7 +1,6 @@
-### Launch of the application core : 0.1.0
-***(16/09/2024)***
+### Launch of the application core : ***(16/09/2024)***  SoftwareAI 0.1.0   
 
-* 
+
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
