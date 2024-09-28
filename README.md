@@ -6,7 +6,7 @@
 
 ![Alt Text](CoreApp/mindmap/MindMap1.jpg)
 ## Update
-- [Launch-Tigrao-Software-Pre-Project-Document-Writer](#update)
+- [LaunchTigraoSoftwarePreProjectDocumentWriter](#update)
 - [LaunchCoreApp](#update)
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
@@ -63,7 +63,74 @@ The concept of an AI team within the company/organization in the Company Account
 # AI Team Pre-Project
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Pre - Project category its objective is to replace the need to hire people to pre plan what was required by a human or other AI
+* **Tigrao**: 
+  * tigrao is a good worker who creates excellent documents for less than $0.01 (depending on the project)
+   ```
+    AI_Team_Pre_Project/AI_Tigrao_Pre_Project.py
+   ```
+  * Example doc pre project:
+    ```
+    {
+        "doc_Pre_Project": {
+          "title": "Pre-Project for Developing a Python Script to Download VODs from Twitch",
+          "summary": "This document describes a project to develop a Python script that allows downloading video on demand (VODs) from the Twitch platform. The script will interact with the Twitch API to retrieve information about available channels and videos, providing customized download options and a user-friendly command-line interface.",
+          "justification": "The demand for features that allow streaming content to be captured offline has been growing. A script that enables the download of Twitch VODs will meet the needs of users who want to maintain an archive of broadcasts in an accessible and practical way.",
+          "objectives": [
+            "Develop a Python script that authenticates with the Twitch API.",
+            "Implement the functionality to download complete VODs from a channel or specific videos.",
+            "Offer options to select different available resolutions for download (480p, 720p, 1080p, etc.).",
+            "Allow naming of downloaded files based on the video title, publication date, or a custom format.",
+            "Integrate with FFMPEG to process and ensure the quality of the downloaded videos."
+          ]
+        },
+        "desired_features": {
+          "authentication": {
+            "description": "The script must be able to authenticate using the Twitch API, either through access tokens or OAuth2, to access VODs from any channel."
+          },
+          "vod_download": {
+            "description": "Enable the complete download of VODs or specific videos by providing the desired video URL or ID."
+          },
+          "available_resolutions": {
+            "description": "Provide the ability to select different available video resolutions for download."
+          },
+          "file_naming": {
+            "description": "Option to name downloaded files based on the video title, publication date, or a custom format."
+          },
+          "ffmpeg_integration": {
+            "description": "Integrate the script with FFMPEG to merge video parts (if segmented) and ensure compatibility with different media players."
+          },
+          "summary_and_filter_options": {
+            "description": "List all available VODs from a channel or within a specific period, allowing filtering by title, date, or views."
+          },
+          "error_handling": {
+            "description": "The script should handle errors such as expired VODs or invalid links, providing appropriate messages and logging errors."
+          },
+          "command_line_interface": {
+            "description": "The script should be executed via the command line, accepting parameters such as '--channel', '--vod-id', '--resolution', and '--output'."
+          },
+          "progress_and_feedback": {
+            "description": "Display download progress with a bar or percentage, as well as provide feedback on estimated time and total file size."
+          }
+        },
+        "scope": [
+          "Effective authentication with the Twitch API using access tokens or OAuth2.",
+          "Development of the functionality to download complete or specific VODs.",
+          "Implementation of resolution selection options for downloads.",
+          "Custom naming system for downloaded files.",
+          "Integration with FFMPEG for proper processing and conversion of videos.",
+          "Listing and filtering of available VODs.",
+          "Error handling and feedback messages.",
+          "User-friendly command-line interface for user interaction."
+        ],
+        "technical_requirements": [
+          "Development in Python 3.x.",
+          "Use of the twitchAPI library or similar to interact with the Twitch API.",
+          "Use of the ffmpeg-python library to handle and convert downloaded videos.",
+          "Clear documentation on installing dependencies and necessary configurations."
+        ]
+      }
 
+    ```   
 #
 #
 #
