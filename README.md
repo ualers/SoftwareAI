@@ -5,6 +5,8 @@
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
 ![Alt Text](CoreApp/mindmap/MindMap1.jpg)
+![Alt Text](CoreApp/mindmap/MindMap2.jpg)
+![Alt Text](CoreApp/mindmap/MindMap3.jpg)
 ## Update
 - [LaunchTigraoSoftwarePreProjectDocumentWriter](#update)
 - [LaunchCoreApp](#update)
