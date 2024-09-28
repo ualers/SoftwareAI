@@ -1,18 +1,4 @@
 
-
-
-# * **💭What is SoftwareAI?**
-* Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
-
-![Alt Text](CoreApp/mindmap/MindMap1.jpg)
-![Alt Text](CoreApp/mindmap/MindMap2.jpg)
-![Alt Text](CoreApp/mindmap/MindMap3.jpg)
-## Info
-- [LaunchTigraoSoftwarePreProjectDocumentWriter](#Update)
-- [LaunchCoreApp](#Update)
-
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
-
 ## Index
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
@@ -30,6 +16,20 @@
 - [AI Team Weekly Report](#AI-Team-Weekly-Report)
 - [AI Team Support](#AI-Team-Support)
 
+
+
+
+# * **💭What is SoftwareAI?**
+* Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
+
+![Alt Text](CoreApp/mindmap/MindMap1.jpg)
+![Alt Text](CoreApp/mindmap/MindMap2.jpg)
+![Alt Text](CoreApp/mindmap/MindMap3.jpg)
+## Info
+- [LaunchTigraoSoftwarePreProjectDocumentWriter](#Update)
+- [LaunchCoreApp](#Update)
+
+# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
 
 
 # Update
