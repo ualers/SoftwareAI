@@ -7,9 +7,9 @@
 ![Alt Text](CoreApp/mindmap/MindMap1.jpg)
 ![Alt Text](CoreApp/mindmap/MindMap2.jpg)
 ![Alt Text](CoreApp/mindmap/MindMap3.jpg)
-## Update
-- [LaunchTigraoSoftwarePreProjectDocumentWriter](#update)
-- [LaunchCoreApp](#update)
+## Info
+- [LaunchTigraoSoftwarePreProjectDocumentWriter](#Update)
+- [LaunchCoreApp](#Update)
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
 
@@ -32,7 +32,7 @@
 
 
 
-# update
+# Update
 ### Launch of Tigrao Software Pre Project Document Writer: ***(28/09/2024)***  SoftwareAI 0.1.1   
 ### Launch of the application core : ***(16/09/2024)***  SoftwareAI 0.1.0   
 
