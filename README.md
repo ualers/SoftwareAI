@@ -1,10 +1,13 @@
-### Launch of the application core : ***(16/09/2024)***  SoftwareAI 0.1.0   
+
 
 
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
-![Alt Text](CoreApp/mindmap/map.jpg)
+![Alt Text](CoreApp/mindmap/MindMap1.jpg)
+## Update
+- [Launch-Tigrao-Software-Pre-Project-Document-Writer](#update)
+- [LaunchCoreApp](#update)
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.0
 
@@ -27,8 +30,12 @@
 
 
 
+# update
+### Launch of Tigrao Software Pre Project Document Writer: ***(28/09/2024)***  SoftwareAI 0.1.1   
+### Launch of the application core : ***(16/09/2024)***  SoftwareAI 0.1.0   
 
 
+#
 # AI Team Company Owners
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Company Owners category is to replace the need to hire people to be the Company Owners
