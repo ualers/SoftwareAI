@@ -65,6 +65,8 @@ The concept of an AI team within the company/organization in the Company Account
 # AI Team Pre-Project
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Pre - Project category its objective is to replace the need to hire people to pre plan what was required by a human or other AI
+
+
 * **Tigrao**: 
   * tigrao is a good worker who creates excellent documents for less than $0.01 (depending on the project)
    ```
