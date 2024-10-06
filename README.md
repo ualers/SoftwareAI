@@ -22,10 +22,11 @@
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
-![Alt Text](CoreApp/mindmap/MindMap1.jpg)
-![Alt Text](CoreApp/mindmap/MindMap2.jpg)
-![Alt Text](CoreApp/mindmap/MindMap3.jpg)
 ## Info
+- [LaunchSynthOperatorSoftwareRequirementsAnalyst](#Update)
+- [LaunchCloudArchitectSoftwaredocumentation](#Update)
+- [LaunchDallasSolutionsTeam](#Update)
+- [LaunchBobProjectmanager](#Update)
 - [LaunchTigraoSoftwarePreProjectDocumentWriter](#Update)
 - [LaunchCoreApp](#Update)
 
@@ -33,6 +34,19 @@
 
 
 # Update
+
+### Launch of SynthOperator, Software Requirements Analyst, objective is to receive and analyze Roadmap, Schedule, Spreadsheet and Pre-Project Document: ***(06/10/2024)***  SoftwareAI 0.1.4
+
+#
+
+### Launch of CloudArchitect, responsibility is to create technical documentation for software projects based on Roadmap, Schedule, Spreadsheet and Pre-Project Document: ***(06/10/2024)***  SoftwareAI 0.1.3 pending
+
+
+#
+### Launch of Dallas, The objective is to plan a Project Roadmap based on the Schedule, Spreadsheet and Pre-Project Document: ***(06/10/2024)***  SoftwareAI 0.1.2
+#
+### Launch of Bob, The objective is to create a Project schedule and spreadsheet based on the Pre-Project Document: ***(06/10/2024)***  SoftwareAI 0.1.1 
+#
 ### Launch of Tigrao Software Pre Project Document Writer: ***(28/09/2024)***  SoftwareAI 0.1.1   
 ### Launch of the application core : ***(16/09/2024)***  SoftwareAI 0.1.0   
 
@@ -142,6 +156,213 @@ The concept of an AI team within the company/organization in the Pre - Project c
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Software Planning category, its objective is to replace the need to hire people to plan the roadmap, schedule, spreadsheet, possible delivery times
 
+* **Bob**: 
+  * Bob is a software project manager who is able to create a schedule and spreadsheet with current dates and following company standards
+   ```
+    AI_Team_Software_Planning/AI_Bob_Software_Planning.py
+   ```
+  * Example Timeline:
+     ```
+           
+           Aqui está o cronograma do projeto "Conversor de Moedas em Python" baseado no documento pré-projeto e na data atual:
+           
+           ```json
+           {
+               "cronograma": {
+                   "nome_do_cronograma": "Cronograma do Projeto Conversor de Moedas",
+                   "atividades": [
+                       {
+                           "atividade": "Levantamento de Requisitos",
+                           "data_inicio": "2024-09-30 14:55:39",
+                           "data_fim": "2024-10-07 14:55:39"
+                       },
+                       {
+                           "atividade": "Desenvolvimento do Script",
+                           "data_inicio": "2024-10-08 14:55:39",
+                           "data_fim": "2024-10-22 14:55:39"
+                       },
+                       {
+                           "atividade": "Implementação de Funcionalidades",
+                           "data_inicio": "2024-10-23 14:55:39",
+                           "data_fim": "2024-11-12 14:55:39"
+                       },
+                       {
+                           "atividade": "Testes e Validação",
+                           "data_inicio": "2024-11-13 14:55:39",
+                           "data_fim": "2024-11-22 14:55:39"
+                       },
+                       {
+                           "atividade": "Documentação do Usuário",
+                           "data_inicio": "2024-11-23 14:55:39",
+                           "data_fim": "2024-11-27 14:55:39"
+                       },
+                       {
+                           "atividade": "Entrega do Projeto",
+                           "data_inicio": "2024-11-28 14:55:39",
+                           "data_fim": "2024-11-30 14:55:39"
+                       }
+                   ]
+               }
+           }
+           ```
+           
+           Se precisar de mais ajustes ou informações, estou à disposição!
+
+
+
+
+     
+     ```
+  * Example spreadsheet:
+     ```
+           
+           Aqui está a planilha do projeto "Conversor de Moedas em Python", elaborada com base no documento pré-projeto e no cronograma:
+           
+           ```json
+           {
+               "planilha": {
+                   "nome_da_planilha": "Planilha do Projeto Conversor de Moedas",
+                   "detalhes_do_projeto": {
+                       "nome": "Conversor de Moedas em Python",
+                       "descricao": "Desenvolvimento de um script em Python que converte valores entre diferentes moedas utilizando taxas de câmbio atualizadas. O script permitirá que os usuários insiram o valor a ser convertido, selecionem a moeda de origem e a moeda de destino, e acessem taxas de câmbio em tempo real através de uma API ou uma base de dados interna.",
+                       "objetivos": [
+                           "Automatizar a conversão de valores entre diferentes moedas",
+                           "Garantir que as taxas de câmbio utilizadas sejam sempre atualizadas e precisas",
+                           "Facilitar múltiplas conversões em uma única execução"
+                       ],
+                       "funcionalidades": [
+                           "Entrada do valor a ser convertido, além da seleção de moedas de origem e destino",
+                           "Acesso a uma API para obter taxas de câmbio em tempo real",
+                           "Exibição da taxa de câmbio atual entre as moedas selecionadas",
+                           "Interface de linha de comando simples e intuitiva"
+                       ],
+                       "justificativa": "Um conversor de moedas eficiente é essencial para profissionais que trabalham em ambientes financeiros ou para viajantes que necessitam de informações precisas sobre câmbio. O uso de APIs e uma interface amigável aumentarão a utilidade da ferramenta e a precisão das conversões.",
+                       "tecnologia": [
+                           "Python",
+                           "APIs de taxas de câmbio (ex: Open Exchange Rates, CurrencyLayer)"
+                       ],
+                       "publico_alvo": "Usuários que precisam realizar conversões de moeda de maneira prática, incluindo viajantes, profissionais de finanças e qualquer pessoa que necessite verificar valores em diferentes moedas."
+                   },
+                   "entregas": [
+                       "Script funcional em Python com todas as funcionalidades especificadas",
+                       "Documentação do usuário com instruções claras sobre uso e modificações",
+                       "Comentários claros no código para facilitar o entendimento e futuras atualizações"
+                   ],
+                   "cronograma": {
+                       "atividades": [
+                           {
+                               "atividade": "Levantamento de Requisitos",
+                               "data_inicio": "2024-09-30 14:55:39",
+                               "data_fim": "2024-10-07 14:55:39"
+                           },
+                           {
+                               "atividade": "Desenvolvimento do Script",
+                               "data_inicio": "2024-10-08 14:55:39",
+                               "data_fim": "2024-10-22 14:55:39"
+                           },
+                           {
+                               "atividade": "Implementação de Funcionalidades",
+                               "data_inicio": "2024-10-23 14:55:39",
+                               "data_fim": "2024-11-12 14:55:39"
+                           },
+                           {
+                               "atividade": "Testes e Validação",
+                               "data_inicio": "2024-11-13 14:55:39",
+                               "data_fim": "2024-11-22 14:55:39"
+                           },
+                           {
+                               "atividade": "Documentação do Usuário",
+                               "data_inicio": "2024-11-23 14:55:39",
+                               "data_fim": "2024-11-27 14:55:39"
+                           },
+                           {
+                               "atividade": "Entrega do Projeto",
+                               "data_inicio": "2024-11-28 14:55:39",
+                               "data_fim": "2024-11-30 14:55:39"
+                           }
+                       ]
+                   }
+               }
+           }
+           ```
+           
+           Se precisar de mais informações ou ajustes, estou à disposição!
+                
+     ```
+
+
+
+* **Dallas**: 
+  * Dallas The objective is to plan a Project Roadmap based on the Schedule, Spreadsheet and Pre-Project Document
+   ```
+    AI_Team_Software_Planning/AI_Dallas_Software_Planning.py
+   ```
+  * Example Roadmap:
+   ```
+      
+      
+      ```json
+      {
+        "Roadmap": {
+          "nome_do_Roadmap": "Roadmap do Projeto Conversor de Moedas em Python",
+          "descricao": "Desenvolvimento e implementação de um script em Python para conversão de valores entre diferentes moedas utilizando taxas de câmbio atualizadas.",
+          "etapas": [
+            {
+              "fase": "Levantamento de Requisitos",
+              "data_inicio": "2024-09-30 14:55:39",
+              "data_fim": "2024-10-07 14:55:39",
+              "descricao": "Coleta de requisitos e documentação necessária para a funcionalidade do projeto.",
+              "responsavel": "Gerente de Projeto"
+            },
+            {
+              "fase": "Desenvolvimento do Script",
+              "data_inicio": "2024-10-08 14:55:39",
+              "data_fim": "2024-10-22 14:55:39",
+              "descricao": "Criação do script principal em Python para a conversão de moedas.",
+              "responsavel": "Desenvolvedores"
+            },
+            {
+              "fase": "Implementação de Funcionalidades",
+              "data_inicio": "2024-10-23 14:55:39",
+              "data_fim": "2024-11-12 14:55:39",
+              "descricao": "Adição de funcionalidades como interface para entrada de dados e acesso a APIs de taxas de câmbio.",
+              "responsavel": "Desenvolvedores"
+            },
+            {
+              "fase": "Testes e Validação",
+              "data_inicio": "2024-11-13 14:55:39",
+              "data_fim": "2024-11-22 14:55:39",
+              "descricao": "Testar todas as funcionalidades do script e validar a precisão das conversões.",
+              "responsavel": "Equipe de QA"
+            },
+            {
+              "fase": "Documentação do Usuário",
+              "data_inicio": "2024-11-23 14:55:39",
+              "data_fim": "2024-11-27 14:55:39",
+              "descricao": "Produção de uma documentação clara e compreensível para as orientações aos usuários.",
+              "responsavel": "Equipe de Documentação"
+            },
+            {
+              "fase": "Entrega do Projeto",
+              "data_inicio": "2024-11-28 14:55:39",
+              "data_fim": "2024-11-30 14:55:39",
+              "descricao": "Finalização do projeto com a entrega do script e acesso à documentação ao usuário.",
+              "responsavel": "Gerente de Projeto"
+            }
+          ],
+          "responsavel": "Bob (Gerente de Projeto)",
+          "data_inicio": "2024-09-30",
+          "data_fim": "2024-11-30"
+        }
+      }
+      ```
+   
+   ```
+
+
+
+
+
 #
 #
 #
@@ -149,7 +370,178 @@ The concept of an AI team within the company/organization in the Software Planni
 # AI Team Software Requirements Analysis
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Software Requirements Analysis category, its objective is to replace the need to hire people to analyze how much should be charged for a Software subscription, the libraries necessary for development
+* **SynthOperator**: 
+   ```
+    AI_Team_Software_Requirements_Analysis/AI_SynthOperator_Software_Requirements_Analysis.py
+   ```
+  * Example analisys:
+   ```
+      
+      Aqui está o resumo das informações extraídas e organizadas dos quatro arquivos relacionados ao projeto de software "Conversor de Moedas em Python":
+      
+      ```json
+      {
+          "resumo": "O projeto visa desenvolver um script em Python que automatiza a conversão de valores entre diferentes moedas, utilizando taxas de câmbio atualizadas. O sistema permitirá que os usuários insiram valores, escolham as moedas de origem e destino, e acessem taxas em tempo real através de APIs.",
+          "requisitos_funcionais": [
+              "Permitir entrada de valor a ser convertido e seleção de moedas.",
+              "Acessar API para obter taxas de câmbio em tempo real.",
+              "Exibir a taxa de câmbio atual entre as moedas selecionadas."
+          ],
+          "requisitos_nao_funcionais": [
+              "Interface de linha de comando simples e intuitiva.",
+              "Garantir precisão e atualização das taxas de câmbio.",
+              "Desempenho eficiente na execução das conversões."
+          ],
+          "dependencias": [
+              "O levantamento de requisitos deve ser concluído antes do desenvolvimento.",
+              "As funcionalidades dependem do acesso à API para taxas de câmbio."
+          ],
+          "marcos": [
+              {
+                  "fase": "Levantamento de Requisitos",
+                  "data_inicio": "2024-09-30 14:55:39",
+                  "data_fim": "2024-10-07 14:55:39"
+              },
+              {
+                  "fase": "Desenvolvimento do Script",
+                  "data_inicio": "2024-10-08 14:55:39",
+                  "data_fim": "2024-10-22 14:55:39"
+              },
+              {
+                  "fase": "Implementação de Funcionalidades",
+                  "data_inicio": "2024-10-23 14:55:39",
+                  "data_fim": "2024-11-12 14:55:39"
+              },
+              {
+                  "fase": "Testes e Validação",
+                  "data_inicio": "2024-11-13 14:55:39",
+                  "data_fim": "2024-11-22 14:55:39"
+              },
+              {
+                  "fase": "Documentação do Usuário",
+                  "data_inicio": "2024-11-23 14:55:39",
+                  "data_fim": "2024-11-27 14:55:39"
+              },
+              {
+                  "fase": "Entrega do Projeto",
+                  "data_inicio": "2024-11-28 14:55:39",
+                  "data_fim": "2024-11-30 14:55:39"
+              }
+          ],
+          "recursos": [
+              "Desenvolvedores especialistas em Python.",
+              "Equipe de QA para testes das funcionalidades.",
+              "Gerente de projeto para coordenação."
+          ],
+          "riscos": [
+              "Atrasos na definição de requisitos.",
+              "Mudanças inesperadas nos requisitos do cliente.",
+              "Problemas de integração com APIs."
+          ]
+      }
+      ```
+      
+      ### Detalhes dos Arquivos Analisados:
+      
+      1. **Roadmap do Projeto**:
+         - O roadmap descreve o desenvolvimento e implementação do projeto e detalha cada fase do cronograma, incluindo os responsáveis pelas atividades .
+      
+      2. **Cronograma do Projeto**:
+         - O cronograma organiza as atividades planejadas e as datas, garantindo que as etapas sejam cumpridas dentro dos prazos determinados .
+      
+      3. **Planilha do Projeto**:
+         - A planilha contém objetivos, funcionalidades, justificativa para a criação do software e detalhes sobre a tecnologia utilizada, como Python e APIs de taxas de câmbio  .
+      
+      4. **Documento Pré-Projeto**:
+         - O documento pré-projeto explica o propósito do sistema, os objetivos a serem alcançados e o público-alvo, além das entregas esperadas ao final do projeto .
+      
+      Este resumo fornece uma visão clara e estruturada do projeto, facilitando a compreensão para todas as partes interessadas. Se precisar de mais informações ou ajustes, estou à disposição!
+      
+         
+    
+   ```
 
+
+
+# AI Team Software Documentation
+* **💭Concept**:
+The concept of an AI team within the company/organization in the Software Documentation category
+* **CloudArchitect**: 
+   ```
+    AI_Team_Software_Planning/AI_Dallas_Software_Planning.py
+   ```
+  * Example Doc:
+   ```
+         
+         # Documentação para o GitHub
+         
+         ## Introdução
+         O **Conversor de Moedas** é uma aplicação Python que permite converter valores entre diferentes moedas utilizando taxas de câmbio obtidas de uma API. É uma ferramenta útil para viajantes, comerciantes e qualquer pessoa que precise realizar transações em múltiplas moedas.
+         
+         ## Instalação
+         Para instalar e usar o Conversor de Moedas, siga estas etapas:
+         
+         1. **Pré-requisitos**:
+            - Você deve ter o Python instalado em sua máquina. Caso ainda não tenha, faça o download em [python.org](https://www.python.org/downloads/).
+         
+         2. **Instalação de bibliotecas**:
+            - Você precisará instalar a biblioteca `requests`. Execute o seguinte comando no terminal:
+            
+            ```bash
+            pip install requests
+            ```
+         
+         3. **Download do Script**:
+            - Salve o código acima em um arquivo chamado `currency_converter.py`.
+         
+         ## Uso
+         Para usar o Conversor de Moedas, siga estes passos:
+         
+         1. Execute o script no terminal:
+            
+            ```bash
+            python currency_converter.py
+            ```
+         
+         2. Quando solicitado, insira a moeda base para a conversão (ex: USD, EUR).
+         
+         3. O programa exibirá as taxas de câmbio disponíveis. 
+         
+         4. Digite a moeda de origem, a moeda de destino e o valor que deseja converter.
+         
+         5. O resultado da conversão será exibido em formato monetário.
+         
+         ## Referência de API
+         - **CurrencyConverter**: Classe principal responsável pela conversão de moedas.
+             - `__init__()`: Inicializa a classe definindo a URL da API de taxas de câmbio.
+             - `get_exchange_rates(base_currency)`: Obtém as taxas de câmbio para a moeda base especificada. Retorna um dicionário de taxas.
+             - `convert_currency(amount, from_currency, to_currency, rates)`: Converte um valor de uma moeda para outra, com base nas taxas fornecidas.
+         
+         ## Contribuição
+         Contribuições são bem-vindas! Para contribuir com este projeto, siga os passos abaixo:
+         
+         1. Faça um fork do repositório.
+         2. Crie uma nova branch para suas modificações:
+            
+            ```bash
+            git checkout -b minha-contribuicao
+            ```
+         3. Realize suas alterações e faça um commit:
+            
+            ```bash
+            git commit -m "Descrição das suas alterações"
+            ```
+         4. Envie sua branch:
+            
+            ```bash
+            git push origin minha-contribuicao
+            ```
+         5. Abra um pull request no GitHub.
+         
+         ## Licença
+         Este projeto está licenciado sob a [MIT License](LICENSE). Para mais detalhes, consulte o arquivo LICENSE no repositório.
+   
+   ```
 #
 #
 #
@@ -157,7 +549,11 @@ The concept of an AI team within the company/organization in the Software Requir
 # AI Team Software Development
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Software Development category is the first most important team in development. Its objective is to replace the need to hire people for the development of code/scripts/applications/software
-
+* **SynthOperator**: 
+   ```
+    AI_Team_Software_Requirements_Analysis/AI_SynthOperator_Software_Requirements_Analysis.py
+   ```
+  * Example analisys:
 #
 #
 #
@@ -247,6 +643,11 @@ Send sales/profit reports via email
 #
 #
 #
+
+
+![Alt Text](CoreApp/mindmap/MindMap1.jpg)
+![Alt Text](CoreApp/mindmap/MindMap2.jpg)
+![Alt Text](CoreApp/mindmap/MindMap3.jpg)
 
 
 
