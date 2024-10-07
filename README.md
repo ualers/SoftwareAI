@@ -35,6 +35,15 @@
 
 # Update
 
+### Launch of SignalMaster, The objective is to receive Python scripts or software developed by the team and improve them based on software development standards already in production at the company, which will be provided via vectorstore.: ***(07/10/2024)***  SoftwareAI 0.1.7
+
+#
+### Launch of DataWeaver, The objective is to analyze current software and suggest improvements based on software projects already in production, which are stored in the vectorstore called All_Software_in_company: ***(07/10/2024)***  SoftwareAI 0.1.6
+
+#
+### Launch of QuantumCore , O objetivo é desenvolver software de alta qualidade com base nos requisitos fornecidos pelo Analista de Requisitos de Software e nos padrões de software já existentes na empresa: ***(07/10/2024)***  SoftwareAI 0.1.5
+
+#
 ### Launch of SynthOperator, Software Requirements Analyst, objective is to receive and analyze Roadmap, Schedule, Spreadsheet and Pre-Project Document: ***(06/10/2024)***  SoftwareAI 0.1.4
 
 #
