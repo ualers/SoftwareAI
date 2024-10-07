@@ -23,6 +23,9 @@
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
 ## Info
+- [LaunchSignalMaster](#Update)
+- [LaunchDataWeaver](#Update)
+- [LaunchQuantumCore](#Update)
 - [LaunchSynthOperatorSoftwareRequirementsAnalyst](#Update)
 - [LaunchCloudArchitectSoftwaredocumentation](#Update)
 - [LaunchDallasSolutionsTeam](#Update)
@@ -558,11 +561,81 @@ The concept of an AI team within the company/organization in the Software Docume
 # AI Team Software Development
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Software Development category is the first most important team in development. Its objective is to replace the need to hire people for the development of code/scripts/applications/software
-* **SynthOperator**: 
+* **QuantumCore**: 
    ```
-    AI_Team_Software_Requirements_Analysis/AI_SynthOperator_Software_Requirements_Analysis.py
+    AI_Team_Software_Development/AI_QuantumCore_Software_Development.py
    ```
-  * Example analisys:
+  * Example code:
+   ```
+        import requests
+        
+        class CurrencyConverter:
+            def __init__(self, api_url='https://api.exchangerate-api.com/v4/latest/'):
+                """Inicializa o conversor de moedas com a URL da API."""
+                self.api_url = api_url
+        
+            def get_exchange_rates(self, base_currency):
+                """Obtém as taxas de câmbio para a moeda base especificada."""
+                try:
+                    response = requests.get(f"{self.api_url}{base_currency}")
+                    response.raise_for_status()  # Lança um erro se a resposta for um erro HTTP
+                    data = response.json()
+                    return data.get('rates', {})
+                except requests.RequestException as e:
+                    print(f"Erro ao acessar a API: {e}")
+                    return {}
+        
+            def convert_currency(self, amount, from_currency, to_currency, rates):
+                """Converte um valor de uma moeda para outra."""
+                if from_currency == to_currency:
+                    return amount
+                
+                base_amount = amount / rates[from_currency]
+                return base_amount * rates.get(to_currency, 0)
+        
+        
+        def main():
+            print("Bem-vindo ao Conversor de Moedas!")
+        
+            base_currency = input("Digite a moeda base (ex: USD, EUR): ").upper()
+            converter = CurrencyConverter()
+            rates = converter.get_exchange_rates(base_currency)
+        
+            if not rates:
+                print(f"Taxas de câmbio não disponíveis para a moeda base: {base_currency}")
+                return
+        
+            print("Taxas de câmbio disponíveis:")
+            for currency in rates.keys():
+                print(currency)
+        
+            from_currency = input("Digite a moeda de origem: ").upper()
+            to_currency = input("Digite a moeda de destino: ").upper()
+            try:
+                amount = float(input("Digite o valor a ser convertido: "))
+            except ValueError:
+                print("Valor inválido, por favor digite um número.")
+                return
+        
+            if from_currency not in rates or to_currency not in rates:
+                print("Uma das moedas não está disponível nas taxas de câmbio.")
+                return
+        
+            converted_amount = converter.convert_currency(amount, from_currency, to_currency, rates)
+        
+            if converted_amount:
+                print(f"{amount:.2f} {from_currency} é igual a {converted_amount:.2f} {to_currency}.")
+            else:
+                print("Erro na conversão de moeda.")
+        
+        if __name__ == "__main__":
+            main()
+
+   
+   ```
+
+
+ 
 #
 #
 #
