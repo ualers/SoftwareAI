@@ -23,9 +23,9 @@
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
 ## Info
-- [LaunchSignalMaster](#Update)
-- [LaunchDataWeaver](#Update)
-- [LaunchQuantumCore](#Update)
+- [LaunchSignalMasterSoftwareDevelopment](#Update)
+- [LaunchDataWeaverSoftwareDevelopment](#Update)
+- [LaunchQuantumCoreSoftwareDevelopment](#Update)
 - [LaunchSynthOperatorSoftwareRequirementsAnalyst](#Update)
 - [LaunchCloudArchitectSoftwaredocumentation](#Update)
 - [LaunchDallasSolutionsTeam](#Update)
@@ -38,7 +38,7 @@
 
 # Update
 
-### Launch of SignalMaster, The objective is to receive Python scripts or software developed by the team and improve them based on software development standards already in production at the company, which will be provided via vectorstore.: ***(07/10/2024)***  SoftwareAI 0.1.7
+### Launch of SignalMaster, The objective is to receive Python scripts or software developed by the team and improve them based on software development standards already in production at the company, which will be provided via vectorstore: ***(07/10/2024)***  SoftwareAI 0.1.7
 
 #
 ### Launch of DataWeaver, The objective is to analyze current software and suggest improvements based on software projects already in production, which are stored in the vectorstore called All_Software_in_company: ***(07/10/2024)***  SoftwareAI 0.1.6
