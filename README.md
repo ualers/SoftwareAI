@@ -4,7 +4,7 @@
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
 # * **💭What is SoftwareAI capable of?**
-* in version 0.1 SoftwareAI is able to create software and create the software repository with the code and README.MD in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, even there is no intracommunication between teams
+* in version 0.1 SoftwareAI is able to create software and create the software repository with the code and README.MD in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, There is still no intercommunication between the teams
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
 
@@ -78,6 +78,9 @@
 # AI Team Company Owners
 * **💭Concept**:
 The concept of an AI team within the company/organization in the Company Owners category is to replace the need to hire people to be the Company Owners
+
+* **ByteManager**: 
+  * initially part of the Company Owner, the objective is to control and manage all steps of all teams
 
 #
 # 
