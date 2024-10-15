@@ -22,15 +22,19 @@
 # * **💭What is SoftwareAI?**
 * Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
 
+# * **💭What is SoftwareAI capable of?**
+* in version 0.1 SoftwareAI is capable of creating software and creating the software repository with the code and README.MD, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intracommunication between the teams
+
 ## Info
-- [LaunchSignalMasterSoftwareDevelopment](#Update)
-- [LaunchDataWeaverSoftwareDevelopment](#Update)
-- [LaunchQuantumCoreSoftwareDevelopment](#Update)
-- [LaunchSynthOperatorSoftwareRequirementsAnalyst](#Update)
-- [LaunchCloudArchitectSoftwaredocumentation](#Update)
-- [LaunchDallasSolutionsTeam](#Update)
-- [LaunchBobProjectmanager](#Update)
-- [LaunchTigraoSoftwarePreProjectDocumentWriter](#Update)
+- [Launch-ByteManager-Company-Owners](#Update)
+- [Launch-Signal-Master-Software-Development](#Update)
+- [Launch-DataWeaver-Software-Development](#Update)
+- [Launch-QuantumCore-Software-Development](#Update)
+- [Launch-SynthOperator-Software-Requirements-Analyst](#Update)
+- [Launch-Cloud-Architect-Software-documentation](#Update)
+- [Launch-Dallas-Solutions-Team](#Update)
+- [Launch-Bob-Project-manager](#Update)
+- [Launch-Tigrao-Software-PreProject-DocumentWriter](#Update)
 - [LaunchCoreApp](#Update)
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
