@@ -20,10 +20,12 @@
 
 
 # * **💭What is SoftwareAI?**
-* Software is an AI framework with the aim of creating an AI-governed software/application development company/organization
+* SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
 # * **💭What is SoftwareAI capable of?**
-* in version 0.1 SoftwareAI is capable of creating software and creating the software repository with the code and README.MD, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intracommunication between the teams
+* in version 0.1 SoftwareAI is able to create software and create the software repository with the code and README.MD in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, even there is no intracommunication between teams
+
+# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
 
 ## Info
 - [Launch-ByteManager-Company-Owners](#Update)
@@ -37,10 +39,11 @@
 - [Launch-Tigrao-Software-PreProject-DocumentWriter](#Update)
 - [LaunchCoreApp](#Update)
 
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
-
-
 # Update
+
+### Launch of ByteManager, initially part of the Company Owner, the objective is to control and manage all steps of all teams ***(15/10/2024)***  SoftwareAI 0.1.7
+
+
 
 ### Launch of SignalMaster, The objective is to receive Python scripts or software developed by the team and improve them based on software development standards already in production at the company, which will be provided via vectorstore: ***(07/10/2024)***  SoftwareAI 0.1.7
 
