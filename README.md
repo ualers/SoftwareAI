@@ -1,5 +1,4 @@
 
-
 # * **💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
@@ -16,6 +15,8 @@
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
 
 ## Info Update
+- [SoftwareAI-interface-in-V-2.0.0](#Update)
+- [Launch-ByteManager-Company-Owners](#Update)
 - [Launch-ByteManager-Company-Owners](#Update)
 - [Launch-CloudArchitect-Software-Documentation](#Update)
 - [Launch-Signal-Master-Software-Development](#Update)
@@ -49,7 +50,8 @@
 
 # Update
 
-###  After completing the various tests, we will create the SoftwareAI interface, in V 2.0.0 we intend to launch without intracommunication between the teams, however everything will be in the same interface, something similar to CrewAI but native for Windows and in the future for Linux ***(06/11/2024)***  SoftwareAI N/A
+
+# After completing the various tests, we will create the SoftwareAI interface, in V 2.0.0 we intend to launch without intracommunication between the teams, however everything will be in the same interface, something similar to CrewAI but native for Windows and in the future for Linux ***(06/11/2024)***  SoftwareAI N/A
 
 
 ### Launch of ByteManager, initially part of the Company Owner, the objective is to control and manage all steps of all teams ***(15/10/2024)***  SoftwareAI 0.1.7
