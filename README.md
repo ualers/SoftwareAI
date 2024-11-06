@@ -5,6 +5,13 @@
 
 # * **💭What is SoftwareAI capable of?**
 * in version 0.1, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
+* Watch the potential of SoftwareAI's Unbuildable Beta V 0.1.7 at 
+   ```
+    https://github.com/A-I-O-R-G/Twitch-VOD-Downloader
+    https://github.com/A-I-O-R-G/PDFGenPython
+    https://github.com/A-I-O-R-G/OrganizaArquivos
+    https://github.com/A-I-O-R-G/ConversorMoedasAPI
+   ```
 
 # SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
 
@@ -41,6 +48,9 @@
 
 
 # Update
+
+###  After completing the various tests, we will create the SoftwareAI interface, in V 2.0.0 we intend to launch without intracommunication between the teams, however everything will be in the same interface, something similar to CrewAI but native for Windows and in the future for Linux ***(06/11/2024)***  SoftwareAI N/A
+
 
 ### Launch of ByteManager, initially part of the Company Owner, the objective is to control and manage all steps of all teams ***(15/10/2024)***  SoftwareAI 0.1.7
 
