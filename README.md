@@ -3,7 +3,7 @@
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
 # * **💭What is SoftwareAI capable of?**
-* in version 0.1, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
+* in version 0.1.7, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
 * Watch the potential of SoftwareAI's Unbuildable Beta V 0.1.7 at 
    ```
     https://github.com/A-I-O-R-G/Twitch-VOD-Downloader
@@ -12,7 +12,15 @@
     https://github.com/A-I-O-R-G/ConversorMoedasAPI
    ```
 
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
+
+* **Current Version**: 
+  * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
+
+
+## Index Docs
+- [doc-tools](Docs/doc-tools.md)
+- [Roadmaps](Roadmaps/SoftwareAI-Roadmap.md)
+
 
 ## Info Update
 - [SoftwareAI-interface-in-V-2.0.0](#Update)
@@ -51,7 +59,7 @@
 # Update
 
 
-# After completing the various tests, we will create the SoftwareAI interface, in V 2.0.0 we intend to launch without intracommunication between the teams, however everything will be in the same interface, something similar to CrewAI but native for Windows and in the future for Linux ***(06/11/2024)***  SoftwareAI N/A
+### CoreApp completely refactored, After complications in intracommunication between teams using the QT5/pyside6  interface, we decided to postpone the interface and leave the core of the application well done so that others can create relatively good software in version 0.1.9 with one click. ***(09/11/2024)***  SoftwareAI 0.1.8
 
 
 ### Launch of ByteManager, initially part of the Company Owner, the objective is to control and manage all steps of all teams ***(15/10/2024)***  SoftwareAI 0.1.7
