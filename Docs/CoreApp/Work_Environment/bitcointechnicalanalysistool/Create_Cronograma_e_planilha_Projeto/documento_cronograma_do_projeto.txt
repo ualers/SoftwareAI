@@ -1,0 +1,51 @@
+
+Com base no Documento Pre Projeto que você forneceu, aqui está o cronograma do projeto em formato JSON:
+
+```json
+{
+  "cronograma": {
+    "titulo": "Cronograma do Projeto - Desenvolvimento de Script para Análise Técnica da Criptomoeda Bitcoin",
+    "duração": "6 semanas",
+    "etapas": [
+      {
+        "nome": "Coleta de dados",
+        "descrição": "Processar dados históricos de preços e volumes da Bitcoin utilizando fontes de dados de mercado.",
+        "data_inicio": "2024-11-11",
+        "data_fim": "2024-11-24"
+      },
+      {
+        "nome": "Cálculo de indicadores",
+        "descrição": "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), Bandas de Bollinger e MACD.",
+        "data_inicio": "2024-11-25",
+        "data_fim": "2024-12-08"
+      },
+      {
+        "nome": "Desenvolvimento de visualizações gráficas",
+        "descrição": "Gerar visualizações gráficas para identificação de tendências e padrões de preços.",
+        "data_inicio": "2024-12-09",
+        "data_fim": "2024-12-15"
+      },
+      {
+        "nome": "Configuração de alertas",
+        "descrição": "Configurar alertas para condições de mercado específicas, como cruzamentos de médias móveis ou níveis de sobrecompra/sobrevenda.",
+        "data_inicio": "2024-12-16",
+        "data_fim": "2024-12-22"
+      },
+      {
+        "nome": "Testes e validação",
+        "descrição": "Realizar testes no script e validar os resultados obtidos.",
+        "data_inicio": "2024-12-23",
+        "data_fim": "2024-12-29"
+      },
+      {
+        "nome": "Documentação final",
+        "descrição": "Elaborar a documentação técnica e relatório final do projeto.",
+        "data_inicio": "2024-12-30",
+        "data_fim": "2025-01-05"
+      }
+    ]
+  }
+}
+```
+
+Esse cronograma fornece uma visão clara das etapas do projeto, os prazos e as descrições das atividades a serem realizadas. Se você precisar de mais informações ou ajustes, sinta-se à vontade para pedir!
