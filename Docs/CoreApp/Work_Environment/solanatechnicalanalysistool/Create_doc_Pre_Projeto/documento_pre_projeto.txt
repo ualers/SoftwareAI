@@ -1,0 +1,21 @@
+
+```json
+{
+  "doc_Pre_Projeto": {
+    "titulo": "Desenvolvimento de Script para Análise Técnica da Criptomoeda Solana",
+    "descricao": "O usuário está solicitando a criação de um script voltado para a análise técnica da criptomoeda Solana. Este script deve ser capaz de coletar e processar dados históricos de preços e volumes da Solana, permitindo a aplicação de indicadores técnicos comuns, como Média Móvel (MA), Índice de Força Relativa (RSI), MACD e Bandas de Bollinger. A finalidade é ajudar na avaliação do desempenho do ativo e na previsão de possíveis movimentos futuros de preços. O script deve incluir funções para gerar gráficos que representem visualmente as tendências de preço e volume ao longo do tempo, além de permitir que o usuário configure alertas para situações específicas de mercado, como pontos de entrada ou saída com base em estratégias de negociação definidas.",
+    "data_criacao": "2024-11-16 09:28:17",
+    "justificativa": "Com a crescente popularidade da criptomoeda Solana, há uma demanda por ferramentas que proporcionem análises técnicas que ajudem investidores a tomar decisões informadas.",
+    "objetivos": [
+      "Coletar e processar dados históricos de preços e volumes da Solana.",
+      "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), MACD e Bandas de Bollinger.",
+      "Gerar gráficos para visualização das tendências de preço e volume ao longo do tempo.",
+      "Permitir que o usuário configure alertas para pontos de entrada e saída em suas estratégias de negociação."
+    ],
+    "metodologia": "O desenvolvimento do script será realizado em Python, utilizando bibliotecas como Pandas para manipulação de dados, Matplotlib para visualização e TA-Lib para cálculos de indicadores técnicos.",
+    "prazos_estimados": "O projeto deverá ser concluído dentro de 7 semanas.",
+    "recursos_necessarios": "Acesso a APIs ou dados de mercado da Solana, ambiente de desenvolvimento Python e bibliotecas necessárias para o processamento e visualização."
+  },
+  "name_doc_Pre_Projeto": "Pre-Projeto de Análise Técnica da Criptomoeda Solana"
+}
+```
