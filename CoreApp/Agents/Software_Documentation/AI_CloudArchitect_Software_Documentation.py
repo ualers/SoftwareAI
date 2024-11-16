@@ -9,6 +9,14 @@ from ..._init_libs_ import *
 # IMPORT SoftwareAI All Paths 
 from ..._init_paths_ import *
 #########################################
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
+
+
 
 
 
@@ -18,131 +26,98 @@ class Software_Documentation:
     def __init__(self):
         pass
 
-    ##############################################################################################
-    def CloudArchitect_Software_Documentation(self, path_python_software):
+    def CloudArchitect_Software_Documentation_Type_Create(self, path_python_software, path_Analysis, path_Roadmap, path_Spreadsheet, path_Timeline, path_Preproject):
 
-        instruction_CloudArchitect_Software_Documentation = """ 
-        Seu nome é CloudArchitect, você é um Desenvolvedor de Software especializado em Python na empresa urobotsoftware. Sua principal responsabilidade é criar e manter a documentação técnica dos projetos de software, garantindo que ela seja clara, completa e facilmente acessível para desenvolvedores e usuários.
-        \n
-        ### Objetivo:
-        - Desenvolver a documentação do software para repositórios no GitHub.
-        - Assegurar que a documentação aborde todos os aspectos necessários, desde a instalação até o uso e manutenção do software.
-        - Manter a documentação atualizada conforme o software evolui e novas funcionalidades são adicionadas.
-        \n
-        ### Responsabilidades:
-        \n
-        1. **Análise do Software:**
-        - Revisar o código do software e compreender sua estrutura, funcionalidades, bibliotecas utilizadas e dependências.
-        - Entender o fluxo de trabalho do software e como as diferentes partes do código interagem.
-        \n
-        2. **Criação de Documentação:**
-        - Desenvolver uma documentação detalhada que inclua:
-            - **Introdução**: Breve descrição do software, seu propósito e funcionalidades principais.
-            - **Instalação**: Instruções passo a passo para instalação do software, incluindo requisitos de sistema e dependências.
-            - **Uso**: Exemplos de como utilizar o software, incluindo comandos, opções de configuração e parâmetros suportados.
-            - **API**: Descrição das interfaces de programação, endpoints, métodos e exemplos de uso.
-            - **Contribuição**: Guia para desenvolvedores interessados em contribuir com o projeto, incluindo regras de contribuição, estilo de código e como submeter pull requests.
-            - **Licença**: Informações sobre a licença sob a qual o software é distribuído.
-        \n
-        3. **Manutenção Contínua:**
-        - Atualizar a documentação sempre que houver mudanças significativas no software.
-        - Adicionar novas seções à documentação conforme novas funcionalidades sejam desenvolvidas.
-        - Revisar regularmente a documentação para garantir sua precisão e relevância.
-        \n
-        4. **Formato e Organização:**
-        - Utilizar Markdown para formatar a documentação, aproveitando recursos como listas, cabeçalhos, links e tabelas.
-        - Estruturar a documentação de maneira organizada, usando pastas e arquivos separados para diferentes seções, conforme necessário.
-        - Incluir um arquivo `README.md` no repositório do GitHub que forneça uma visão geral do software e links para documentação adicional.
-        \n
-        5. **Colaboração com a Equipe:**
-        - Trabalhar em estreita colaboração com desenvolvedores e testadores para garantir que a documentação reflita com precisão a funcionalidade do software.
-        - Participar de reuniões de progresso e revisar o código para identificar áreas que necessitem de documentação adicional ou atualizada.
-        \n
+        python_software = python_functions.analyze_txt(path_python_software)
 
-        ### Formato de Resposta:
+        Analysis = python_functions.analyze_txt(path_Analysis)
 
-        Responda no formato JSON conforme o exemplo abaixo:
-        {
-            "status_da_documentacao": "...",
-            "secoes_da_documentacao": [
-                "Introdução",
-                "Instalação",
-                "Uso",
-                "Referência de API"
-            ],
-            "observacoes": "..."
-        }
+        Roadmap = python_functions.analyze_txt(path_Roadmap)
 
+        Spreadsheet = python_functions.analyze_txt(path_Spreadsheet)
 
-        """
+        Timeline = python_functions.analyze_txt(path_Timeline)
+
+        Preproject = python_functions.analyze_txt(path_Preproject)
+
         key = "AI_CloudArchitect_Software_Documentation"
         nameassistant = "AI CloudArchitect Software Documentation"
         model_select = "gpt-4o-mini-2024-07-18"
-        adxitional_instructions = None
+        
         Upload_1_file_in_thread = None
         Upload_1_file_in_message = None
         Upload_1_image_for_vision_in_thread = None
         Upload_list_for_code_interpreter_in_thread = None
         vectorstore_in_assistant = None
         vectorstore_in_Thread = None
-        tools = None
 
 
-        AI_CloudArchitect = AutenticateAgent.create_or_auth_AI(key, instruction_CloudArchitect_Software_Documentation, nameassistant, model_select, tools, vectorstore_in_assistant)
-        
-        
-        
-        vector_store_id = Agent_files.auth_or_create_vectorstore("DocGitHubData", [])
-        AI_CloudArchitect = Agent_files_update.update_vectorstore_in_agent(AI_CloudArchitect, [vector_store_id])
-        
-        python_software = python_functions.analyze_txt(path_python_software)
 
+        AI_CloudArchitect = AutenticateAgent.create_or_auth_AI(key, instructionCloudArchitect, nameassistant, model_select, tools_CloudArchitect, vectorstore_in_assistant)
+        
+        
+        
+        vector_store_id = Agent_files.auth_or_create_vectorstore("DocGitHubData")
+        #AI_CloudArchitect = Agent_files_update.update_vectorstore_in_agent(AI_CloudArchitect, [vector_store_id])
+        
         mensagem = f"""
-        Crie a Documentacao para o github desse software\n
-        
-        {python_software}
+        Crie a Documentacao para o github desse software com base no codigo do software e nas documentacoes\n
+        Codigo Software:\n
+        {python_software}\n
+        Documentacao Analysis:\n
+        {Analysis}\n
+        Documentacao Roadmap:\n
+        {Roadmap}\n
+        Documentacao Spreadsheet:\n
+        {Spreadsheet}\n
+        Documentacao Timeline:\n
+        {Timeline}\n
+        Documentacao Preproject:\n
+        {Preproject}\n
+
+
+
 
         """
-
-        
-        response = ResponseAgent.ResponseAgent_message_with_assistants(mensagem,
+        rregras = "Regras: NÃO use a function update_readme_to_github"
+        mensagem_final = mensagem + rregras
+        response = ResponseAgent.ResponseAgent_message_with_assistants(mensagem_final,
                                                                         Upload_1_file_in_thread,
                                                                         Upload_1_file_in_message,
                                                                         Upload_1_image_for_vision_in_thread, 
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread,
-                                                                        tools, 
+                                                                        tools_CloudArchitect, 
                                                                         AI_CloudArchitect, 
                                                                         model_select,
-                                                                        adxitional_instructions, key)
+                                                                        adxitional_instructions_CloudArchitect, key)
         path_Documentacao = os.getenv("PATH_DOCUMENTACAO_ENV")
         print(response)
         
 
-        mensaxgem = f"""deixe essa documentacao do github asseguir aprensentavel ao publico: \n {response}"""
-        
-        referencias = """remova as referencias a criacao da documentacao por exemplo:\n
-            ```json
-                {
-                    "status_da_documentacao": "Documentação criada com sucesso.",
-                    "secoes_documentadas": [
-                        "Introdução",
-                        "Funcionalidade",
-                        "Instalação",
-                        "Uso",
-                        "Referência de API",
-                        "Contribuição",
-                        "Licença"
-                    ],
-                    "observacoes": "A documentação deve ser mantida atualizada conforme novas funcionalidades fo
-                }
-            ```
-        """
+        # # referencias = """remova as referencias a criacao da documentacao por exemplo:\n
+        # #     ```json
+        # #         {
+        # #             "status_da_documentacao": "Documentação criada com sucesso.",
+        # #             "secoes_documentadas": [
+        # #                 "Introdução",
+        # #                 "Funcionalidade",
+        # #                 "Instalação",
+        # #                 "Uso",
+        # #                 "Referência de API",
+        # #                 "Contribuição",
+        # #                 "Licença"
+        # #             ],
+        # #             "observacoes": "A documentação deve ser mantida atualizada conforme novas funcionalidades "
+        # #         }
+        # #     ```
+        # # """
 
-        format = 'Responda no formato JSON Exemplo: {"documentacao_corrigida": "documentacao corrigida..."}'
-        mensagem = mensaxgem + referencias + format
+        mensaxgem = f"""deixe essa documentacao do github asseguir no formato markdown: \n {response}"""
+        format = 'Responda no formato JSON Exemplo: {"documentacao": "documentacao..."}'
+        mensagem = mensaxgem + format
         response = ResponseAgent.ResponseAgent_message_completions(mensagem, "", True)
-        documentacao_corrigida = response["documentacao_corrigida"]
+        documentacao_corrigida = response["documentacao"]
         print(documentacao_corrigida)
         python_functions.save_TXT(documentacao_corrigida, path_Documentacao, "w")
 
@@ -156,6 +131,148 @@ class Software_Documentation:
         self.check_and_upload_docs()
 
         return path_Documentacao
+
+
+
+    def CloudArchitect_Software_Documentation_Type_Update(self, repo_name, path_readme, code_python_software_old, code_path_python_software_new, path_Analysis, path_Roadmap, path_Spreadsheet, path_Timeline, path_Preproject):
+
+        
+        Readme = python_functions.analyze_txt(path_readme)
+
+        # python_software_old = python_functions.analyze_txt(code_python_software_old)
+
+        # python_software_new = python_functions.analyze_txt(code_path_python_software_new)
+
+        # Analysis = python_functions.analyze_txt(path_Analysis)
+
+        # Roadmap = python_functions.analyze_txt(path_Roadmap)
+
+        # Spreadsheet = python_functions.analyze_txt(path_Spreadsheet)
+
+        # Timeline = python_functions.analyze_txt(path_Timeline)
+
+        # Preproject = python_functions.analyze_txt(path_Preproject)
+
+        key = "AI_CloudArchitect_Software_Documentation"
+        nameassistant = "AI CloudArchitect Software Documentation"
+        model_select = "gpt-4o-mini-2024-07-18"
+        
+        Upload_1_file_in_thread = None
+        Upload_1_file_in_message = None
+        Upload_1_image_for_vision_in_thread = None
+        Upload_list_for_code_interpreter_in_thread = None
+        vectorstore_in_assistant = None
+        vectorstore_in_Thread = None
+
+
+
+        AI_CloudArchitect = AutenticateAgent.create_or_auth_AI(key, instructionCloudArchitect, nameassistant, model_select, tools_CloudArchitect, vectorstore_in_assistant)
+
+        # vector_store_id = Agent_files.auth_or_create_vectorstore("DocGitHubData")
+        #AI_CloudArchitect = Agent_files_update.update_vectorstore_in_agent(AI_CloudArchitect, [vector_store_id])
+        
+        mensagem = f"""
+        Atualize a Documentacao atual do github desse software com base no codigo do software antigo e o software novo \n
+        Repo Name:\n
+        {repo_name}\n
+        Documentacao atual do github:\n
+        {Readme}\n
+        codigo python do software antigo :\n
+        {code_python_software_old}
+        codigo python do software novo :\n
+        {code_path_python_software_new}\n
+
+        """
+        # Documentacao Analysis:\n
+        # {Analysis}\n
+        # Documentacao Roadmap:\n
+        # {Roadmap}\n
+        # Documentacao Spreadsheet:\n
+        # {Spreadsheet}\n
+        # Documentacao Timeline:\n
+        # {Timeline}\n
+        # Documentacao Preproject:\n
+        # {Preproject}\n
+        response = ResponseAgent.ResponseAgent_message_with_assistants(mensagem,
+                                                                        Upload_1_file_in_thread,
+                                                                        Upload_1_file_in_message,
+                                                                        Upload_1_image_for_vision_in_thread, 
+                                                                        Upload_list_for_code_interpreter_in_thread,
+                                                                        vectorstore_in_Thread,
+                                                                        tools_CloudArchitect, 
+                                                                        AI_CloudArchitect, 
+                                                                        model_select,
+                                                                        adxitional_instructions_CloudArchitect, key)
+        path_Documentacao = os.getenv("PATH_DOCUMENTACAO_ENV")
+        print(response)
+        
+
+        mensaxgem = f"""deixe essa documentacao do github asseguir aprensentavel ao publico: \n {response}"""
+        
+        # referencias = """remova as referencias a criacao da documentacao por exemplo:\n
+        #     ```json
+        #         {
+        #             "status_da_documentacao": "Documentação criada com sucesso.",
+        #             "secoes_documentadas": [
+        #                 "Introdução",
+        #                 "Funcionalidade",
+        #                 "Instalação",
+        #                 "Uso",
+        #                 "Referência de API",
+        #                 "Contribuição",
+        #                 "Licença"
+        #             ],
+        #             "observacoes": "A documentação deve ser mantida atualizada conforme novas funcionalidades "
+        #         }
+        #     ```
+        # """
+
+        format = 'Responda no formato JSON Exemplo: {"documentacao_corrigida": "documentacao corrigida..."}'
+        mensagem = mensaxgem + format
+        response = ResponseAgent.ResponseAgent_message_completions(mensagem, "", True)
+        documentacao_corrigida = response["documentacao_corrigida"]
+        print(documentacao_corrigida)
+        python_functions.save_TXT(documentacao_corrigida, path_Documentacao, "w")
+
+        self.diretorio_script = os.path.dirname(os.path.abspath(__file__))
+        self.path_DocGitHubDataREADME = os.path.join(self.diretorio_script, 'DocGitHubData', f"README{random.randint(30, 900)}.md")
+        self.path_DocGitHubData = os.path.join(self.diretorio_script, 'DocGitHubData')
+        self.path_DocGitHubData_log = os.path.join(self.diretorio_script, 'docs_uploaded.log')
+
+        python_functions.save_TXT(documentacao_corrigida, self.path_DocGitHubDataREADME, "w")
+
+        github_username, github_token = Github_functions.CloudArchitect_github_keys()
+
+        mensagem = f"""
+        Atualiza o Readme do repositorio no github\n
+        file_path_readme_improvements:\n
+        {path_readme}\n
+        repo_name:\n
+        {repo_name}\n
+        token:\n
+        {github_token}\n
+
+        """
+
+        
+        response = ResponseAgent.ResponseAgent_message_with_assistants(mensagem,
+                                                                        Upload_1_file_in_thread,
+                                                                        Upload_1_file_in_message,
+                                                                        Upload_1_image_for_vision_in_thread, 
+                                                                        Upload_list_for_code_interpreter_in_thread,
+                                                                        vectorstore_in_Thread,
+                                                                        tools_CloudArchitect, 
+                                                                        AI_CloudArchitect, 
+                                                                        model_select,
+                                                                        adxitional_instructions_CloudArchitect, key)
+        path_Documentacao = os.getenv("PATH_DOCUMENTACAO_ENV")
+        print(response)
+        self.check_and_upload_docs()
+
+        return path_Documentacao
+
+
+
 
     def read_uploaded_files(self, log_file="docs_uploaded.log"):
         """Lê o arquivo de log e retorna um conjunto de arquivos já carregados"""
