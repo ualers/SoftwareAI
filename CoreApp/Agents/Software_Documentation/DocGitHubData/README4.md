@@ -1,61 +1,29 @@
 
-# Ferramenta de Análise de Dados
+## 📊 4. Ferramenta de Análise de Dados
 
-## Descrição
-Uma ferramenta para análise de dados que fornece visualizações interativas.
+### 🎯 Descrição
+Visualizações interativas para seus dados! 📈
 
-## Instalação
-1. Clone o repositório:
-   ```
-    git clone https://github.com/usuario/ferramenta-analise-dados.git
-   ```
-2. Navegue até o diretório do projeto:
-    ```
-        cd ferramenta-analise-dados
-    ```
+### ⚙️ Instalação
+1. 📥 Clone o repositório:
+```bash
+git clone https://github.com/usuario/ferramenta-analise-dados.git
+```
 
-3. Instale as dependências:
-    ```
-    pip install -r requirements.txt
+2. 📂 Entre na pasta:
+```bash
+cd ferramenta-analise-dados
+```
 
-    ```
+3. 📦 Instale requisitos:
+```bash
+pip install -r requirements.txt
+```
 
-4. Execute o script principal:
+4. 🚀 Execute:
+```bash
+python app.py
+```
 
-    ```
-    python app.py
-
-    ```
-
-Licença
-Distribuído sob a MIT License.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 📜 Licença
+MIT License ⚖️
