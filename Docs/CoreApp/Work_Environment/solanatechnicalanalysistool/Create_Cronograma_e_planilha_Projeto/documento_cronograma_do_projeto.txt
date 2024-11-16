@@ -1,0 +1,51 @@
+
+Com base no Documento Pre Projeto que você forneceu, aqui está o cronograma do projeto em formato JSON:
+
+```json
+{
+  "cronograma": {
+    "titulo": "Cronograma do Projeto - Desenvolvimento de Script para Análise Técnica da Criptomoeda Solana",
+    "duração": "7 semanas",
+    "etapas": [
+      {
+        "nome": "Coleta de dados",
+        "descrição": "Coletar e processar dados históricos de preços e volumes da Solana utilizando APIs ou fontes de dados de mercado.",
+        "data_inicio": "2024-11-16",
+        "data_fim": "2024-11-30"
+      },
+      {
+        "nome": "Cálculo de indicadores",
+        "descrição": "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), MACD e Bandas de Bollinger.",
+        "data_inicio": "2024-12-01",
+        "data_fim": "2024-12-14"
+      },
+      {
+        "nome": "Desenvolvimento de gráficos",
+        "descrição": "Gerar gráficos que representem visualmente as tendências de preço e volume ao longo do tempo.",
+        "data_inicio": "2024-12-15",
+        "data_fim": "2024-12-21"
+      },
+      {
+        "nome": "Configuração de alertas",
+        "descrição": "Permitir que o usuário configure alertas para pontos de entrada e saída com base em estratégias de negociação definidas.",
+        "data_inicio": "2024-12-22",
+        "data_fim": "2024-12-28"
+      },
+      {
+        "nome": "Testes e validação",
+        "descrição": "Realizar testes no script e validar os resultados obtidos.",
+        "data_inicio": "2024-12-29",
+        "data_fim": "2025-01-04"
+      },
+      {
+        "nome": "Documentação final",
+        "descrição": "Elaborar a documentação técnica e relatório final do projeto.",
+        "data_inicio": "2025-01-05",
+        "data_fim": "2025-01-12"
+      }
+    ]
+  }
+}
+```
+
+Esse cronograma fornece uma visão clara das etapas do projeto, incluindo prazos e descrições das atividades a serem realizadas. Se você precisar de mais informações ou ajustes, sinta-se à vontade para pedir!
