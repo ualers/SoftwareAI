@@ -10,6 +10,7 @@ from .Agents.Software_Development.AI_QuantumCore_Software_Development import Sof
 from .Agents.Software_Development.AI_SignalMaster_Software_Development import SoftwareDevelopment_SignalMaster
 from .Agents.Software_Requirements_Analysis.AI_SynthOperator_Software_Requirements_Analysis import Softwareanaysis
 from .Agents.Pre_Project.AI_Tigrao_Pre_Project import Pre_Project_Document
+from .Agents.Software_Development.AI_NexGenCoder_Software_Development import SoftwareDevelopment_NexGenCoder
 
 class AgentInitializer:
     # Dicionário para armazenar instâncias de agentes
@@ -19,21 +20,20 @@ class AgentInitializer:
     def initialize_agents(cls):
         """Inicializa todos os agentes e armazena no dicionário _agents."""
         cls._agents['Gerente_de_projeto'] = Gerente_de_projeto()
-        cls._agents['Company_Managers'] = Company_Managers()  # Inicializa Company_Managers
-        cls._agents['Pre_Project_Document'] = Pre_Project_Document()  # Inicializa Pre_Project_Document
-        
+        cls._agents['Company_Managers'] = Company_Managers() 
+        cls._agents['Pre_Project_Document'] = Pre_Project_Document() 
         cls._agents['Software_Documentation'] = Software_Documentation()
         cls._agents['Equipe_De_Solucoes'] = Equipe_De_Solucoes()
-        cls._agents['software_improvements'] = software_improvements()
-
-        cls._agents['SoftwareDevelopment'] = SoftwareDevelopment(
-            cls._agents['Software_Documentation']
-        )
-        
-        cls._agents['SoftwareDevelopment_SignalMaster'] = SoftwareDevelopment_SignalMaster()
         cls._agents['Softwareanaysis'] = Softwareanaysis()
-
-        # Inicializa ByteManager com os agentes necessários
+        cls._agents['software_improvements'] = software_improvements()
+        cls._agents['SoftwareDevelopment_SignalMaster'] = SoftwareDevelopment_SignalMaster()
+        cls._agents['SoftwareDevelopment_NexGenCoder'] = SoftwareDevelopment_NexGenCoder()
+        cls._agents['SoftwareDevelopment'] = SoftwareDevelopment(
+            cls._agents['Software_Documentation'],
+            cls._agents['software_improvements'],
+            cls._agents['SoftwareDevelopment_SignalMaster'],
+            cls._agents['SoftwareDevelopment_NexGenCoder']
+        )
         cls._agents['ByteManager'] = ByteManager(
             cls._agents['Company_Managers'],
             cls._agents['Pre_Project_Document'],
