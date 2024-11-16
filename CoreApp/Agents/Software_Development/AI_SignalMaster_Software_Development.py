@@ -9,6 +9,12 @@ from ..._init_libs_ import *
 # IMPORT SoftwareAI All Paths 
 from ..._init_paths_ import *
 #########################################
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
 
 
 
@@ -27,107 +33,11 @@ class SoftwareDevelopment_SignalMaster:
         :param analysis_txt_path: str \n
         :param output: path_to_py
         """   
-        instructionAI_SignalMaster = """
-        Seu nome é SignalMaster, você é um Desenvolvedor Sênior em Python na empresa urobotsoftware. Sua principal responsabilidade é receber scripts ou softwares Python desenvolvidos pela equipe e melhorá-los com base nos padrões de desenvolvimento de softwares já em produção na empresa, os quais serão fornecidos via vectorstore.
 
-        ### Objetivo:
-        - Analisar e melhorar o código recebido, garantindo que ele siga as melhores práticas de desenvolvimento e esteja alinhado com os padrões de software da urobotsoftware.
-        - Usar as informações fornecidas pelo vectorstore para aplicar padrões de código, arquitetura, e otimizações usadas em outros projetos em produção.
-
-        ### Responsabilidades:
-
-        1. **Análise do Software Atual:**
-        - Rever o código atual fornecido para entender sua funcionalidade, estrutura, e pontos fracos ou ineficientes.
-        - Avaliar o código em termos de desempenho, segurança, escalabilidade e facilidade de manutenção.
-
-        2. **Consultando o Vectorstore:**
-        - Consultar os softwares em produção fornecidos pelo vectorstore para extrair padrões de desenvolvimento, arquitetura, estilo de codificação e boas práticas.
-        - Identificar melhorias ou otimizações possíveis, inspiradas em projetos anteriores da empresa.
-
-        3. **Aprimoramento do Código:**
-        - Melhorar a estrutura e organização do código para garantir modularidade, reutilização e clareza.
-        - Otimizar o desempenho, identificando possíveis gargalos e aplicando técnicas eficientes de processamento e manipulação de dados.
-        - Implementar melhorias em segurança e robustez do código, com base em padrões já estabelecidos nos projetos em produção.
-        - Garantir que o código esteja documentado de maneira clara, seguindo os padrões de documentação da empresa.
-
-        4. **Refatoração e Melhoria Contínua:**
-        - Refatorar o código para remover redundâncias e simplificar lógicas complexas sem alterar o comportamento desejado.
-        - Garantir que o código esteja aderente às convenções de estilo, como PEP 8, e às boas práticas da empresa.
-        - Adicionar comentários explicativos onde necessário, além de garantir que os nomes de variáveis, funções e classes sejam intuitivos e expressivos.
-
-        5. **Integração com Padrões de Produção:**
-        - Incorporar tecnologias, bibliotecas ou frameworks que são comumente utilizados pela empresa para garantir padronização entre projetos.
-        - Assegurar que o software seja compatível com a infraestrutura de produção existente, utilizando padrões de integração contínua e entrega contínua (CI/CD) já estabelecidos.
-
-        6. **Testes e Validação:**
-        - Verificar se o software possui testes adequados, e adicionar ou melhorar a cobertura de testes unitários e de integração.
-        - Garantir que os testes sejam compatíveis com as ferramentas e metodologias de teste em uso pela empresa.
-
-        7. **Colaboração com a Equipe:**
-        - Trabalhar em conjunto com os desenvolvedores que criaram o software original, fornecendo feedback e sugestões para melhorias futuras.
-        - Participar de reuniões de revisão de código e sessões de discussão técnica com outros membros da equipe para garantir que as melhorias propostas sejam compreendidas e implementadas corretamente.
-
-        ### Formato de Resposta:
-
-        Responda no formato JSON conforme o exemplo abaixo:
-        {
-            "status_do_Desenvolvimento": "...",
-            "melhorias_realizadas": [
-                "Refatoração do módulo X",
-                "Otimização de desempenho no processamento de Y",
-                "Adição de testes unitários para a função Z"
-            ],
-            "observacoes": "..."
-        }
-        """
         key = "AI_SignalMaster_Desenvolvedor_Pleno_de_Software_em_Python"
         nameassistant = "AI SignalMaster Desenvolvedor Pleno de Software em Python"
         model_select = "gpt-4o-mini-2024-07-18"
-        adxitional_instructions = "pyqt5 é a gui que estao nos padroes da empresa"
-        tools=[
-            {"type": "file_search"},
-            {
-                "type": "function",
-                "function": {
-                    "name": "improve_code_and_create_pull_request",
-                    "description": "Realiza melhorias no código e cria um pull request no repositório GitHub.",
-                    "parameters": {
-                        "type": "object",
-                        "properties": {
-                            "repo_owner": {
-                                "type": "string",
-                                "description": "Nome do dono do repositório no GitHub."
-                            },
-                            "repo_name": {
-                                "type": "string",
-                                "description": "Nome do repositório no GitHub."
-                            },
-                            "branch_name": {
-                                "type": "string",
-                                "description": "Nome da branch onde o código será atualizado."
-                            },
-                            "file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo no repositório."
-                            },
-                            "commit_message": {
-                                "type": "string",
-                                "description": "Mensagem de commit descrevendo as melhorias."
-                            },
-                            "improvements": {
-                                "type": "string",
-                                "description": "Novo código melhorado."
-                            },
-                            "token": {
-                                "type": "string",
-                                "description": "Token de autenticação do GitHub."
-                            }
-                        },
-                        "required": ["repo_owner", "repo_name", "branch_name", "file_path", "commit_message", "improvements", "token"]
-                    }
-                }
-            }
-        ]
+
         # path_Conhecimentos_python = r"C:\Users\ualer\Downloads\Saas do site\A-I-O-R-G\AI_Team_Software_Development\Conhecimentos_python_em_pdf"
         # name_for_vectorstore = "Conhecimentos_python_em_pdf"
         # file_path_Conhecimentos_python_em_pdf = [
@@ -176,6 +86,7 @@ class SoftwareDevelopment_SignalMaster:
 
         Upload_1_file_in_thread = None
         Upload_1_file_in_message = None
+        Upload_list_for_code_interpreter_in_thread = None
         Upload_1_image_for_vision_in_thread = None
         vectorstore_in_assistant = None #[vector_store_id_all_software_in_company]
         vectorstore_in_Thread = None
@@ -183,7 +94,7 @@ class SoftwareDevelopment_SignalMaster:
         github_username, github_token = Github_functions.SignalMaster_github_keys()
 
         
-        AI_SignalMaster = AutenticateAgent.create_or_auth_AI(key, instructionAI_SignalMaster, nameassistant, model_select, tools, vectorstore_in_assistant)
+        AI_SignalMaster = AutenticateAgent.create_or_auth_AI(key, instructionSignalMaster, nameassistant, model_select, tools_SignalMaster, vectorstore_in_assistant)
         
         
         mensaxgem = f"""melhore esse script em python\n
@@ -191,7 +102,18 @@ class SoftwareDevelopment_SignalMaster:
         {python_content}
         """
 
-        response = ResponseAgent.ResponseAgent_message_with_assistants(mensaxgem, Upload_1_file_in_thread, Upload_1_file_in_message, Upload_1_image_for_vision_in_thread, vectorstore_in_Thread, tools, AI_SignalMaster, model_select, adxitional_instructions, key)
+        response = ResponseAgent.ResponseAgent_message_with_assistants(mensaxgem,
+                                                                        Upload_1_file_in_thread,
+                                                                        Upload_1_file_in_message,
+                                                                        Upload_1_image_for_vision_in_thread, 
+                                                                        Upload_list_for_code_interpreter_in_thread,
+                                                                        vectorstore_in_Thread,
+                                                                        tools_SignalMaster, 
+                                                                        AI_SignalMaster, 
+                                                                        model_select,
+                                                                        adxitional_instructions_DataWeaver, key)
+
+
         
         path_Software_Development_txt = os.getenv("PATH_SOFTWARE_DEVELOPMENT_TXT_ENV")
         python_functions.save_TXT(response, path_Software_Development_txt, "w")
@@ -221,13 +143,21 @@ class SoftwareDevelopment_SignalMaster:
         """
         
         format = 'Responda no formato JSON Exemplo: {"mensagem": "mensagem de commit para o pull request..."}'
-        
         mensagem = mensaxgem + format
         response = ResponseAgent.ResponseAgent_message_completions(mensagem, "", True)
         commit_message = response["mensagem"]
+        
 
-
-
+        title_prompt = f"""Crie um título para um pull request no GitHub com base no código e na mensagem de commit:
+        código:
+        {codigo}
+        commit_message:
+        {commit_message}
+        """
+        format = 'Responda no formato JSON Exemplo: {"nome_para_pr": "nome do pull request..."}'
+        title_message = title_prompt + format
+        response = ResponseAgent.ResponseAgent_message_completions(title_message, "", True)
+        pr_title = response.get("nome_para_pr", "Título do Pull Request")
 
         
         mensaxgem = f"""Realize melhorias no código e cria um pull request no repositório GitHub.\n
@@ -243,11 +173,22 @@ class SoftwareDevelopment_SignalMaster:
         {commit_message}\n
         improvements:\n
         {codigo}\n
+        pr_title:\n
+        {pr_title}
         token:\n
         {github_token}
         """
         
-        response = ResponseAgent.ResponseAgent_message_with_assistants(mensaxgem, Upload_1_file_in_thread, Upload_1_file_in_message, Upload_1_image_for_vision_in_thread, vectorstore_in_Thread, tools, AI_SignalMaster, model_select, adxitional_instructions, key)
+        response = ResponseAgent.ResponseAgent_message_with_assistants(mensaxgem,
+                                                                        Upload_1_file_in_thread,
+                                                                        Upload_1_file_in_message,
+                                                                        Upload_1_image_for_vision_in_thread, 
+                                                                        Upload_list_for_code_interpreter_in_thread,
+                                                                        vectorstore_in_Thread,
+                                                                        tools_SignalMaster, 
+                                                                        AI_SignalMaster, 
+                                                                        model_select,
+                                                                        adxitional_instructions_DataWeaver, key)
        
 
 
