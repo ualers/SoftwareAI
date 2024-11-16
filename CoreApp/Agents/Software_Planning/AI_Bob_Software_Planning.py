@@ -9,6 +9,12 @@ from ..._init_libs_ import *
 # IMPORT SoftwareAI All Paths 
 from ..._init_paths_ import *
 #########################################
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
 
 
 
@@ -22,30 +28,11 @@ class Gerente_de_projeto:
     def Bob_Gerente_de_projeto(self, path_name_doc_Pre_Projeto):
 
         """Cria o cronograma e planilha"""
-        instructionGerente_de_Projeto = """ 
-        Seu Nome é Bob, Voce é um Gerente de projeto da empresa Urobotsoftware, seu objetivo é criar um cronograma e planilha do Projeto com base no Documento Pre Projeto
 
-        Responda o cronograma no formato JSON
-        Exemplo:
-        {"cronograma": "cronograma do Projeto ..."}
-        {"nome_do_cronograma": "nome_do_cronograma_do_projeto ..."}
-
-
-        Responda a planilha do Projeto no formato JSON
-        Exemplo:
-        {"planilha": "planilha do Projeto ..."}
-        {"nome_da_planilha": "nome_da_planilha_do_projeto ..."}
-
-        """
         key = "AI_Bob_Gerente_de_Projeto"
         nameassistant = "AI Bob Gerente de Projeto"
         model_select = "gpt-4o-mini-2024-07-18"
-        adxitional_instructions = None
-        Uploadfile_in_thread = None
-        Uploadfile_in_message = None
-        tools = None
-        vectorstore = None
-
+        
         Upload_1_file_in_thread = None
         Upload_1_file_in_message = None
         Upload_1_image_for_vision_in_thread = None
@@ -54,7 +41,7 @@ class Gerente_de_projeto:
         Upload_list_for_code_interpreter_in_thread = None
 
 
-        AI_Gerente_de_Projeto = AutenticateAgent.create_or_auth_AI(key, instructionGerente_de_Projeto, nameassistant, model_select, tools, vectorstore_in_assistant)
+        AI_Gerente_de_Projeto = AutenticateAgent.create_or_auth_AI(key, instructionBob, nameassistant, model_select, tools_Bob, vectorstore_in_assistant)
 
         doc_Pre_Projeto = python_functions.analyze_txt(path_name_doc_Pre_Projeto)
 
@@ -75,10 +62,11 @@ class Gerente_de_projeto:
                                                                         Upload_1_image_for_vision_in_thread, 
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread,
-                                                                        tools, 
+                                                                        tools_Bob, 
                                                                         AI_Gerente_de_Projeto, 
                                                                         model_select,
-                                                                        adxitional_instructions, key)
+                                                                        adxitional_instructions_Bob, key)
+       
         path_nome_do_cronograma = os.getenv("PATH_NOME_DO_CRONOGRAMA_ENV")
         
         python_functions.save_TXT(response, path_nome_do_cronograma, "w")
@@ -122,10 +110,10 @@ class Gerente_de_projeto:
                                                                         Upload_1_image_for_vision_in_thread,
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread, 
-                                                                        tools,
+                                                                        tools_Bob,
                                                                         AI_Gerente_de_Projeto, 
                                                                         model_select,
-                                                                        adxitional_instructions,
+                                                                        adxitional_instructions_Bob,
                                                                         key
                                                                             
                                                                     )
