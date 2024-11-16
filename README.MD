@@ -12,7 +12,10 @@
     https://github.com/A-I-O-R-G/ConversorMoedasAPI
    ```
 
-# SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.7
+
+* **Current Version**: 
+  * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
+
 
 ## Index Docs
 - [doc-tools](Docs/doc-tools.md)
