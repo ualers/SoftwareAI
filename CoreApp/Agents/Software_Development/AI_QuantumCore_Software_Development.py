@@ -6,11 +6,24 @@ from ..._init_core_ import *
 # IMPORT SoftwareAI Libs 
 from ..._init_libs_ import *
 #########################################
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
 
 
 class SoftwareDevelopment:
-    def __init__(self, Software_Documentation):
+    def __init__(self, Software_Documentation,
+                SoftwareImprovements_DataWeaver,
+                SoftwareDevelopment_SignalMaster,
+                SoftwareDevelopment_NexGenCoder):
+        
         self.Software_Documentation = Software_Documentation
+        self.SoftwareImprovements_DataWeaver = SoftwareImprovements_DataWeaver
+        self.SoftwareDevelopment_SignalMaster = SoftwareDevelopment_SignalMaster
+        self.SoftwareDevelopment_NexGenCoder = SoftwareDevelopment_NexGenCoder
 
     ##############################################################################################
     def AI_QuantumCore(
@@ -31,173 +44,11 @@ class SoftwareDevelopment:
         :param output: path_to_py
         """   
 
-        instructionQuantumCore = """ 
-        Seu nome é QuantumCore, você é um Desenvolvedor Pleno em Python na empresa urobotsoftware. Sua principal responsabilidade é desenvolver software de alta qualidade com base nos requisitos fornecidos pelo Analista de Requisitos de Software e nos padrões de software já existentes na empresa, que foram upados via vectorstore.
-
-        ### Responsabilidades:
-
-        1. **Recepção do Arquivo:**
-        - Receber e revisar o arquivo contendo a análise de requisitos de software, que inclui tanto os requisitos funcionais quanto os não funcionais.
-        - Assegurar-se de que todos os requisitos estejam claramente documentados e que não existam ambiguidades que possam impactar o desenvolvimento.
-
-        2. **Análise de Requisitos:**
-        - Compreender detalhadamente todos os requisitos especificados no documento, incluindo funcionalidades, desempenho, segurança, escalabilidade e outras características críticas do software a ser desenvolvido.
-        - Utilizar o **vectorstore** para verificar os padrões já implementados em softwares anteriores da empresa, assegurando a consistência com os requisitos e boas práticas internas.
-        - Identificar áreas que necessitem de esclarecimento ou detalhamento adicional e comunicar-se proativamente com o Analista de Requisitos de Software.
-
-        3. **Planejamento do Desenvolvimento:**
-        - Dividir os requisitos em tarefas de desenvolvimento claras e gerenciáveis, priorizando-as conforme a complexidade e dependências.
-        - Estabelecer um cronograma detalhado para o desenvolvimento das funcionalidades, alinhando-o com o cronograma do projeto fornecido e garantindo a alocação eficiente do tempo e recursos.
-        - Selecionar as tecnologias, frameworks e bibliotecas Python mais adequadas para o desenvolvimento, levando em consideração o que já foi utilizado e validado pela empresa, conforme armazenado no **vectorstore**.
-
-        4. **Implementação do Software:**
-        - Desenvolver o software de acordo com os requisitos funcionais e não funcionais, aplicando boas práticas de programação Python, incluindo Clean Code, modularidade, reutilização de código e aderência a padrões de codificação (PEP 8).
-        - Consultar o **vectorstore** para reutilizar módulos ou padrões existentes, sempre que aplicável, garantindo consistência e eficiência.
-        - Implementar testes unitários e de integração para garantir a robustez e qualidade do software durante todo o ciclo de desenvolvimento.
-        - Utilizar controle de versão (Git) de maneira eficiente.
-
-        5. **Documentação do Código:**
-        - Documentar o código desenvolvido de forma clara e concisa, e manter consistência com a documentação de projetos anteriores, conforme os padrões armazenados no **vectorstore**.
-        - Criar e manter documentação técnica abrangente, incluindo arquivos README (.md) e outros documentos relevantes.
-
-        6. **Colaboração com Outros Membros da Equipe:**
-        - Trabalhar em colaboração com o Analista de Requisitos, Testadores de Software e outros desenvolvedores, assegurando a aderência aos padrões internos.
-
-        7. **Entrega do Software:**
-        - Preparar o software para entrega, incluindo builds finais, criação de pacotes Python e configuração do ambiente de produção, automatizando o processo sempre que possível.
-
-        8. **Resolução de Problemas:**
-        - Identificar, diagnosticar e resolver problemas ou bugs durante o desenvolvimento, propondo melhorias baseadas em soluções anteriores armazenadas no **vectorstore**.
-
-        9. **Criação e Upload no GitHub:**
-        - Criar um repositório no GitHub para o projeto.
-        - Fazer o upload da documentação (.md) e dos arquivos de código Python para o repositório recém-criado, assegurando que a estrutura do repositório esteja organizada e a documentação esteja atualizada.
-
-        ### Formato de Resposta:
-
-        Responda no formato JSON conforme o exemplo abaixo:
-        ```json
-        {
-            "status_do_desenvolvimento": "Progresso conforme o planejado",
-            "tarefas_completas": [
-                "Implementação da funcionalidade de autenticação de usuários",
-                "Criação de testes unitários para o módulo de autenticação",
-                "Documentação do código para a funcionalidade de autenticação"
-            ],
-            "pendencias": [
-                "Clarificação necessária para o requisito de segurança adicional",
-                "Aprovação do design da API pelo Analista de Requisitos"
-            ],
-            "proximas_tarefas": [
-                "Início da integração com o sistema de pagamentos",
-                "Teste de desempenho para a funcionalidade de processamento de pedidos"
-            ],
-            "observacoes": "Nenhum impedimento significativo até o momento. Desenvolvimento dentro do prazo."
-        }
-        """
         key = "AI_QuantumCore_Desenvolvedor_Pleno_de_Software_em_Python"
         nameassistant = "AI QuantumCore Desenvolvedor Pleno de Software em Python"
         model_select = "gpt-4o-mini-2024-07-18"
 
-        adxitional_instructions = """
-        Clareza e Precisão: Assegure-se de que todos os aspectos do software sejam desenvolvidos com alta precisão e clareza, garantindo que o código seja fácil de entender, manter e expandir.
-        \n
-        Comunicação Proativa: Mantenha uma comunicação constante e proativa com os outros membros da equipe para resolver dúvidas e evitar mal-entendidos que possam impactar o progresso do projeto.
-        \n
-        Foco na Qualidade: Priorize a qualidade do código, garantindo que todas as funcionalidades sejam implementadas de maneira eficiente, segura e robusta.
-        \n
-        Cumprimento de Prazos: Cumpra rigorosamente os prazos estabelecidos no cronograma, e informe qualquer potencial atraso o mais cedo possível, junto com um plano de ação para mitigação.
-                
-        """
-        tools=[
-            {"type": "file_search"},
-            {
-                "type": "function",
-                "function": {
-                    "name": "create_github_repo_and_upload",
-                    "description": "Cria um repositório no GitHub e realiza o upload da documentação (.md) e do código Python.",
-                    "parameters": {
-                        "type": "object",
-                        "properties": {
-                            "repo_name": {
-                                "type": "string",
-                                "description": "Nome do repositório a ser criado no GitHub."
-                            },
-                            "repo_description": {
-                                "type": "string",
-                                "description": "Descrição do repositório."
-                            },
-                            "readme_file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo .md (README) a ser carregado no repositório."
-                            },
-                            "code_file_paths": {
-                                "type": "array",
-                                "items": {
-                                    "type": "string"
-                                },
-                                "description": "Lista de caminhos dos arquivos de código Python a serem carregados no repositório."
-                            },
-                            "token": {
-                                "type": "string",
-                                "description": "Token de autenticação do GitHub para realizar operações na API."
-                            }
-                        },
-                        "required": ["repo_name", "repo_description", "readme_file_path", "code_file_paths", "token"]
-                    }
-                }
-            },
-            {
-                "type": "function",
-                "function": {
-                    "name": "add_projectmap_to_github",
-                    "description": "Realiza o upload dos arquivos do projeto, incluindo documentação, timeline, roadmap e análises.",
-                    "parameters": {
-                        "type": "object",
-                        "properties": {
-                            "repo_name": {
-                                "type": "string",
-                                "description": "Nome do repositório no GitHub."
-                            },
-                            "timeline_file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo de timeline do projeto."
-                            },
-                            "spreadsheet_file_path": {
-                                "type": "string",
-                                "description": "Caminho da planilha do projeto."
-                            },
-                            "pre_project_file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo de pré-projeto."
-                            },
-                            "Roadmap_file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo de Roadmap do projeto."
-                            },
-                            "analise_file_path": {
-                                "type": "string",
-                                "description": "Caminho do arquivo de análise do projeto."
-                            },
-                            "token": {
-                                "type": "string",
-                                "description": "Token de autenticação do GitHub para realizar operações na API."
-                            }
-                        },
-                        "required": [
-                            "repo_name",
-                            "timeline_file_path",
-                            "spreadsheet_file_path",
-                            "pre_project_file_path",
-                            "Roadmap_file_path",
-                            "analise_file_path",
-                            "token"
-                        ]
-                    }
-                }
-            }
-                
-        ]
+
 
 
         
@@ -265,7 +116,7 @@ class SoftwareDevelopment:
 
         github_username, github_token = Github_functions.QuantumCore_github_keys()
 
-        AI_QuantumCore = AutenticateAgent.create_or_auth_AI(key, instructionQuantumCore, nameassistant, model_select, tools, vectorstore_in_assistant)
+        AI_QuantumCore = AutenticateAgent.create_or_auth_AI(key, instructionQuantumCore, nameassistant, model_select, tools_QuantumCore, vectorstore_in_assistant)
         
         #analysis_txt = python_functions.analyze_txt(analysis_txt_path)
         #update_vector_storage_at_assistant_level = analysis_txt_path
@@ -284,10 +135,10 @@ class SoftwareDevelopment:
                                                                         Upload_1_image_for_vision_in_thread,
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread, 
-                                                                        tools,
+                                                                        tools_QuantumCore,
                                                                         AI_QuantumCore, 
                                                                         model_select,
-                                                                        adxitional_instructions,
+                                                                        adxitional_instructions_QuantumCore,
                                                                         key
                                                                             
                                                                     )
@@ -297,12 +148,13 @@ class SoftwareDevelopment:
         python_software_in_txt = python_functions.analyze_txt(path_Software_Development_txt)
 
 
-        mensaxgem = f"""corrija todos os erros de sintaxe do codigo asseguir:\n
+        mensaxgem = f"""corrija todos os erros de sintaxe do codigo asseguir :\n
         {python_software_in_txt}
         """
+        regras = "\ncaso nao haja erros de sintaxe retorne o codigo\n"
         format = 'Responda no formato JSON Exemplo: {"codigo": "import..."}'
         path_Software_Development_py = os.getenv("PATH_SOFTWARE_DEVELOPMENT_PY_ENV")
-        mensagem = mensaxgem + format
+        mensagem = mensaxgem + regras + format
         response = ResponseAgent.ResponseAgent_message_completions(mensagem, "", True)
         codigo = response["codigo"]
         python_functions.save_python_code(codigo, path_Software_Development_py)
@@ -315,7 +167,7 @@ class SoftwareDevelopment:
         """
         regras = "Descrição do Repositório NÃO exceder o limite de 350 caracteres"
         format = 'Responda no formato JSON Exemplo: {"nome": "nome..."}, {"descricao": "descricao..."}'
-        path_Software_Development_py = os.getenv("PATH_SOFTWARE_DEVELOPMENT_PY_ENV")
+        
         mensagem = mensaxgem + regras + format
         response = ResponseAgent.ResponseAgent_message_completions(mensagem, "", True)
         try:
@@ -325,7 +177,19 @@ class SoftwareDevelopment:
             print(errror2)
             print(response)
 
-        readme_file_path = self.Software_Documentation.CloudArchitect_Software_Documentation(path_Software_Development_py)
+        from dotenv import load_dotenv
+        load_dotenv(dotenv_path=r"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\ambiente.env")
+
+        path_Software_Development_py = os.getenv("PATH_SOFTWARE_DEVELOPMENT_PY_ENV")
+        path_Analysis = os.getenv("PATH_ANALISE_ENV")
+        path_Roadmap = os.getenv("PATH_ROADMAP_ENV")
+        path_Spreadsheet = os.getenv("PATH_PLANILHA_PROJETO_ENV")
+        path_Timeline = os.getenv("PATH_NOME_DO_CRONOGRAMA_ENV")
+        path_Preproject = os.getenv("PATH_NAME_DOC_PRE_PROJETO_ENV")
+        path_DOCUMENTACAO_ENV = os.getenv("PATH_DOCUMENTACAO_ENV")
+        
+
+        readme_file_path = self.Software_Documentation.CloudArchitect_Software_Documentation_Type_Create(path_Software_Development_py, path_Analysis, path_Roadmap, path_Spreadsheet, path_Timeline, path_Preproject)
         code_file_paths = [path_Software_Development_py]
 
         mensaxgem = f"""Cria um repositório no GitHub e realiza o upload da documentação (.md) e do código Python.\n
@@ -348,10 +212,10 @@ class SoftwareDevelopment:
                                                                         Upload_1_image_for_vision_in_thread, 
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread,
-                                                                        tools, 
+                                                                        tools_QuantumCore, 
                                                                         AI_QuantumCore, 
                                                                         model_select,
-                                                                        adxitional_instructions, key)
+                                                                        adxitional_instructions_QuantumCore, key)
         print(response)
 
 
@@ -380,17 +244,39 @@ class SoftwareDevelopment:
                                                                         Upload_1_image_for_vision_in_thread, 
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread,
-                                                                        tools, 
+                                                                        tools_QuantumCore, 
                                                                         AI_QuantumCore, 
                                                                         model_select,
-                                                                        adxitional_instructions, key)
+                                                                        adxitional_instructions_QuantumCore, key)
         print(response)
 
+        code_python_software_old = python_functions.analyze_txt(os.getenv("PATH_SOFTWARE_DEVELOPMENT_PY_ENV"))
+        save_code_old = codigo
+        pr_number = 1
+        branch_name = f"main_1"
+        for i in range(5):
+            branch_name = f"main_{i + 1}"
+            
 
+            path_Software_Development_py = os.getenv("PATH_SOFTWARE_DEVELOPMENT_PY_ENV")
 
+            flag_improvements = self.SoftwareImprovements_DataWeaver.AI_DataWeaver_improvements(path_Software_Development_py, "", "")
+            print(flag_improvements)
 
+            flag_SoftwareDevelopment_SignalMaster = self.SoftwareDevelopment_SignalMaster.AI_SignalMaster(path_Software_Development_py, repo_name, branch_name)
+            print(flag_SoftwareDevelopment_SignalMaster)
 
-        # mensaxgem = f"""crie um nome para a branch com pull request do repositorio no github:\n
+            flag_SoftwareDevelopment_NexGenCoder = self.SoftwareDevelopment_NexGenCoder.AI_NexGenCoder(repo_name, pr_number)
+            print(flag_SoftwareDevelopment_NexGenCoder)
+            
+            
+            path_python_software_new = python_functions.analyze_txt(path_Software_Development_py)
+
+            readme_file_path_improvements = self.Software_Documentation.CloudArchitect_Software_Documentation_Type_Update(repo_name, path_DOCUMENTACAO_ENV, code_python_software_old, path_python_software_new, path_Analysis, path_Roadmap, path_Spreadsheet, path_Timeline, path_Preproject)
+
+            code_python_software_old = python_functions.analyze_txt(path_Software_Development_py)
+
+        # mensaxgem = f"""crie um nome para a branch de 10 caracteres do pull request do repositorio no github:\n
         # repositorio:\n
         # {repo_name}\n
         # repo_description:\n
@@ -406,15 +292,15 @@ class SoftwareDevelopment:
         # print(flagAI_DataWeaver_improvements)
 
 
-        #file_teste_path = CipherMind_Testing_in_Software_development.AI_CipherMind(script_version_1_path, path_doc)
+        # file_teste_path = CipherMind_Testing_in_Software_development.AI_CipherMind(script_version_1_path, path_doc)
 
-        #github_username, github_password, github_tokenNexGenCoder = Github_functions.NexGenCoder_github_keys()
-        #NexGenCoder_Testing_in_Software_development.AI_NexGenCoder(file_teste_path, repo_owner, repo_name, branch_name,  github_tokenNexGenCoder)
-        #flagquantumcore_review_pr = quantumcore_review_pr(repo_owner, repo_name, pr_number)
-        #print(flagquantumcore_review_pr)
+        # github_username, github_password, github_tokenNexGenCoder = Github_functions.NexGenCoder_github_keys()
+        # NexGenCoder_Testing_in_Software_development.AI_NexGenCoder(file_teste_path, repo_owner, repo_name, branch_name,  github_tokenNexGenCoder)
+        # flagquantumcore_review_pr = quantumcore_review_pr(repo_owner, repo_name, pr_number)
+        # print(flagquantumcore_review_pr)
 
 
-        return response
+        # return response
 
 
 
