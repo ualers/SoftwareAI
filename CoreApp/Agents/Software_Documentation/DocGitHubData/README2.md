@@ -1,35 +1,34 @@
 
+## ✅ 2. Aplicativo de Tarefas
 
-# Aplicativo de Tarefas
+### 🎯 Descrição
+Gerencie suas tarefas diárias com simplicidade e eficiência! 📝
 
-## Descrição
-Um aplicativo simples para gerenciar suas tarefas diárias.
+### ⭐ Funcionalidades
+- ➕ Adicionar novas tarefas
+- ✔️ Marcar tarefas concluídas
+- 🗑️ Remover tarefas
 
-## Funcionalidades
-- Adicionar tarefas
-- Marcar tarefas como concluídas
-- Remover tarefas
+### 🛠️ Instalação
+1. 📥 Clone o projeto:
+```bash
+git clone https://github.com/usuario/aplicativo-tarefas.git
+```
 
-## Instalação
-Siga os passos abaixo para instalar o aplicativo:
-1. Clone o repositório:
-    ```
-        git clone https://github.com/usuario/aplicativo-tarefas.git
-    ```
+2. 📂 Acesse a pasta:
+```bash
+cd aplicativo-tarefas
+```
 
-2. Navegue até o diretório do projeto:
-    ```
-        cd aplicativo-tarefas
-    ```
+3. 📦 Instale dependências:
+```bash
+npm install
+```
 
-3. Instale as dependências:
-    ```
-        npm install
-    ```
-4. Execute o aplicativo com o comando:
-    ```
-        npm start
-    ```
+4. 🚀 Execute:
+```bash
+npm start
+```
 
-Licença
-Este projeto é licenciado sob a MIT License.
+### 📜 Licença
+MIT License ⚖️
