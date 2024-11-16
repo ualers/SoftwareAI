@@ -1,4 +1,25 @@
 
+* **the path to the buildable version**: 
+  * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop
+   ```
+    #########################################
+    # IMPORT SoftwareAI Agents
+    from CoreApp._init_agents_ import AgentInitializer
+    #########################################
+    # IMPORT SoftwareAI Libs 
+    from CoreApp._init_libs_ import *
+    #########################################
+
+
+    byte_manager = AgentInitializer.get_agent('ByteManager') 
+
+    mensagem = "solicito um script para Análise técnica da criptomoeda solana  "
+    owner_response = byte_manager.AI_1_ByteManager_Company_Owners(mensagem)
+    print(owner_response)
+
+   ```
+
+
 # * **💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
@@ -18,8 +39,8 @@
 
 
 ## Index Docs
-- [doc-tools](Docs/doc-tools.md)
-- [Roadmaps](Roadmaps/SoftwareAI-Roadmap.md)
+- [doc-tools](CoreApp/Docs/doc-tools.md)
+- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 
 
 ## Info Update
@@ -57,6 +78,9 @@
 
 
 # Update
+
+### add Roadmaps, Docs, _init_paths_.py, Fluxogram beta v 0.1.8.pdf, Instructions, Tools ***(16/11/2024)***  SoftwareAI 0.1.8
+
 
 
 ### CoreApp completely refactored, After complications in intracommunication between teams using the QT5/pyside6  interface, we decided to postpone the interface and leave the core of the application well done so that others can create relatively good software in version 0.1.9 with one click. ***(09/11/2024)***  SoftwareAI 0.1.8
