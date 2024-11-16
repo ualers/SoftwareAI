@@ -1,39 +1,69 @@
+# 📚 Documentação do Sistema de Transcrição de YouTube
 
-### Documentação Detalhada
+## 🌟 1. Introdução
+Este software incrível permite transformar áudio de vídeos do YouTube em documentos PDF! 🎥 ➡️ 📄
 
-#### 1. Introdução
-Este software permite transcrever o áudio de vídeos do YouTube e gerar um arquivo PDF contendo a transcrição. Ele utiliza a biblioteca `whisper` para a transcrição do áudio, `pytube` para baixar o áudio do vídeo, e `FPDF` para a criação do PDF.
+Utilizamos as seguintes tecnologias:
+- 🎧 `whisper` para transcrição de áudio
+- 📺 `pytube` para download dos vídeos
+- 📑 `FPDF` para geração de PDFs
 
-#### 2. Instalação
-Para instalar as bibliotecas necessárias, utilize o seguinte comando:
+## 🛠️ 2. Instalação
+Execute o seguinte comando para instalar todas as dependências necessárias:
+
 ```bash
 pip install pytube pydub torch torchvision torchaudio fpdf
 ```
-**Nota:** O `whisper` pode ser instalado diretamente com `pip install git+https://github.com/openai/whisper.git` se não estiver disponível via pip.
 
-#### 3. Uso
-- Altere a variável `youtube_url` para o URL do vídeo do YouTube que você deseja processar.
-- Execute o script. O PDF resultante será salvo como `Transcricao_Tutorial_YouTube.pdf`.
+💡 **Dica:** Para instalar o `whisper`, use:
+```bash
+pip install git+https://github.com/openai/whisper.git
+```
 
-Exemplo de como rodar o script:
+## 🚀 3. Como Usar
+1. 🔗 Defina a URL do vídeo do YouTube na variável `youtube_url`
+2. ▶️ Execute o script
+3. ✨ Pronto! Seu PDF será salvo como `Transcricao_Tutorial_YouTube.pdf`
+
+Para executar:
 ```bash
 python script.py
 ```
 
-#### 4. Referência de API
-- **PDFGenerator**: Classe responsável pela criação de PDFs.
-  - `__init__(self, title)`: Inicializa o PDF com um título.
-  - `add_text(self, text)`: Adiciona texto ao PDF.
-  - `save(self, filename)`: Salva o PDF com o nome especificado.
+## 📖 4. Referência da API
 
-- `download_audio(youtube_url)`: Baixa o áudio de um vídeo do YouTube e retorna o caminho do arquivo de áudio.
-  - Parâmetro: `youtube_url` (str): URL do vídeo do YouTube.
+### 📑 Classe PDFGenerator
+Responsável por criar seus PDFs lindos!
 
-- `transcribe_audio(audio_path)`: Transcreve o áudio utilizando o modelo Whisper e retorna o texto transcrito.
-  - Parâmetro: `audio_path` (str): Caminho do arquivo de áudio.
+#### Métodos:
+- 🎨 `__init__(self, title)`
+  - Inicia um novo PDF com título personalizado
+  
+- ✍️ `add_text(self, text)`
+  - Adiciona conteúdo ao seu PDF
+  
+- 💾 `save(self, filename)`
+  - Salva o PDF no arquivo especificado
 
-#### 5. Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para fazer fork do repositório e enviar suas melhorias.
+### 🎵 Funções de Áudio
 
-#### 6. Licença
-Este projeto é licenciado sob a MIT License. Veja o arquivo LICENSE para mais informações.
+- 📥 `download_audio(youtube_url: str)`
+  - Baixa o áudio do YouTube
+  - Retorna: caminho do arquivo de áudio
+  
+- 🎤 `transcribe_audio(audio_path: str)`
+  - Converte áudio em texto usando IA
+  - Retorna: texto transcrito
+
+## 👥 5. Contribuição
+Adoraríamos sua ajuda! 🤝
+- 🔄 Faça um fork
+- ⭐ Adicione suas melhorias
+- 📤 Envie um PR
+
+## 📜 6. Licença
+Este projeto está sob a licença MIT. 
+Veja o arquivo LICENSE para mais detalhes! ⚖️
+
+---
+💪 **Desenvolvido com muito ❤️ pela comunidade**
