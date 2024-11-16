@@ -220,7 +220,7 @@ class ResponseAgent:
                                             vectorstore_in_Thread,
                                             tools, agent_id,
                                             model_select, aditional_instructions,
-                                            key, logger=None, socket=None):
+                                            key):
         
         """ 
         :param mensagem: This argument is the desired message that the agent responds to | If not use = None
@@ -360,14 +360,20 @@ class ResponseAgent:
 
 
         contador = 0
+        tool_outputs = []
         while True:
             time.sleep(2)
             run_status = client.beta.threads.runs.retrieve(
                 thread_id=threead_id,
                 run_id=run.id
             )
-            print(run_status.status)
+            try:
 
+                print(run_status.usage.total_tokens)
+                print(run_status.usage.prompt_tokens)
+                print(run_status.usage.completion_tokens)
+            except:
+                pass
             if run_status.status == 'requires_action':
                 for tool_call in run_status.required_action.submit_tool_outputs.tool_calls:
                     if tool_call.type == 'function':
@@ -376,7 +382,10 @@ class ResponseAgent:
                         function_arguments = tool_call.function.arguments
                         print(function_name)
                         print(function_arguments)
+                        print(tool_call)
+                        print(tool_call.id)
 
+                        
                         _init_output_(function_name,
                                 function_arguments,
                                 tool_call,
@@ -389,10 +398,7 @@ class ResponseAgent:
             elif run_status.status == 'failed':
                 pass
             elif run_status.status == 'in_progress':
-                if logger:
-                    logger.emit("thinking...")
-                else:
-                    print("thinking...")
+                print("thinking...")
             else:
                 contador += 1 
                 if contador == 15:
@@ -431,6 +437,7 @@ class ResponseAgent:
             #break
 
 class Github_functions:
+
 
     def QuantumCore_github_keys():
         github_username = "AI name on github"
@@ -643,7 +650,7 @@ class Agent_files:
 
             return vector_store.id
 
-    def auth_or_create_vectorstore(name_for_vectorstore: str, file_paths: list, update1newfiles=None):
+    def auth_or_create_vectorstore(name_for_vectorstore: str, file_paths=None, update1newfiles=None):
         """Create or auth or update 1 files in vector store \n 
         O tamanho máximo por arquivo é 512 MB. Cada arquivo deve conter no máximo 5.000.000 de tokens por arquivo (calculado automaticamente quando você anexa um arquivo).
         \n 
@@ -667,7 +674,7 @@ class Agent_files:
                 client.beta.vector_stores.files.upload(
                     vector_store_id=vector_store.id, file=update1newfile
                 )
-            else:
+            elif file_paths:
                 file_streams = [open(path, "rb") for path in file_paths]
                 client.beta.vector_stores.file_batches.upload_and_poll(
                     vector_store_id=vector_store.id, files=file_streams
