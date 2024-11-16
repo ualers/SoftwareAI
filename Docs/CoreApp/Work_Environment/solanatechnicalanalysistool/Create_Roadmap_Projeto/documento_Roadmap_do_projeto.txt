@@ -1,0 +1,71 @@
+
+Com base nas informações fornecidas no cronograma, na planilha e no documento pré-projeto, aqui está o roadmap do projeto para o desenvolvimento do script de análise técnica da criptomoeda Solana em formato JSON:
+
+```json
+{
+  "Roadmap": {
+    "titulo": "Roadmap do Projeto - Desenvolvimento de Script para Análise Técnica da Criptomoeda Solana",
+    "duracao_total": "7 semanas",
+    "etapas": [
+      {
+        "nome": "Coleta de Dados",
+        "responsavel": "Equipe de Desenvolvimento",
+        "data_inicio": "2024-11-16",
+        "data_fim": "2024-11-30",
+        "status": "Não iniciado",
+        "descricao": "Coletar e processar dados históricos de preços e volumes da Solana utilizando APIs ou fontes de dados de mercado."
+      },
+      {
+        "nome": "Cálculo de Indicadores",
+        "responsavel": "Analista de Dados",
+        "data_inicio": "2024-12-01",
+        "data_fim": "2024-12-14",
+        "status": "Não iniciado",
+        "descricao": "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), MACD e Bandas de Bollinger."
+      },
+      {
+        "nome": "Desenvolvimento de Gráficos",
+        "responsavel": "Desenvolvedor Python",
+        "data_inicio": "2024-12-15",
+        "data_fim": "2024-12-21",
+        "status": "Não iniciado",
+        "descricao": "Gerar gráficos que representem visualmente as tendências de preço e volume ao longo do tempo."
+      },
+      {
+        "nome": "Configuração de Alertas",
+        "responsavel": "Engenheiro de Software",
+        "data_inicio": "2024-12-22",
+        "data_fim": "2024-12-28",
+        "status": "Não iniciado",
+        "descricao": "Permitir que o usuário configure alertas para pontos de entrada e saída com base em estratégias de negociação definidas."
+      },
+      {
+        "nome": "Testes e Validação",
+        "responsavel": "QA Team",
+        "data_inicio": "2024-12-29",
+        "data_fim": "2025-01-04",
+        "status": "Não iniciado",
+        "descricao": "Realizar testes no script e validar os resultados obtidos."
+      },
+      {
+        "nome": "Documentação Final",
+        "responsavel": "Sênior Writer",
+        "data_inicio": "2025-01-05",
+        "data_fim": "2025-01-12",
+        "status": "Não iniciado",
+        "descricao": "Elaborar a documentação técnica e relatório final do projeto."
+      }
+    ],
+    "justificativa": "Com a crescente popularidade da criptomoeda Solana, há uma demanda por ferramentas que proporcionem análises técnicas que ajudem investidores a tomar decisões informadas.",
+    "objetivos_principais": [
+      "Coletar e processar dados históricos de preços e volumes da Solana.",
+      "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), MACD e Bandas de Bollinger.",
+      "Gerar gráficos para visualização das tendências de preço e volume ao longo do tempo.",
+      "Permitir que o usuário configure alertas para pontos de entrada e saída em suas estratégias de negociação."
+    ],
+    "metodologia": "O desenvolvimento do script será realizado em Python, utilizando bibliotecas como Pandas para manipulação de dados, Matplotlib para visualização e TA-Lib para cálculos de indicadores técnicos."
+  }
+}
+```
+
+Esse roadmap fornece uma visão organizada e abrangente do projeto de desenvolvimento do script para análise técnica da criptomoeda Solana, cobrindo todas as etapas, responsabilidades e objetivos principais. Se precisar de mais informações ou ajustes, sinta-se à vontade para pedir!
