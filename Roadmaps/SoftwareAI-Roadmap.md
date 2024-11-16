@@ -1,89 +1,88 @@
 
-# **Roadmap para o Framework SoftwareAI**
+# **Roadmap for the SoftwareAI Framework**
 
 ---
 
-## **Fase 1: Fundação e Estrutura Básica**
-### **Objetivo:** Estabelecer a base do framework e definir sua arquitetura inicial.
+## **Phase 1: Foundation and Basic Structure**  
+### **Goal:** Establish the framework's foundation and define its initial architecture.
 
-- **1.1 - Estrutura Inicial**
-  - [x] Desenvolver o núcleo do framework (CoreApp).
-  - [x] Criar arquitetura modular para equipes e funcionalidades.
-  - [x] Configurar repositório GitHub com `README.md`, `LICENSE`, e `CONTRIBUTING.md`.
-  
-- **1.2 - Equipe e Processos Básicos**
-  - [x] Lançar **Tigrao**, responsável por criar o Pre-Project Document.
-  - [x] Lançar **Bob**, para gerar cronogramas e planilhas.
-  - [x] Lançar **Dallas**, para criar o Roadmap baseado no cronograma e no Pre-Project Document.
-  
-- **1.3 - Automação**
-  - [ ] Configurar pipelines de CI/CD no GitHub para automação de testes e deploy.
-  - [ ] Implementar controle básico de commits com melhorias automáticas.
+- **1.1 - Initial Structure**  
+  - [x] Develop the framework core (CoreApp).  
+  - [x] Create a modular architecture for teams and functionalities.  
+  - [x] Set up a GitHub repository with `README.md`, `LICENSE`, and `CONTRIBUTING.md`.  
 
-### **Entrega Esperada:**
-Base funcional do framework SoftwareAI com equipes iniciais ativas.
+- **1.2 - Basic Teams and Processes**  
+  - [x] Launch **Tigrao**, responsible for creating the Pre-Project Document.  
+  - [x] Launch **Bob**, to generate schedules and spreadsheets.  
+  - [x] Launch **Dallas**, to create the Roadmap based on the schedule and Pre-Project Document.  
 
----
+- **1.3 - Automation**  
+  - [ ] Set up CI/CD pipelines on GitHub for automated testing and deployment.  
+  - [ ] Implement basic commit control with automatic improvements.  
 
-## **Fase 2: Desenvolvimento de Funcionalidades e Expansão**
-### **Objetivo:** Expandir capacidades e adicionar funcionalidades avançadas.
-
-- **2.1 - Equipes Avançadas**
-  - [x] Lançar **SynthOperator**, para análise de requisitos de software.
-  - [x] Lançar **CloudArchitect**, responsável pela documentação técnica dos projetos.
-  - [x] Lançar **SignalMaster**, para receber scripts e melhorar padrões de desenvolvimento.
-  - [x] Lançar **DataWeaver**, para análise e sugestão de melhorias em softwares existentes.
-  - [x] Lançar **QuantumCore**, para desenvolvimento de software com base em requisitos.
-
-- **2.2 - Comunicação entre Equipes**
-  - [x] Estruturar um sistema de comunicação intrateams básico baseado no import.
-
-- **2.3 - Funcionalidades Adicionais**
-  - [x] Permitir geração automática de repositórios GitHub.
-  - [x] Implementar commits automatizados para melhorias incrementais.
-
-- **2.4 - Testes e Validação**
-  - [x] Realizar testes extensivos de todas as funcionalidades.
-  - [x] Corrigir bugs e melhorar a performance.
-
-- **2.5 - Refatorar CoreApp**
-  - [x] Pasta 'CoreApp/Agents' criada, Cada equipe contem sua propria subpasta dentro de 'Agents'
-  - [x] Pasta 'CoreApp/FirebaseKeys' criada, contem as chaves da open-ai e dos aplicativos Firebase
-  - [x] Pasta 'CoreApp/Flowchart' criada, contem todos os fluxogramas e mapas mentais do software-ai
-  - [x] Pasta 'CoreApp/SoftwareAI' criada, comtem o arquivo core da aplicacao chamado 'SoftwareAI_Core'
-  - [x] Pasta 'CoreApp/SoftwareAI/Functions' criada, comtem todos os arquivos das funcoes utilizadas pelas equipes, tambem contem o arquivo inicializador de todas as funcoes chamado '_init_functions_'
-  - [x] Pasta 'CoreApp/SoftwareAI/Functions_Submit_Outputs' criada, comtem todos os arquivos responsaveis por enviar a resposta de retorno das funcoes para open ai,  tambem contem o arquivo inicializador de todas as funcoes chamado '_init_submit_outputs_'
-  - [x] Pasta 'CoreApp/SoftwareAI/Instructions' criada, contem o arquivo inicializador de todas as instrucoes chamado '_init_Instructions_', Cada equipe contem sua propria subpasta de instrucao dentro de 'Instructions'
-  - [x] Pasta 'CoreApp/SoftwareAI/Tools' criada, contem o arquivo inicializador de todas as ferramentas chamado '_init_tools_', Cada equipe contem sua propria subpasta de ferramentas dentro de 'Tools'
-  - [x] Pasta 'CoreApp/Work_Environment' criada, é a area de trabalho das equipes sempre que um novo projeto é solicitado bytemanager define o nome do projeto e cria uma subpasta
-  - [x] Arquivo 'CoreApp/_init_agents_' criado, é o arquivo inicializador de todos os Agents
-  - [x] Arquivo 'CoreApp/_init_core_' criado, é o arquivo inicializador do 'SoftwareAI_Core'
-  - [x] Arquivo 'CoreApp/_init_keys_' criado, é o arquivo inicializador das chaves e aplicativos firebase
-  - [x] Arquivo 'CoreApp/_init_libs_' criado, é o arquivo inicializador de todas as importacoes do framework
-  - [x] Arquivo 'CoreApp/_init_paths_' criado, é o arquivo inicializador de todos os caminhos da area de trabalho das equipes 
-  - [x] Arquivo 'CoreApp/ambiente' criado, é o arquivo de variavel de ambiente responsavel por armazenar todos os caminhos da area de trabalho das equipes 
-
-
-### **Entrega Esperada:**
-Framework com funcionalidades maduras e suporte básico à comunicação entre equipes.
+### **Expected Delivery:**  
+Functional base of the SoftwareAI framework with initial teams active.
 
 ---
 
-## **Fase 3: Manutenção e Expansão Futuras**
-### **Objetivo:** Garantir evolução contínua e adaptação às novas demandas.
+## **Phase 2: Feature Development and Expansion**  
+### **Goal:** Expand capabilities and add advanced features.
 
-- **5.1 - Manutenção**
-  - [ ] Monitorar e corrigir bugs relatados.
-  - [ ] Atualizar dependências e padrões de segurança.
+- **2.1 - Advanced Teams**  
+  - [x] Launch **SynthOperator**, for software requirements analysis.  
+  - [x] Launch **CloudArchitect**, responsible for technical project documentation.  
+  - [x] Launch **SignalMaster**, to receive scripts and improve development standards.  
+  - [x] Launch **DataWeaver**, for analyzing and suggesting improvements to existing software.  
+  - [x] Launch **QuantumCore**, to develop software based on requirements.  
 
-- **5.2 - Funcionalidades Futuras**
-  - [ ] Adicionar intercomunicação avançada entre equipes.
-  - [ ] Expandir para suporte nativo em Linux.
-  - [ ] Desenvolver novos módulos e equipes especializadas (ex.: MarketingAI, FinanceAI).
+- **2.2 - Team Communication**  
+  - [x] Structure a basic intra-team communication system based on imports.  
 
-### **Entrega Esperada:**
-Framework dinâmico, adaptável e em constante evolução.
+- **2.3 - Additional Features**  
+  - [x] Enable automatic generation of GitHub repositories.  
+  - [x] Implement automated commits for incremental improvements.  
+
+- **2.4 - Testing and Validation**  
+  - [x] Conduct extensive testing of all features.  
+  - [x] Fix bugs and improve performance.  
+
+- **2.5 - CoreApp Refactoring**  
+  - [x] Create `CoreApp/Agents` folder: Each team contains its subfolder inside 'Agents'.  
+  - [x] Create `CoreApp/FirebaseKeys` folder: Contains OpenAI keys and Firebase app keys.  
+  - [x] Create `CoreApp/Flowchart` folder: Contains all software-AI flowcharts and mind maps.  
+  - [x] Create `CoreApp/SoftwareAI` folder: Contains the core file `SoftwareAI_Core`.  
+  - [x] Create `CoreApp/SoftwareAI/Functions` folder: Contains all files for team functions and the initializer `_init_functions_`.  
+  - [x] Create `CoreApp/SoftwareAI/Functions_Submit_Outputs` folder: Contains files to send function outputs to OpenAI, with `_init_submit_outputs_`.  
+  - [x] Create `CoreApp/SoftwareAI/Instructions` folder: Contains `_init_Instructions_` and subfolders for team-specific instructions.  
+  - [x] Create `CoreApp/SoftwareAI/Tools` folder: Contains `_init_tools_` and subfolders for team-specific tools.  
+  - [x] Create `CoreApp/Work_Environment` folder: Workspace for teams where ByteManager names and creates subfolders for projects.  
+  - [x] Create `CoreApp/_init_agents_`: Initializes all agents.  
+  - [x] Create `CoreApp/_init_core_`: Initializes `SoftwareAI_Core`.  
+  - [x] Create `CoreApp/_init_keys_`: Initializes keys and Firebase apps.  
+  - [x] Create `CoreApp/_init_libs_`: Initializes all framework imports.  
+  - [x] Create `CoreApp/_init_paths_`: Initializes all workspace paths.  
+  - [x] Create `CoreApp/ambiente`: Environment variables file for storing all workspace paths.  
+
+### **Expected Delivery:**  
+A mature framework with basic team communication support.
 
 ---
 
-**Nota:** Este roadmap foi projetado com base nas funcionalidades descritas na versão beta atual (v0.1.7) e objetivos futuros.
+## **Phase 3: Maintenance and Future Expansion**  
+### **Goal:** Ensure continuous evolution and adaptation to new demands.
+
+- **5.1 - Maintenance**  
+  - [ ] Monitor and fix reported bugs.  
+  - [ ] Update dependencies and security standards.  
+
+- **5.2 - Future Features**  
+  - [ ] Add advanced inter-team communication.  
+  - [ ] Expand to native Linux support.  
+  - [ ] Develop new modules and specialized teams (e.g., MarketingAI, FinanceAI).  
+
+### **Expected Delivery:**  
+A dynamic, adaptable, and continuously evolving framework.
+
+---
+
+**Note:** This roadmap was designed based on the features described in the current beta version (v0.1.7) and future goals.
