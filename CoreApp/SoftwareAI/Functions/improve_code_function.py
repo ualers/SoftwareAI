@@ -8,7 +8,16 @@ from CoreApp._init_core_ import *
 from CoreApp._init_libs_ import *
 #########################################
 
-def improve_code_and_create_pull_request(repo_owner: str, repo_name: str, branch_name: str, file_path: str, commit_message: str, improvements: str, token: str):
+def improve_code_and_create_pull_request(
+                                        repo_owner: str,
+                                        repo_name: str, 
+                                        branch_name: str,
+                                        file_path: str, 
+                                        commit_message: str, 
+                                        improvements: str,
+                                        pr_title: str, 
+                                        token: str
+                                        ):
     """
     Realiza melhorias no código e cria um pull request no repositório GitHub dentro de uma organização.
     """
@@ -74,8 +83,18 @@ def improve_code_and_create_pull_request(repo_owner: str, repo_name: str, branch
         file_sha = response.json().get('sha')  # Obter SHA do arquivo existente
 
     # Adicionar ou atualizar o arquivo no novo branch
-    file_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
+    name_filepath = os.path.basename(file_path)
+    file_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{name_filepath}"
     improved_content_base64 = base64.b64encode(improvements.encode()).decode()
+    
+    # Verificar se o arquivo já existe para obter o SHA
+    response = requests.get(file_url, headers=headers, params={"ref": branch_name})
+    if response.status_code == 200:
+        file_sha = response.json().get("sha")  # SHA do arquivo existente
+    else:
+        file_sha = None  # Arquivo novo, sem SHA
+
+    # Dados para a requisição PUT
     file_data = {
         "message": commit_message,
         "content": improved_content_base64,
@@ -88,18 +107,6 @@ def improve_code_and_create_pull_request(repo_owner: str, repo_name: str, branch
     if response.status_code not in [201, 200]:
         print(f"Erro ao adicionar o arquivo: {response.content}")
         return
-
-    # Criar título para o pull request usando a OpenAI API
-    title_prompt = f"""Crie um título para um pull request no GitHub com base no código e na mensagem de commit:
-    código:
-    {improvements}
-    commit_message:
-    {commit_message}
-    """
-    format = 'Responda no formato JSON Exemplo: {"nome_para_pr": "nome do pull request..."}'
-    title_message = title_prompt + format
-    response = ResponseAgent.ResponseAgent_message_completions(title_message, "", True)
-    pr_title = response.get("nome_para_pr", "Título do Pull Request")
 
     # Criar o pull request
     pr_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/pulls"
