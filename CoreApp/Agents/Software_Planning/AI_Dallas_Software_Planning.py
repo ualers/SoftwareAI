@@ -9,7 +9,12 @@ from ..._init_libs_ import *
 # IMPORT SoftwareAI All Paths 
 from ..._init_paths_ import *
 #########################################
-
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
 
 
 
@@ -22,28 +27,11 @@ class Equipe_De_Solucoes:
         read_planilha_json = python_functions.analyze_txt(planilha_json)
         read_doc_Pre_Projeto = python_functions.analyze_txt(doc_Pre_Projeto)
 
-        """Cria e Retorna o RoadMap"""    
-        instruction_agente_1_da_equipe_de_solucoes = """ 
-        Seu Nome é Dallas, Voce Faz parte da Equipe de Solucoes da empresa Urobotsoftware, seu objetivo é Planejar um Roadmap do Projeto com base no Cronograma,Planilha e Documento Pre Projeto 
-
-        Responda o Roadmap do Projeto no formato JSON
-        Exemplo:
-        {"Roadmap": "Roadmap do Projeto ..."}
-        {"nome_do_Roadmap": "nome_do_Roadmap_do_projeto ..."}
-
-        """
-        
         key = "AI_Dallas_Equipe_de_Solucoes"
         nameassistant = "AI Dallas Equipe de Solucoes"
         model_select = "gpt-4o-mini-2024-07-18"
-        # Tools 
-        adxitional_instructions = None
-        Uploadfile_in_thread = None
-        Uploadfile_in_message = None
-        tools = None
-        vectorstore = None
 
-
+        
         Upload_1_file_in_thread = None
         Upload_1_file_in_message = None
         Upload_1_image_for_vision_in_thread = None
@@ -52,7 +40,7 @@ class Equipe_De_Solucoes:
         Upload_list_for_code_interpreter_in_thread = None
 
         # ----------------------------------------------- 
-        AI_Dallas_Equipe_de_Solucoes = AutenticateAgent.create_or_auth_AI(key, instruction_agente_1_da_equipe_de_solucoes, nameassistant, model_select, tools, vectorstore_in_assistant)
+        AI_Dallas_Equipe_de_Solucoes = AutenticateAgent.create_or_auth_AI(key, instructionDallas, nameassistant, model_select, tools_Dallas, vectorstore_in_assistant)
         mensagem = f"""
         Planeje um Roadmap do Projeto com base no Cronograma,Planilha e Documento Pre Projeto asseguir:\n
 
@@ -75,10 +63,10 @@ class Equipe_De_Solucoes:
                                                                         Upload_1_image_for_vision_in_thread, 
                                                                         Upload_list_for_code_interpreter_in_thread,
                                                                         vectorstore_in_Thread,
-                                                                        tools, 
+                                                                        tools_Dallas, 
                                                                         AI_Dallas_Equipe_de_Solucoes, 
                                                                         model_select,
-                                                                        adxitional_instructions, key)
+                                                                        adxitional_instructions_Dallas, key)
 
         path_Roadmap = os.getenv("PATH_ROADMAP_ENV")
         python_functions.save_TXT(response, path_Roadmap, "w")
