@@ -73,6 +73,38 @@ def create_github_repo_and_upload(repo_name: str, repo_description: str, readme_
         print(f"Falha ao adicionar colaborador. Status: {collaborator_response.status_code}, Resposta: {collaborator_response.json()}")
         return {"status": "error", "message": collaborator_response.json()}
 
+
+    # Adicionando colaborador com permissões de administrador
+    collaborator_url = f"https://api.github.com/repos/A-I-O-R-G/{repo_name}/collaborators/NexGenCoder756"
+
+    collaborator_data = {
+        "permission": "admin"
+    }
+
+    collaborator_response = requests.put(collaborator_url, headers=headers, json=collaborator_data)
+
+    if collaborator_response.status_code == 201 or collaborator_response.status_code == 204:
+        print(f"Colaborador 'NexGenCoder756' adicionado com sucesso com permissões de administrador.")
+    else:
+        print(f"Falha ao adicionar colaborador. Status: {collaborator_response.status_code}, Resposta: {collaborator_response.json()}")
+        return {"status": "error", "message": collaborator_response.json()}
+    
+
+    # Adicionando colaborador com permissões de administrador
+    collaborator_url = f"https://api.github.com/repos/A-I-O-R-G/{repo_name}/collaborators/CloudArchitectt"
+
+    collaborator_data = {
+        "permission": "admin"
+    }
+
+    collaborator_response = requests.put(collaborator_url, headers=headers, json=collaborator_data)
+
+    if collaborator_response.status_code == 201 or collaborator_response.status_code == 204:
+        print(f"Colaborador 'CloudArchitectt' adicionado com sucesso com permissões de administrador.")
+    else:
+        print(f"Falha ao adicionar colaborador. Status: {collaborator_response.status_code}, Resposta: {collaborator_response.json()}")
+        return {"status": "error", "message": collaborator_response.json()}
+
     return {"status": "success", "message": "Repositório, arquivos e colaborador adicionados com sucesso"}
 
 
