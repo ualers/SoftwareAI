@@ -12,6 +12,12 @@ from ..._init_libs_ import *
 # IMPORT SoftwareAI All Paths 
 from ..._init_paths_ import *
 #########################################
+# IMPORT SoftwareAI Instructions
+from ...SoftwareAI.Instructions._init_Instructions_ import *
+#########################################
+# IMPORT SoftwareAI Tools
+from ...SoftwareAI.Tools._init_tools_ import *
+#########################################
 
 
 class ByteManager:
@@ -39,85 +45,25 @@ class ByteManager:
         
         """    
 
-        instruction_AI_ByteManager = """ 
-        Seu Nome é ByteManager, Voce Faz parte da equipe de Donos da Empresa Urobotsoftware\n
-        Suas Responsabilidades Principais São:\n
 
-        Visão Estratégica:\n
-
-        Analisar e interpretar dados de mercado para identificar novas oportunidades de desenvolvimento de software.
-        Definir e ajustar a visão e missão da empresa com base em tendências tecnológicas emergentes.\n
-        
-        Gestão de Projetos:\n
-
-        Supervisionar o progresso dos projetos em todas as etapas do desenvolvimento de software, garantindo que os prazos e metas sejam cumpridos.
-        Aprovar ou rejeitar solicitações de novos projetos com base na viabilidade técnica e comercial.\n
-        
-        Inovação e Crescimento:\n
-
-        Propor e implementar inovações em produtos existentes ou no desenvolvimento de novos produtos.
-        Explorar e analisar novos mercados e segmentos para expansão da empresa.\n
-        
-        Reuniões de Sincronização Regulares:
-        Propor reuniões regulares (diárias ou semanais) para que as equipes compartilhem atualizações, desafios e objetivos. 
-        Isso ajuda a alinhar todos em torno do progresso e a identificar possíveis obstáculos cedo.
-
-        
-
-        Responda no formato JSON
-        Exemplo:
-        {"resposta": "resposta ..."}
-        \n
-        \n
-        Voce pode consultar o Manager de Software chamado MatrixMinder, ele é um Manager de Software da empresa Urobotsoftware,
-
-        \n
-        As Responsabilidades Principais Dele São:\n
-
-        Coordenação de Projetos:
-
-        Supervisionar e coordenar todas as atividades dos projetos de software, garantindo que as metas sejam alcançadas dentro dos prazos estipulados.
-        Facilitar a comunicação entre as equipes de desenvolvimento, design e testes para assegurar a colaboração eficiente.
-        \n
-        Alocação de Recursos:
-
-        Gerenciar e alocar recursos (tecnológicos e financeiros) de maneira eficaz para otimizar o desempenho dos projetos.
-        Priorizar tarefas e determinar a melhor distribuição de workload entre as equipes.
-        \n
-        Monitoramento de Desempenho:
-
-        Acompanhar o progresso dos projetos em tempo real, utilizando métricas de desempenho para identificar possíveis gargalos ou desvios no cronograma.
-        Fornecer feedback contínuo para as equipes com base em análises de desempenho, ajudando a manter os padrões de qualidade elevados.
-        \n
-        Caso queira consultar o MatrixMinder Responda no formato JSON
-        Exemplo:
-        {"consultarMatrixMinder": "Pergunta ao MatrixMinder..."}
-
-        
-
-        Caso seja solicitado algum codigo crie uma descricao completa do que foi solicitado e Responda no formato JSON
-        Exemplo:
-        {"solicitadoalgumcodigo": "descricao..."}
-
-
-        """
         key = "AI_ByteManager_Company_Owners"
         nameassistant = "AI ByteManager Donos da Empresa Urobotsoftware"
         model_select = "gpt-4o-mini-2024-07-18"
-        tools = [{"type": "file_search"}]
+
+
         vectorstore_in_assistant = None #[ 
         #             "vs_USBolYuyy7cVXhfBWFToQcaN"
         #         ]
         vectorstore_in_Thread = None
 
-        adxitional_instructions = None
+        
         Upload_1_file_in_thread = None
         Upload_1_file_in_message = None
         Upload_1_image_for_vision_in_thread = None
         Upload_list_for_code_interpreter_in_thread = None
 
 
-        AI_ByteManager = AutenticateAgent.create_or_auth_AI(key, instruction_AI_ByteManager, nameassistant, model_select, tools, vectorstore_in_assistant)
+        AI_ByteManager = AutenticateAgent.create_or_auth_AI(key, instructionByteManager, nameassistant, model_select, tools_ByteManager, vectorstore_in_assistant)
 
         mensaxgem = f"""decida oque o usuario esta solicitando com base na mensagem asseguir: {mensagem} \n       
         
@@ -131,7 +77,7 @@ class ByteManager:
                                                                 Upload_1_file_in_thread, Upload_1_file_in_message,
                                                                 Upload_1_image_for_vision_in_thread, Upload_list_for_code_interpreter_in_thread,
                                                                 vectorstore_in_Thread,
-                                                                tools,  AI_ByteManager, model_select, adxitional_instructions, key)
+                                                                tools_ByteManager,  AI_ByteManager, model_select, adxitional_instructions_ByteManager, key)
         print(response)
         try:
             teste_dict = json.loads(response)
@@ -150,7 +96,7 @@ class ByteManager:
             passando_resposta_do_matrixminder = ResponseAgent.ResponseAgent_message_with_assistants(resposta_do_matrixminder,
                                                                     Upload_1_file_in_thread, Upload_1_file_in_message,
                                                                     Upload_1_image_for_vision_in_thread,  Upload_list_for_code_interpreter_in_thread, vectorstore_in_Thread,
-                                                                    tools, AI_ByteManager, model_select, adxitional_instructions, key)
+                                                                    tools_ByteManager, AI_ByteManager, model_select, adxitional_instructions_ByteManager, key)
             
             resposta_AI_ByteManager_dict = json.loads(passando_resposta_do_matrixminder)
             resposta_AI_ByteManager = resposta_AI_ByteManager_dict['resposta']
@@ -160,17 +106,22 @@ class ByteManager:
 
 
             mensaxgem = f"crie uma descricao completa de {mensagem}  "
-            AI_ByteManager_response = ResponseAgent.ResponseAgent_message_with_assistants(mensaxgem,
+            format = 'Responda no formato JSON Exemplo: {"descricao": "..."}'
+            
+            mensagemz = mensaxgem + format
+
+            AI_ByteManager_response = ResponseAgent.ResponseAgent_message_with_assistants(mensagemz,
                                                                     Upload_1_file_in_thread, Upload_1_file_in_message,
                                                                     Upload_1_image_for_vision_in_thread, Upload_list_for_code_interpreter_in_thread, vectorstore_in_Thread,
-                                                                    tools,  AI_ByteManager, model_select, adxitional_instructions, key)
+                                                                    tools_ByteManager,  AI_ByteManager, model_select, adxitional_instructions_ByteManager, key)
 
             
 
-
-            teste_dict = json.loads(AI_ByteManager_response)
-            pergunta_ao_tigrao = teste_dict['solicitadoalgumcodigo']    
-
+            try:
+                teste_dict = json.loads(AI_ByteManager_response)
+                pergunta_ao_tigrao = teste_dict['solicitadoalgumcodigo']    
+            except Exception as e2:
+                pergunta_ao_tigrao = AI_ByteManager_response
 
             mensaxgem = f"""crie um nome do repositorio desse software no github com base na descricao:\n
             {pergunta_ao_tigrao}
@@ -215,7 +166,7 @@ class ByteManager:
 
             for key in list(os.environ.keys()):
                 if key.endswith('_ENV'):
-                    del os.environ[key]
+                    del os.environ[key]                                                                                                                                                                     
 
             PATH_SOFTWARE_DEVELOPMENT_PY_ENV = rf"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\Work_Environment\{repo_name}\Software_Development\python_software.py"
             PATH_SOFTWARE_DEVELOPMENT_TXT_ENV = rf"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\Work_Environment\{repo_name}\Software_Development\python_software.txt"
