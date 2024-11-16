@@ -1,64 +1,61 @@
-# Documentação das Ferramentas
-Funções Disponíveis
+# Documentation of Tools
+Available Functions
 
 ## analyze_file
-Analisa o conteúdo de um arquivo de texto.
+Analyzes the content of a text file.
 
-### Parâmetros
-- `file_path` (string, obrigatório): Caminho completo incluindo o nome do arquivo a ser analisado.
+### Parameters
+- file_path (string, required): Full path including the file name to be analyzed.
 
-```
-    {
-        "type": "function",
-        "function": {
-            "name": "analyze_file",
-            "description": "Analiza um arquivo txt",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "file_path": {
-                        "type": "string",
-                        "description": "Caminho com nome do arquivo"
-                    }
-                },
-                "required": [
-                    "file_path"
-                ]
-            }
+{
+    "type": "function",
+    "function": {
+        "name": "analyze_file",
+        "description": "Analyzes a txt file",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "file_path": {
+                    "type": "string",
+                    "description": "Path with the file name"
+                }
+            },
+            "required": [
+                "file_path"
+            ]
         }
-    },
-```
+    }
+},
+
 
 ## update_readme_to_github
 
-Atualiza o arquivo README.md de um repositório no GitHub.
+Updates the README.md file of a GitHub repository.
 
-### Parâmetros
-- `file_path_readme_improvements` (string, obrigatório): Caminho do arquivo README melhorado
-- `repo_name` (string, obrigatório): Nome do repositório no GitHub
-- `token` (string, obrigatório): Token de autenticação do GitHub para acesso à API
-```
+### Parameters
+- file_path_readme_improvements (string, required): Path of the improved README file
+- repo_name (string, required): Name of the GitHub repository
+- token (string, required): GitHub authentication token for API access
 {
     "type": "function",
     "function": {
         "name": "update_readme_to_github",
-        "description": "Atualiza o Readme do repositorio no github",
+        "description": "Updates the repository README on GitHub",
         "parameters": {
             "type": "object",
             "properties": {
                 "file_path_readme_improvements": {
                     "type": "string",
-                    "description": "O Caminho do readme melhorado"
+                    "description": "Path of the improved README"
                 },
                 "repo_name": {
                     "type": "string",
-                    "description": "O nome do repositorio do github"
+                    "description": "Name of the GitHub repository"
                 },
                 "token": {
                     "type": "string",
-                    "description": "Token de autenticação do GitHub para realizar operações na API."
+                    "description": "GitHub authentication token to perform API operations."
                 }
-
             },
             "required": [
                 "file_path_readme_improvements",
@@ -68,221 +65,224 @@ Atualiza o arquivo README.md de um repositório no GitHub.
         }
     }
 },
-```
 
 
 ## save_TXT
 
-Salva conteúdo em um arquivo de texto com diferentes modos de escrita.
+Saves content to a text file with different write modes.
 
-### Parâmetros
-- `string` (string, obrigatório): Conteúdo a ser salvo no arquivo
-- `filexname` (string, obrigatório): Nome do arquivo
-- `letra` (string, obrigatório): Modo de escrita
-  - `'w'`: Cria novo arquivo ou sobrescreve existente
-  - `'x'`: Cria novo arquivo, falha se já existir
-  - `'a'`: Anexa conteúdo ao final do arquivo
-- `path` (string, obrigatório): Diretório onde o arquivo será salvo
-```
-
-    {
-        "type": "function",
-        "function": {
-            "name": "save_TXT",
-            "description": "Salva um arquivo txt",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "string": {
-                        "type": "string",
-                        "description": "O conteudo do txt"
-                    },
-                    "filexname": {
-                        "type": "string",
-                        "description": "O nome do txt"
-                    },
-                    "letra": {
-                        "type": "string",
-                        "description": " letra 'w' abre para escrita truncando o arquivo primeiro, letra 'x' cria um novo arquivo e abre-o para escrita, letra 'a' abre para escrita anexando ao final do arquivo se existir"
-                    },
-                    "path": {
-                        "type": "string",
-                        "description": "o caminho onde o txt sera salvo "
-                    }
-
+### Parameters
+- string (string, required): Content to be saved in the file
+- filexname (string, required): Name of the file
+- letra (string, required): Write mode
+  - 'w': Creates a new file or overwrites an existing one
+  - 'x': Creates a new file, fails if already exists
+  - 'a': Appends content to the end of the file
+- path (string, required): Directory where the file will be saved
+{
+    "type": "function",
+    "function": {
+        "name": "save_TXT",
+        "description": "Saves a txt file",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "string": {
+                    "type": "string",
+                    "description": "The content of the txt file"
                 },
-                "required": [
-                    "string",
-                    "filexname",
-                    "letra",
-                    "path"
-                ]
-            }
+                "filexname": {
+                    "type": "string",
+                    "description": "The name of the txt file"
+                },
+                "letra": {
+                    "type": "string",
+                    "description": "Letter 'w' opens for writing truncating the file first, letter 'x' creates a new file and opens it for writing, letter 'a' opens for writing appending to the end of the file if it exists"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The path where the txt will be saved"
+                }
+            },
+            "required": [
+                "string",
+                "filexname",
+                "letra",
+                "path"
+            ]
         }
-    },
+    }
+},
 
-```
 
 ## save_code
 
-Salva arquivos de código em diferentes linguagens.
+Saves code files in different languages.
 
-### Parâmetros
-- `code_string` (string, obrigatório): Conteúdo do código
-- `name_script` (string, obrigatório): Nome do arquivo
-- `file_type` (string, obrigatório): Tipo do arquivo
-  - Valores aceitos: `"html"`, `"js"`, `"css"`, `"py"`
-- `path` (string, obrigatório): Diretório onde o arquivo será salvo
-```
-    {
-        "type": "function",
-        "function": {
-            "name": "save_code",
-            "description": "Salva 4 tipos de codigos html, js, css, py",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "code_string": {
-                        "type": "string",
-                        "description": "O conteudo do codigo"
-                    },
-                    "name_script": {
-                        "type": "string",
-                        "description": "O nome do codigo"
-                    },
-                    "file_type": {
-                        "type": "string",
-                        "description": "o tipo de arquivo sendo eles html, js, css ou py "
-                    },
-                    "path": {
-                        "type": "string",
-                        "description": "o caminho onde o codigo sera salvo "
-                    }
-
+### Parameters
+- code_string (string, required): Code content
+- name_script (string, required): File name
+- file_type (string, required): File type
+  - Accepted values: "html", "js", "css", "py"
+- path (string, required): Directory where the file will be saved
+{
+    "type": "function",
+    "function": {
+        "name": "save_code",
+        "description": "Saves 4 types of code html, js, css, py",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "code_string": {
+                    "type": "string",
+                    "description": "The content of the code"
                 },
-                "required": [
-                    "code_string",
-                    "name_script",
-                    "file_type",
-                    "path"
-                ]
-            }
+                "name_script": {
+                    "type": "string",
+                    "description": "The name of the code"
+                },
+                "file_type": {
+                    "type": "string",
+                    "description": "The file type being html, js, css or py"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The path where the code will be saved"
+                }
+            },
+            "required": [
+                "code_string",
+                "name_script",
+                "file_type",
+                "path"
+            ]
         }
-    },
-```
+    }
+},
+
 
 ## execute_python_code
 
-Executa um script Python.
+Executes a Python script.
 
-### Parâmetros
-- `filename` (string, obrigatório): Caminho completo do arquivo Python a ser executado
-```
-    {
-        "type": "function",
-        "function": {
-            "name": "execute_python_code",
-            "description": "Executa codigos py",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "filename": {
-                        "type": "string",
-                        "description": "O caminho junto ao nome do .py"
-                    }
-                },
-                "required": [
-                    "filename"
-                ]
-            }
+### Parameters
+- filename (string, required): Full path of the Python file to be executed
+{
+    "type": "function",
+    "function": {
+        "name": "execute_python_code",
+        "description": "Executes py codes",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "filename": {
+                    "type": "string",
+                    "description": "The path with the .py file name"
+                }
+            },
+            "required": [
+                "filename"
+            ]
         }
     }
-```
+},
 
 
 ## get_current_datetime
 
-Retorna a data e hora atual em formato padronizado.
+Returns the current date and time in a standardized format.
 
-### Retorno
-- String no formato "YYYY-MM-DD HH:MM:SS"
-```
-    {
-        "type": "function",
-        "function": {
-            "name": "get_current_datetime",
-            "description": "Retorna a data e hora atual no formato YYYY-MM-DD HH:MM:SS.",
-            "parameters": {
-                "type": "object",
-                "properties": {},
-                "required": []
-            }
+### Return
+- String in the format "YYYY-MM-DD HH:MM:SS"
+{
+    "type": "function",
+    "function": {
+        "name": "get_current_datetime",
+        "description": "Returns the current date and time in the format YYYY-MM-DD HH:MM:SS.",
+        "parameters": {
+            "type": "object",
+            "properties": {},
+            "required": []
         }
-    },
-```
+    }
+},
+
 
 ## create_github_repo_and_upload
 
-Cria um novo repositório no GitHub e faz upload inicial de documentação e código.
+Creates a new repository on GitHub and uploads initial documentation and code.
 
-### Parâmetros
-- `repo_name` (string, obrigatório): Nome do novo repositório
-- `repo_description` (string, obrigatório): Descrição do repositório
-- `readme_file_path` (string, obrigatório): Caminho do arquivo README.md
-- `code_file_paths` (array de strings, obrigatório): Lista de caminhos dos arquivos Python
-- `token` (string, obrigatório): Token de autenticação do GitHub
+### Parameters
+- repo_name (string, required): Name of the new repository
+- repo_description (string, required): Description of the repository
+- readme_file_path (string, required): Path of the README.md file
+- code_file_paths (array of strings, required): List of paths to Python files
+- token (string, required): GitHub authentication token
 ```
     {
         "type": "function",
         "function": {
-            "name": "create_github_repo_and_upload",
-            "description": "Cria um repositório no GitHub e realiza o upload da documentação (.md) e do código Python.",
+            "name": "add_projectmap_to_github",
+            "description": "Uploads the project files, including documentation, timeline, roadmap, and analysis.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "repo_name": {
                         "type": "string",
-                        "description": "Nome do repositório a ser criado no GitHub."
+                        "description": "Repository name on GitHub."
                     },
-                    "repo_description": {
+                    "timeline_file_path": {
                         "type": "string",
-                        "description": "Descrição do repositório."
+                        "description": "Path of the project's timeline file."
                     },
-                    "readme_file_path": {
+                    "spreadsheet_file_path": {
                         "type": "string",
-                        "description": "Caminho do arquivo .md (README) a ser carregado no repositório."
+                        "description": "Path of the project's spreadsheet file."
                     },
-                    "code_file_paths": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        },
-                        "description": "Lista de caminhos dos arquivos de código Python a serem carregados no repositório."
+                    "pre_project_file_path": {
+                        "type": "string",
+                        "description": "Path of the pre-project file."
+                    },
+                    "Roadmap_file_path": {
+                        "type": "string",
+                        "description": "Path of the project's Roadmap file."
+                    },
+                    "analise_file_path": {
+                        "type": "string",
+                        "description": "Path of the project's analysis file."
                     },
                     "token": {
                         "type": "string",
-                        "description": "Token de autenticação do GitHub para realizar operações na API."
+                        "description": "GitHub authentication token to perform API operations."
                     }
                 },
-                "required": ["repo_name", "repo_description", "readme_file_path", "code_file_paths", "token"]
+                "required": [
+                    "repo_name",
+                    "timeline_file_path",
+                    "spreadsheet_file_path",
+                    "pre_project_file_path",
+                    "Roadmap_file_path",
+                    "analise_file_path",
+                    "token"
+                ]
             }
         }
     },
-
 ```
 
 ## add_projectmap_to_github
 
-Realiza o upload de documentos de planejamento e análise do projeto para um repositório GitHub.
+Uploads project planning and analysis documents to a GitHub repository.
 
-### Parâmetros
-- `repo_name` (string, obrigatório): Nome do repositório
-- `timeline_file_path` (string, obrigatório): Caminho do arquivo de timeline
-- `spreadsheet_file_path` (string, obrigatório): Caminho da planilha do projeto
-- `pre_project_file_path` (string, obrigatório): Caminho do arquivo de pré-projeto
-- `Roadmap_file_path` (string, obrigatório): Caminho do arquivo de Roadmap
-- `analise_file_path` (string, obrigatório): Caminho do arquivo de análise
-- `token` (string, obrigatório): Token de autenticação do GitHub
+### Parameters
+- repo_name (string, required): Name of the repository
+- timeline_file_path (string, required): Path of the project timeline file
+- spreadsheet_file_path (string, required): Path of the project spreadsheet
+- pre_project_file_path (string, required): Path of the pre-project file
+- Roadmap_file_path (string, required): Path of the project roadmap file
+- analise_file_path (string, required): Path of the project analysis file
+- token (string, required): GitHub authentication token
+
 
 ```
     {
@@ -336,63 +336,71 @@ Realiza o upload de documentos de planejamento e análise do projeto para um rep
     }
 ```
 
-
 ## improve_code_and_create_pull_request
 
-Implementa melhorias no código e cria um Pull Request no GitHub.
+Implement code improvements and create a Pull Request on GitHub.
 
-### Parâmetros
-- `repo_owner` (string, obrigatório): Nome do proprietário do repositório
-- `repo_name` (string, obrigatório): Nome do repositório
-- `branch_name` (string, obrigatório): Nome da branch para as alterações
-- `file_path` (string, obrigatório): Caminho do arquivo a ser melhorado
-- `commit_message` (string, obrigatório): Mensagem descritiva do commit
-- `improvements` (string, obrigatório): Código melhorado
-- `pr_title` (string, obrigatório): Título do Pull Request
-- `token` (string, obrigatório): Token de autenticação do GitHub
+### Parameters
+- `repo_owner` (string, required): Name of the repository owner
+- `repo_name` (string, required): Repository name
+- `branch_name` (string, required): Name of the branch for the changes
+- `file_path` (string, required): Path of the file to be improved
+- `commit_message` (string, required): Descriptive commit message
+- `improvements` (string, required): Improved code
+- `pr_title` (string, required): Pull Request title
+- `token` (string, required): GitHub authentication token
 ```
     {
         "type": "function",
         "function": {
             "name": "improve_code_and_create_pull_request",
-            "description": "Realiza melhorias no código e cria um pull request no repositório GitHub.",
+            "description": "Implements code improvements and creates a pull request on GitHub.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "repo_owner": {
                         "type": "string",
-                        "description": "Nome do dono do repositório no GitHub."
+                        "description": "Repository owner's name on GitHub."
                     },
                     "repo_name": {
                         "type": "string",
-                        "description": "Nome do repositório no GitHub."
+                        "description": "Repository name on GitHub."
                     },
                     "branch_name": {
                         "type": "string",
-                        "description": "Nome da branch onde o código será atualizado."
+                        "description": "Branch name where the code will be updated."
                     },
                     "file_path": {
                         "type": "string",
-                        "description": "Caminho do arquivo no repositório."
+                        "description": "Path of the file in the repository."
                     },
                     "commit_message": {
                         "type": "string",
-                        "description": "Mensagem de commit descrevendo as melhorias."
+                        "description": "Commit message describing the improvements."
                     },
                     "improvements": {
                         "type": "string",
-                        "description": "Novo código melhorado."
+                        "description": "New improved code."
                     },
                     "pr_title": {
                         "type": "string",
-                        "description": "Titulo do Pull request."
+                        "description": "Pull request title."
                     },
                     "token": {
                         "type": "string",
-                        "description": "Token de autenticação do GitHub."
+                        "description": "GitHub authentication token."
                     }
                 },
-                "required": ["repo_owner", "repo_name", "branch_name", "file_path", "commit_message", "improvements", "pr_title",  "token"]
+                "required": [
+                    "repo_owner",
+                    "repo_name",
+                    "branch_name",
+                    "file_path",
+                    "commit_message",
+                    "improvements",
+                    "pr_title",
+                    "token"
+                ]
             }
         }
     }
