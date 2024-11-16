@@ -1,24 +1,29 @@
-# API
+# 📚 Coleção de Documentações
 
-## Descrição
-Esta API fornece funcionalidades para gerenciar dados de usuários. Permite criar, ler, atualizar e excluir informações.
+## 🌐 1. API de Usuários
 
-## Instalação
-1. Clone o repositório:
-    ```
-        git clone https://github.com/usuario/exemplo-api.git
-    ``` 
-2. Navegue até o diretório do projeto:
-    ```
-    cd exemplo-api
-    ```
-3. Instale as dependências:
-    ```
-    pip install -r requirements.txt
-    ```
-4. Uso:
-    GET /usuarios: Retorna a lista de usuários.
-    POST /usuarios: Cria um novo usuário.
+### 🎯 Descrição
+API poderosa para gerenciamento completo de dados de usuários! 👥
 
-Contribuição:
-Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
+### ⚙️ Instalação
+1. 📥 Clone o repositório:
+```bash
+git clone https://github.com/usuario/exemplo-api.git
+```
+
+2. 📂 Entre no diretório:
+```bash
+cd exemplo-api
+```
+
+3. 📦 Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+### 🚀 Endpoints
+- 📋 `GET /usuarios` → Lista todos os usuários
+- ➕ `POST /usuarios` → Cria novo usuário
+
+### 🤝 Contribuição
+Sua ajuda é bem-vinda! Abra uma issue ou envie um PR! 💪
