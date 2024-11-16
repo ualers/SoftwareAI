@@ -1,0 +1,70 @@
+
+Com base no cronograma, na planilha e no documento pré-projeto fornecidos, aqui está o roadmap do projeto em formato JSON:
+
+```json
+{
+  "Roadmap": {
+    "titulo": "Roadmap do Projeto - Desenvolvimento de Script para Análise Técnica da Criptomoeda Bitcoin",
+    "duracao_total": "6 semanas",
+    "etapas": [
+      {
+        "nome": "Coleta de Dados",
+        "responsavel": "Equipe de Desenvolvimento",
+        "data_inicio": "2024-11-11",
+        "data_fim": "2024-11-24",
+        "status": "Não iniciado",
+        "descricao": "Processar dados históricos de preços e volumes da Bitcoin utilizando fontes de dados de mercado."
+      },
+      {
+        "nome": "Cálculo de Indicadores",
+        "responsavel": "Analista de Dados",
+        "data_inicio": "2024-11-25",
+        "data_fim": "2024-12-08",
+        "status": "Não iniciado",
+        "descricao": "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), Bandas de Bollinger e MACD."
+      },
+      {
+        "nome": "Desenvolvimento de Visualizações Gráficas",
+        "responsavel": "Desenvolvedor Python",
+        "data_inicio": "2024-12-09",
+        "data_fim": "2024-12-15",
+        "status": "Não iniciado",
+        "descricao": "Gerar visualizações gráficas para identificação de tendências e padrões de preços."
+      },
+      {
+        "nome": "Configuração de Alertas",
+        "responsavel": "Engenheiro de Software",
+        "data_inicio": "2024-12-16",
+        "data_fim": "2024-12-22",
+        "status": "Não iniciado",
+        "descricao": "Configurar alertas para condições de mercado específicas, como cruzamentos de médias móveis ou níveis de sobrecompra/sobrevenda."
+      },
+      {
+        "nome": "Testes e Validação",
+        "responsavel": "QA Team",
+        "data_inicio": "2024-12-23",
+        "data_fim": "2024-12-29",
+        "status": "Não iniciado",
+        "descricao": "Realizar testes no script e validar os resultados obtidos."
+      },
+      {
+        "nome": "Documentação Final",
+        "responsavel": "Sênior Writer",
+        "data_inicio": "2024-12-30",
+        "data_fim": "2025-01-05",
+        "status": "Não iniciado",
+        "descricao": "Elaborar a documentação técnica e o relatório final do projeto."
+      }
+    ],
+    "justificativa": "A necessidade de ferramentas avançadas de análise técnica que auxiliem investidores na compreensão do comportamento do mercado de criptomoedas e na identificação de oportunidades de investimento.",
+    "objetivos_principais": [
+      "Processar dados históricos de preços e volumes da Bitcoin.",
+      "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), Bandas de Bollinger e MACD.",
+      "Gerar visualizações gráficas para identificação de tendências e padrões de preços.",
+      "Configurar alertas para condições de mercado específicas, como cruzamentos de médias móveis."
+    ]
+  }
+}
+```
+
+Esse roadmap resume as etapas do projeto de desenvolvimento do script para análise técnica da criptomoeda Bitcoin, com detalhes sobre as responsabilidades, prazos e objetivos principais. Se precisar de mais informações ou ajustes, sinta-se à vontade para perguntar!
