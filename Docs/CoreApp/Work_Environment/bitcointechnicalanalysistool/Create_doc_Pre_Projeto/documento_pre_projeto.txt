@@ -1,0 +1,21 @@
+
+```json
+{
+  "doc_Pre_Projeto": {
+    "titulo": "Desenvolvimento de Script para Análise Técnica da Criptomoeda Bitcoin",
+    "descricao": "O usuário está solicitando a criação de um script dedicado à análise técnica da criptomoeda Bitcoin. Esse script deve ser capaz de processar dados históricos de preços e volumes da Bitcoin, permitindo a aplicação de diversas ferramentas e indicadores técnicos, como Média Móvel (MA), Índice de Força Relativa (RSI), Bandas de Bollinger, e MACD. O objetivo é facilitar a avaliação do comportamento do mercado e auxiliar na tomada de decisões de investimento. O script também deve incluir funcionalidades para visualizar graficamente as tendências e padrões de preços ao longo do tempo, além de permitir a configuração de alertas para quando determinadas condições de mercado forem atingidas, como cruzamentos das médias móveis ou níveis de sobrecompra/sobrevenda.",
+    "data_criacao": "2024-11-11 09:36:32",
+    "justificativa": "A necessidade de ferramentas avançadas de análise técnica que auxiliem investidores na compreensão do comportamento do mercado de criptomoedas e na identificação de oportunidades de investimento.",
+    "objetivos": [
+      "Processar dados históricos de preços e volumes da Bitcoin.",
+      "Aplicar indicadores técnicos como Média Móvel (MA), Índice de Força Relativa (RSI), Bandas de Bollinger e MACD.",
+      "Gerar visualizações gráficas para identificação de tendências e padrões de preços.",
+      "Configurar alertas para condições de mercado específicas, como cruzamentos de médias móveis."
+    ],
+    "metodologia": "O desenvolvimento será realizado em Python utilizando bibliotecas como Pandas, NumPy, Matplotlib e TA-Lib para o cálculo dos indicadores técnicos e visualização dos dados.",
+    "prazos_estimados": "O projeto deverá ser concluído dentro de 6 semanas.",
+    "recursos_necessarios": "Acesso a fontes de dados de mercado, ferramentas de desenvolvimento em Python e bibliotecas especializadas em análise técnica."
+  },
+  "name_doc_Pre_Projeto": "Pre-Projeto de Análise Técnica da Criptomoeda Bitcoin"
+}
+```
