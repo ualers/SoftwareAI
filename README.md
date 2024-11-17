@@ -57,10 +57,10 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
     * https://github.com/A-I-O-R-G/gerador-nome-cursos
 
 #
-## 📁 Index Docs
+# 📁 Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
 #
-## Index Team
+# Index Team
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
 - [AI Team Company Accounting](#AI-Team-Company-Accounting)
