@@ -77,6 +77,52 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 
 ## Update
 
+### _init_paths_ improviments: V 0.1.9.0
+***(17/11/2024)***
+Updates for version 0.1.9.0:
+* **_init_paths_**: improvement when loading dot env
+    ```
+        ├── 📁 CoreApp
+        │   ├── 🐍 _init_paths_.py
+                Before:
+                ```python
+                load_dotenv(dotenv_path=r"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\ambiente.env")
+                ```
+                now:
+                ```python
+                load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "ambiente.env"))
+                ```
+
+    ```
+#
+### _init_libs_ improviments: V 0.1.8.9
+***(17/11/2024)***
+Updates for version 0.1.8.9:
+* **_init_libs_**: duplicate imports removed
+    ```
+        ├── 📁 CoreApp
+        │   ├── 🐍 _init_libs_.py
+    ```
+#
+### _init_libs_ improviments: V 0.1.8.8
+***(17/11/2024)***
+Updates for version 0.1.8.8:
+* **_init_libs_**: duplicate imports removed
+    ```
+        ├── 📁 CoreApp
+        │   ├── 🐍 _init_libs_.py
+    ```
+#
+### _init_agents_ improviments: V 0.1.8.7
+***(17/11/2024)***
+Updates for version 0.1.8.7:
+* **_init_agents_**: comments in code removed
+    ```
+        ├── 📁 CoreApp
+        │   ├── 🐍 _init_agents_.py
+    ```
+#
+
 ### FirebaseKeys change: V 0.1.8.6
 ***(17/11/2024)***
 Updates for version 0.1.8.6:
