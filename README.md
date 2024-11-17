@@ -60,7 +60,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 ## Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
 #
-# Index Team
+## Index Team
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
 - [AI Team Company Accounting](#AI-Team-Company-Accounting)
@@ -77,7 +77,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 - [AI Team Weekly Report](#AI-Team-Weekly-Report)
 - [AI Team Support](#AI-Team-Support)
 
-# Update
+## Update
 
 ### FirebaseKeys change: 0.1.8.6
 ***(17/11/2024)***
@@ -96,7 +96,7 @@ Updates for version 0.1.8.5:
     ```
         ├── 📁 CoreApp
         │   ├── 📁 SoftwareAI
-        │   │   ├── 🐍 Core.py # Arquivo contendo as chaves de API do OpenAI
+        │   │   ├── 🐍 Core.py 
     ```
 
 
@@ -108,7 +108,7 @@ Updates for version 0.1.8.4:
     ```
         ├── 📁 CoreApp
         │   ├── 📁 KeysGitHub
-        │   │   ├── 🐍 keys.py # Arquivo contendo as chaves de API do OpenAI
+        │   │   ├── 🐍 keys.py 
     ```
 
 ### KeysOpenAI add: 0.1.8.3
@@ -118,7 +118,7 @@ Updates for version 0.1.8.3:
     ```
         ├── 📁 CoreApp
         │   ├── 📁 KeysOpenAI
-        │   │   ├── 🐍 keys.py # Arquivo contendo as chaves de API do OpenAI
+        │   │   ├── 🐍 keys.py 
     ```
 
 ### Upload_image_for_vision_in_thread remove: 0.1.8.2
