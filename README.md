@@ -2,10 +2,8 @@
 - [Index-Docs](#Index-Docs)
 - [Info-Update](#Update)
 - [Index-Team](#Index-Team)
-
 * **Current Version**: 
   * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
-#
 * **the path to the buildable version**: 
   * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
 
