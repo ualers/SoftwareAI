@@ -1,6 +1,11 @@
+# Index
+- [Index-Docs](#Index-Docs)
+- [Info-Update](#Update)
+- [Index-Team](#Index-Team)
+
 * **Current Version**: 
   * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
-
+#
 * **the path to the buildable version**: 
   * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
 
@@ -23,14 +28,7 @@
    ```
    * https://github.com/A-I-O-R-G/solana-analyzer
 
-## Index Docs
-- [doc-tools](CoreApp/Docs/doc-tools.md)
-- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
-
-## Info Update
-- [Updates](#Update)
-
-
+#
 # * **💭What is SoftwareAI capable of?**
 * in version 0.1.7, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
 * Watch the potential of SoftwareAI's Unbuildable Beta V 0.1.7 at 
@@ -50,13 +48,17 @@
     https://github.com/A-I-O-R-G/gerador-nome-cursos
 
    ```
-
+#
 # * **💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
-
+#
 # * **💭How did SoftwareAI come about?**
 Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than other models... This made my big project viable, a software organization/company formed by artificial intelligence, all the code will be open and free interpretation, however business applications created with Qt5 from SoftwareAI will be sold and made available at site
-
+#
+## Index Docs
+- [doc-tools](CoreApp/Docs/doc-tools.md)
+- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
+#
 
 ## Index Team
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
@@ -79,8 +81,6 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 
 # Update
 
-
-
 ### FirebaseKeys change: 0.1.8.6
 ***(17/11/2024)***
 Updates for version 0.1.8.6:
@@ -89,8 +89,7 @@ Updates for version 0.1.8.6:
         ├── 📁 CoreApp
         │   ├── 📁 KeysFirebase
     ```
-
-
+#
 
 ### SoftwareAI_Core change: 0.1.8.5
 ***(17/11/2024)***
