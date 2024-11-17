@@ -1,31 +1,33 @@
-# 🌟 Index
-- [Index-Docs](#Index-Docs)
+# 📜 Index
+- [📁-Index-Docs](#📁-Index-Docs)
 - [Info-Update](#Update)
 - [Index-Team](#Index-Team)
+- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
+- [Flowchart](CoreApp/Flowchart)
+
 * **Current Version**: 
   * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
-* **💻the path to the buildable version**: 
-  * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
+* **💻 The path to the buildable version**: 
+  * The first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
 
+   ```bash
+    git clone https://github.com/ualers/SoftwareAI
    ```
-        https://github.com/ualers/SoftwareAI
-   ```
 
-   ```
-        #########################################
-        # IMPORT SoftwareAI Agents
-        from CoreApp._init_agents_ import AgentInitializer
-        #########################################
-        # IMPORT SoftwareAI Libs 
-        from CoreApp._init_libs_ import *
-        #########################################
+   ```python
+    #########################################
+    # IMPORT SoftwareAI Agents
+    from CoreApp._init_agents_ import AgentInitializer
+    #########################################
+    # IMPORT SoftwareAI Libs 
+    from CoreApp._init_libs_ import *
+    #########################################
 
+    byte_manager = AgentInitializer.get_agent('ByteManager') 
 
-        byte_manager = AgentInitializer.get_agent('ByteManager') 
-
-        mensagem = "solicito um script para Análise técnica da criptomoeda solana  "
-        owner_response = byte_manager.AI_1_ByteManager_Company_Owners(mensagem)
-        print(owner_response)
+    mensagem = "solicito um script para Análise técnica da criptomoeda solana  "
+    owner_response = byte_manager.AI_1_ByteManager_Company_Owners(mensagem)
+    print(owner_response)
    ```
    * repository on github generated with the example above: 
    * https://github.com/A-I-O-R-G/solana-analyzer
@@ -57,9 +59,9 @@
 # * **💭How did SoftwareAI come about?**
 Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than other models... This made my big project viable, a software organization/company formed by artificial intelligence, all the code will be open and free interpretation, however business applications created with Qt5 from SoftwareAI will be sold and made available at site
 #
-## Index Docs
+## 📁 Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
-- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
+
 #
 
 ## Index Team
