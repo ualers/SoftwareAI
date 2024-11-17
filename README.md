@@ -79,7 +79,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 
 ## Update
 
-### FirebaseKeys change: 0.1.8.6
+### FirebaseKeys change: V 0.1.8.6
 ***(17/11/2024)***
 Updates for version 0.1.8.6:
 * **FirebaseKeys**: FirebaseKeys Change to KeysFirebase
@@ -89,7 +89,7 @@ Updates for version 0.1.8.6:
     ```
 #
 
-### SoftwareAI_Core change: 0.1.8.5
+### SoftwareAI_Core change: V 0.1.8.5
 ***(17/11/2024)***
 Updates for version 0.1.8.5:
 * **SoftwareAI_Core**: SoftwareAI_Core Change to Core
@@ -101,7 +101,7 @@ Updates for version 0.1.8.5:
 
 
 
-### KeysGitHub add: 0.1.8.4
+### KeysGitHub add: V 0.1.8.4
 ***(17/11/2024)***
 Updates for version 0.1.8.4:
 * **KeysGitHub**: the KeysGitHub folder was added for better structuring of the ​​softwareAI
@@ -111,7 +111,7 @@ Updates for version 0.1.8.4:
         │   │   ├── 🐍 keys.py 
     ```
 
-### KeysOpenAI add: 0.1.8.3
+### KeysOpenAI add: V 0.1.8.3
 ***(17/11/2024)***
 Updates for version 0.1.8.3:
 * **KeysOpenAI**: the KeysOpenAI folder was added for better structuring of the ​​softwareAI
@@ -121,7 +121,7 @@ Updates for version 0.1.8.3:
         │   │   ├── 🐍 keys.py 
     ```
 
-### Upload_image_for_vision_in_thread remove: 0.1.8.2
+### Upload_image_for_vision_in_thread remove: V 0.1.8.2
 ***(17/11/2024)***
 Updates for version 0.1.8.2:
 * **upload_image_for_vision_in_thread**: the function that was deprecated was removed
@@ -129,7 +129,7 @@ Updates for version 0.1.8.2:
         def upload_image_for_vision_in_thread(image_file_path: str, thread_id: str):
     ```
 
-### Store added: 0.1.8.1
+### Store added: V 0.1.8.1
 ***(17/11/2024)***
 Updates for version 0.1.8.1:
 * **Chat completion storage was added**:  enabling the evaluation and adjustment of the model for specific criteria
