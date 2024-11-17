@@ -9,7 +9,6 @@
 
    ```
         https://github.com/ualers/SoftwareAI
-
    ```
 
    ```
@@ -27,8 +26,8 @@
         mensagem = "solicito um script para Análise técnica da criptomoeda solana  "
         owner_response = byte_manager.AI_1_ByteManager_Company_Owners(mensagem)
         print(owner_response)
-
    ```
+   * repository on github generated with the example above: 
    * https://github.com/A-I-O-R-G/solana-analyzer
 
 #
