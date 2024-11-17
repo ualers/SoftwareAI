@@ -1,6 +1,16 @@
+# * **💭What is SoftwareAI?**
+* SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
+
+## Index Docs
+- [doc-tools](CoreApp/Docs/doc-tools.md)
+- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
+
+## Info Update
+- [Updates](#Update)
 
 * **the path to the buildable version**: 
-  * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop
+  * the first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
+
    ```
     #########################################
     # IMPORT SoftwareAI Agents
@@ -18,10 +28,8 @@
     print(owner_response)
 
    ```
+   * https://github.com/A-I-O-R-G/solana-analyzer
 
-
-# * **💭What is SoftwareAI?**
-* SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 
 # * **💭What is SoftwareAI capable of?**
 * in version 0.1.7, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
@@ -32,31 +40,20 @@
     https://github.com/A-I-O-R-G/OrganizaArquivos
     https://github.com/A-I-O-R-G/ConversorMoedasAPI
    ```
+   Beta V 0.1.8
+   ```
+    https://github.com/A-I-O-R-G/solana-analyzer
+    https://github.com/A-I-O-R-G/music-recommendation-system
+    https://github.com/A-I-O-R-G/CSVDataAnalyzer
+    https://github.com/A-I-O-R-G/transcricao-tutorial-youtube
+    https://github.com/A-I-O-R-G/GeradorDeDescricaoDeCursos
+    https://github.com/A-I-O-R-G/gerador-nome-cursos
 
+   ```
 
 * **Current Version**: 
   * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
 
-
-## Index Docs
-- [doc-tools](CoreApp/Docs/doc-tools.md)
-- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
-
-
-## Info Update
-- [SoftwareAI-interface-in-V-2.0.0](#Update)
-- [Launch-ByteManager-Company-Owners](#Update)
-- [Launch-ByteManager-Company-Owners](#Update)
-- [Launch-CloudArchitect-Software-Documentation](#Update)
-- [Launch-Signal-Master-Software-Development](#Update)
-- [Launch-DataWeaver-Software-Development](#Update)
-- [Launch-QuantumCore-Software-Development](#Update)
-- [Launch-SynthOperator-Software-Requirements-Analyst](#Update)
-- [Launch-Cloud-Architect-Software-documentation](#Update)
-- [Launch-Dallas-Solutions-Team](#Update)
-- [Launch-Bob-Project-manager](#Update)
-- [Launch-Tigrao-Software-PreProject-DocumentWriter](#Update)
-- [LaunchCoreApp](#Update)
 
 ## Index Team
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
@@ -78,6 +75,74 @@
 
 
 # Update
+
+
+
+### FirebaseKeys change: 0.1.8.6
+***(17/11/2024)***
+Updates for version 0.1.8.6:
+* **FirebaseKeys**: FirebaseKeys Change to KeysFirebase
+    ```
+        ├── 📁 CoreApp
+        │   ├── 📁 KeysFirebase
+    ```
+
+
+
+### SoftwareAI_Core change: 0.1.8.5
+***(17/11/2024)***
+Updates for version 0.1.8.5:
+* **SoftwareAI_Core**: SoftwareAI_Core Change to Core
+    ```
+        ├── 📁 CoreApp
+        │   ├── 📁 SoftwareAI
+        │   │   ├── 🐍 Core.py # Arquivo contendo as chaves de API do OpenAI
+    ```
+
+
+
+### KeysGitHub add: 0.1.8.4
+***(17/11/2024)***
+Updates for version 0.1.8.4:
+* **KeysGitHub**: the KeysGitHub folder was added for better structuring of the ​​softwareAI
+    ```
+        ├── 📁 CoreApp
+        │   ├── 📁 KeysGitHub
+        │   │   ├── 🐍 keys.py # Arquivo contendo as chaves de API do OpenAI
+    ```
+
+### KeysOpenAI add: 0.1.8.3
+***(17/11/2024)***
+Updates for version 0.1.8.3:
+* **KeysOpenAI**: the KeysOpenAI folder was added for better structuring of the ​​softwareAI
+    ```
+        ├── 📁 CoreApp
+        │   ├── 📁 KeysOpenAI
+        │   │   ├── 🐍 keys.py # Arquivo contendo as chaves de API do OpenAI
+    ```
+
+### Upload_image_for_vision_in_thread remove: 0.1.8.2
+***(17/11/2024)***
+Updates for version 0.1.8.2:
+* **upload_image_for_vision_in_thread**: the function that was deprecated was removed
+    ```
+        def upload_image_for_vision_in_thread(image_file_path: str, thread_id: str):
+    ```
+
+### Store added: 0.1.8.1
+***(17/11/2024)***
+Updates for version 0.1.8.1:
+* **Chat completion storage was added**:  enabling the evaluation and adjustment of the model for specific criteria
+    ```
+        data = {
+            "model": "gpt-4o-mini",  
+            "messages": mensagem,
+            "store": True,
+            "max_tokens": 16_384,
+            "response_format": { "type": formato },
+        }
+
+    ```
 
 ### add Roadmaps, Docs, _init_paths_.py, Fluxogram beta v 0.1.8.pdf, Instructions, Tools ***(16/11/2024)***  SoftwareAI 0.1.8
 
