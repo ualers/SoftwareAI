@@ -1,37 +1,62 @@
-# 📜 Index
-- [📁 Index Docs](#Index-Docs)
-- [Info-Update](#Update)
-- [Index-Team](#Index-Team)
-- [Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
-- [Flowchart](CoreApp/Flowchart)
+# 🤖 SoftwareAI Documentation
 
-* **Current Version**: 
+![Version](https://img.shields.io/badge/version-0.1.8-blue)
+![Status](https://img.shields.io/badge/status-beta-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+# 📜 Index
+- [📖 Sobre](#About)
+- [🚀 Starting](#Getting-Started)
+- [💡 Features](#Features)
+- [📁 Index Docs](#Index-Docs)
+- [🔄 Info-Update](#Update)
+- [👥 Index-Team](#Index-Team)
+- [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
+- [📊 Flowchart](CoreApp/Flowchart)
+
+* **Current Version**: ![Version](https://img.shields.io/badge/version-0.1.8-blue)
+
   * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
     ```bash
     git clone https://github.com/ualers/SoftwareAI
     ```
 
-* **💻 The path to the buildable version**: 
-  * The first example of how to execute software creation, currently after completing the creation of the software repository on github, a 5 improvement loop takes place
-    ```python
-    #########################################
-    # IMPORT SoftwareAI Agents
-    from CoreApp._init_agents_ import AgentInitializer
-    #########################################
-    # IMPORT SoftwareAI Libs 
-    from CoreApp._init_libs_ import *
-    #########################################
 
-    byte_manager = AgentInitializer.get_agent('ByteManager') 
+## 🚀 Getting Started
 
-    mensagem = "solicito um script para Análise técnica da criptomoeda solana  "
-    owner_response = byte_manager.AI_1_ByteManager_Company_Owners(mensagem)
-    print(owner_response)
-    ```
-    * repository on github generated with the example above: 
-    * https://github.com/A-I-O-R-G/solana-analyzer
+### Installation
+```bash
+git clone https://github.com/ualers/SoftwareAI
+```
 
-#
+### Basic Usage
+```python
+# Importing SoftwareAI Agents
+from CoreApp._init_agents_ import AgentInitializer
+
+# Importing SoftwareAI Libraries
+from CoreApp._init_libs_ import *
+
+# Initializing Agent
+byte_manager = AgentInitializer.get_agent('ByteManager') 
+
+# Usage Example
+message = "I request a script for technical analysis of Solana cryptocurrency"
+owner_response = byte_manager.AI_1_ByteManager_Company_Owners(message)
+print(owner_response)
+```
+
+## 💡 Current Features 
+- 📊 Creation of pre-project documentation
+- 🗺️ Roadmap generation
+- 📅 Automatic schedules
+- 📝 Requirements analysis
+- 🔄 GitHub repository management
+- ⚡ Loop of 5 automatic improvements
+- 📚 Repository on github generated with the example above: https://github.com/A-I-O-R-G/solana-analyzer
+
+
+## 📖 About
 # * **💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 #
@@ -41,19 +66,30 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 # * **💭What is SoftwareAI capable of?**
 * in version 0.1.7, SoftwareAI is capable of creating software with a pre-project document, project roadmap, schedule, spreadsheet, requirement analysis, in addition to creating the software repository on github with the code, README.MD and description in addition to implementing 1 improvement through commit, in version 0.1 all teams that make up the organization have communication limited to importing python, there is still no intercommunication between teams
 * Watch the potential of SoftwareAI's Unbuildable Beta V 0.1.7 at 
-    * https://github.com/A-I-O-R-G/Twitch-VOD-Downloader
-    * https://github.com/A-I-O-R-G/PDFGenPython
-    * https://github.com/A-I-O-R-G/OrganizaArquivos
-    * https://github.com/A-I-O-R-G/ConversorMoedasAPI
+    ### Beta v0.1.8 (Current)
+    Demonstration Projects:
+    - [💹 Solana Analyzer](https://github.com/A-I-O-R-G/solana-analyzer)
+    - [🎵 Music Recommendation System](https://github.com/A-I-O-R-G/music-recommendation-system)
+    - [📝 YouTube Tutorial Transcription](https://github.com/A-I-O-R-G/transcricao-tutorial-youtube)
+    - [📊 CSV Data Analyzer](https://github.com/A-I-O-R-G/CSVDataAnalyzer)
+    - [📚 Course Description Generator](https://github.com/A-I-O-R-G/GeradorDeDescricaoDeCursos)
 
-* Watch the potential of SoftwareAI's Unbuildable Beta V 0.1.8 at 
-    * https://github.com/A-I-O-R-G/solana-analyzer
-    * https://github.com/A-I-O-R-G/music-recommendation-system
-    * https://github.com/A-I-O-R-G/transcricao-tutorial-youtube
-    * https://github.com/A-I-O-R-G/CSVDataAnalyzer
-    * https://github.com/A-I-O-R-G/GeradorDeDescricaoDeCursos
-    * https://github.com/A-I-O-R-G/gerador-nome-cursos
+    ### Beta v0.1.7 (Previous)
+    Demonstration Projects:
+    - [📺 Twitch VOD Downloader](https://github.com/A-I-O-R-G/Twitch-VOD-Downloader)
+    - [📄 PDFGenPython](https://github.com/A-I-O-R-G/PDFGenPython)
+    - [📁 OrganizaArquivos](https://github.com/A-I-O-R-G/OrganizaArquivos)
+    - [💱 ConversorMoedasAPI](https://github.com/A-I-O-R-G/ConversorMoedasAPI)
 
+## 📁 Structure
+```
+CoreApp/
+├── Roadmaps/
+│ └── SoftwareAI-Roadmap.md
+├── Flowchart/
+├── _init_agents_/
+└── _init_libs_/
+```
 #
 ## Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
@@ -88,11 +124,10 @@ Updates for version 0.1.9.0:
                 ```python
                 load_dotenv(dotenv_path=r"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\ambiente.env")
                 ```
-                now:
+                Now:
                 ```python
                 load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "ambiente.env"))
                 ```
-
     ```
 #
 ### _init_libs_ improviments: V 0.1.8.9
