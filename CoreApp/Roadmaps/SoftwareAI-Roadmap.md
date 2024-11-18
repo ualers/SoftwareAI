@@ -63,6 +63,12 @@ Functional base of the SoftwareAI framework with initial teams active.
   - [x] Create `CoreApp/_init_paths_`: Initializes all workspace paths.  
   - [x] Create `CoreApp/ambiente`: Environment variables file for storing all workspace paths.  
 
+- **2.6 - Work_Environment Refactoring**  
+  - [x] the name of the workbook created by CEO
+  - [ ] name refactoring in 'Create_Cronograma_e_planilha_Projeto', 'Create_doc_Pre_Projeto', 'Create_documentation', 'Create_Roadmap_Projeto', 'Software_Development', 'Software_Requirements_Analysis'
+  - [ ] ask the QuantumCore to create and structure the 'Software_Development' folder according to the project
+  - [ ] 
+
 ### **Expected Delivery:**  
 A mature framework with basic team communication support.
 
