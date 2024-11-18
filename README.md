@@ -5,20 +5,21 @@
 ![License](https://img.shields.io/badge/license-Apache-green)
 
 # 📜 Index
-- [📖 About](#About)
-- [🚀 Starting](#getting-started)
-- [💡 Features](#features)
+- [📖 About](#-about)
+- [🚀 Starting](#-getting-started)
+- [💡 Features](#-features)
 - [📁 Index Docs](#Index-Docs)
 - [🔄 Info-Update](#Update)
 - [👥 Index-Team](#Index-Team)
 - [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 - [📊 Flowchart](CoreApp/Flowchart)
-- [📁 Structure](#structure)
+- [📁 Structure](#Structure)
+- [🤝 Contributing](#-contributing)
 
 ⚠️ **Note**: This project is in beta phase and does not reflect the final product.
 
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 ```bash
@@ -42,7 +43,7 @@ owner_response = byte_manager.AI_1_ByteManager_Company_Owners(message)
 print(owner_response)
 ```
 
-## 💡 Current Features 
+## 💡 Features
 - 📊 Creation of pre-project documentation
 - 🗺️ Roadmap generation
 - 📅 Automatic schedules
@@ -53,7 +54,7 @@ print(owner_response)
 
 
 ## 📖 About
-# * **💭What is SoftwareAI?**
+# * **🤔💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
 #
 # * **💭How did SoftwareAI come about?**
@@ -77,7 +78,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
     - [📁 OrganizaArquivos](https://github.com/A-I-O-R-G/OrganizaArquivos)
     - [💱 ConversorMoedasAPI](https://github.com/A-I-O-R-G/ConversorMoedasAPI)
 
-## 📁 Structure
+## Structure
 ```
 CoreApp/
 ├── Roadmaps/
@@ -86,6 +87,14 @@ CoreApp/
 ├── _init_agents_/
 └── _init_libs_/
 ```
+
+## 🤝 Contributing
+While SoftwareAI is primarily AI-driven, we welcome contributions from the community:
+- 🐛 Bug Reports
+- 💡 Feature Suggestions
+- 📝 Documentation Improvements
+- 🔧 Code Contributions
+
 #
 ## Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
