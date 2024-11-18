@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-Apache-green)
 
 # 📜 Index
-- [📖 About](#📖-About)
+- [📖 About](#About)
 - [🚀 Starting](#getting-started)
 - [💡 Features](#features)
 - [📁 Index Docs](#Index-Docs)
