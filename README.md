@@ -98,10 +98,11 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 │    │       │    └── 🐍 AI_SignalMaster_Software_Development.py
 │    │       │
 │    │       ├── 📁 Software_Documentation/
-│    │       │    │   └── 📁 AI_CloudArchitect_Software_Documentation.py
-│    │       │    │   └── 📑docs_uploaded.log
 │    │       │    ├── 📁 DocGitHubData/
-│    │       │           └── 📑READMEALLDATA.md
+│    │       │    │       └── 📑READMEALLDATA.md
+│    │       │    │
+│    │       │    └── 🐍 AI_CloudArchitect_Software_Documentation.py
+│    │       │    └── 📑docs_uploaded.log
 │    │       │
 │    │       ├── 📁 Software_Planning/
 │    │       │    └── 🐍 AI_Bob_Software_Planning.py
