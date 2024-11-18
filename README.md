@@ -8,18 +8,18 @@
 - [📖 About](#-about)
 - [🚀 Starting](#-getting-started)
 - [💡 Features](#-features)
-- [📁 Index Docs](#Index-Docs)
-- [🔄 Info-Update](#Update)
-- [👥 Index-Team](#Index-Team)
+- [📁 Index Docs](#-index-docs)
+- [👥 Index-Team](#-index-team)
+- [🔄 Info-Update](#-update)
 - [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 - [📊 Flowchart](CoreApp/Flowchart)
-- [📁 Structure](#Structure)
+- [📁 Project Structure](#-structure)
 - [🤝 Contributing](#-contributing)
 
 ⚠️ **Note**: This project is in beta phase and does not reflect the final product.
 
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Installation
 ```bash
@@ -78,7 +78,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
     - [📁 OrganizaArquivos](https://github.com/A-I-O-R-G/OrganizaArquivos)
     - [💱 ConversorMoedasAPI](https://github.com/A-I-O-R-G/ConversorMoedasAPI)
 
-## Structure
+## 📁 Structure
 ```
 CoreApp/
 ├── Roadmaps/
@@ -96,10 +96,10 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 - 🔧 Code Contributions
 
 #
-## Index Docs
+## 📁 Index Docs
 - [doc-tools](CoreApp/Docs/doc-tools.md)
 #
-## Index Team
+## 👥 Index Team
 - [AI-Team-Company-Owners](#AI-Team-Company-Owners)
 - [AI Team Company Managers](#AI-Team-Company-Managers)
 - [AI Team Company Accounting](#AI-Team-Company-Accounting)
@@ -116,7 +116,7 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 - [AI Team Weekly Report](#AI-Team-Weekly-Report)
 - [AI Team Support](#AI-Team-Support)
 
-## Update
+## 🔄 Update
 
 ### _init_paths_ improviments: V 0.1.9.0
 ***(17/11/2024)***
