@@ -281,20 +281,21 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 ***(18/11/2024)***
 Updates for version 0.1.9.5:
 * **_init_paths_**: change _init_paths_ 
+```
+├── 📁 CoreApp
+    ├── 🐍 _init_paths_.py
+```
+Before:
+```python
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "ambiente.env"))
+load_dotenv(find_dotenv('ambiente.env'), override=True)
+```
+Now:
+```python
+    load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "environment.env"))
+    load_dotenv(find_dotenv('environment.env'), override=True)
+```
 
-    ├── 📁 CoreApp
-        ├── 🐍 _init_paths_.py
-            Before:
-            ```python
-            load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "ambiente.env"))
-            load_dotenv(find_dotenv('ambiente.env'), override=True)
-            ```
-            Now:
-            ```python
-            load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "environment.env"))
-            load_dotenv(find_dotenv('environment.env'), override=True)
-            ```
-    
 #
 ### change AI_ByteManager_Company_CEO: V 0.1.9.4
 ***(18/11/2024)***
