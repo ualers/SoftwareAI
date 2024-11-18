@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/status-beta-yellow)
 ![License](https://img.shields.io/badge/license-Apache-green)
 
-# 📜 Index
+# 📜 Table of Contents
 - [📖 About](#-about)
 - [🚀 Starting](#-getting-started)
 - [💡 Features](#-features)
@@ -15,9 +15,9 @@
 - [📊 Flowchart](CoreApp/Flowchart)
 - [📁 Project Structure](#-structure)
 - [🤝 Contributing](#-contributing)
-
-⚠️ **Note**: This project is in beta phase and does not reflect the final product.
-
+#
+⚠️ **Note**: SoftwareAI is in beta phase and does not currently reflect the final product.
+#
 
 ## 🚀 Getting Started
 
