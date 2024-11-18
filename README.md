@@ -78,7 +78,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
     - [📁 OrganizaArquivos](https://github.com/A-I-O-R-G/OrganizaArquivos)
     - [💱 ConversorMoedasAPI](https://github.com/A-I-O-R-G/ConversorMoedasAPI)
 
-## 📁 Structure
+## 📚 SoftwareAI Structure
 ```
 📁CoreApp/
 │    ├── 📁Agents/
@@ -326,7 +326,7 @@ Updates for version 0.1.9.4:
                                     print(f".env carregado de: {env_path}")
                                 else:
                                     print(f"Erro: Arquivo environment.env não encontrado em {env_path}")
-                                    
+
                             self.load_env()
                             
                         ```
