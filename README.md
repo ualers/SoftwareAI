@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-Apache-green)
 
 # 📜 Index
-- [📖 About](#about)
+- [📖 About](#📖-About)
 - [🚀 Starting](#getting-started)
 - [💡 Features](#features)
 - [📁 Index Docs](#Index-Docs)
@@ -13,6 +13,7 @@
 - [👥 Index-Team](#Index-Team)
 - [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 - [📊 Flowchart](CoreApp/Flowchart)
+- [📁 Structure](#structure)
 
 ⚠️ **Note**: This project is in beta phase and does not reflect the final product.
 
