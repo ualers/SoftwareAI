@@ -118,6 +118,21 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 
 ## 🔄 Update
 
+### SoftwareAI-Roadmap improviments: V 0.1.9.1
+***(17/11/2024)***
+Updates for version 0.1.9.1:
+* **SoftwareAI-Roadmap**: improvement 
+    ```
+        ├── 📁 CoreApp
+        │   ├── 📁Roadmaps
+        │   ├── 📑 SoftwareAI-Roadmap.md
+                ```bash
+                - [ ] name refactoring in 'Create_Cronograma_e_planilha_Projeto', 'Create_doc_Pre_Projeto', 'Create_documentation', 'Create_Roadmap_Projeto', 'Software_Development', 'Software_Requirements_Analysis'
+                - [ ] ask the QuantumCore to create and structure the 'Software_Development' folder according to the project
+                - [ ] 
+                ```
+    ```
+#
 ### _init_paths_ improviments: V 0.1.9.0
 ***(17/11/2024)***
 Updates for version 0.1.9.0:
