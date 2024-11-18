@@ -241,7 +241,7 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 │    └── 🐍 _init_keys_.py
 │    └── 🐍 _init_libs_.py
 │    └── 🐍 _init_paths_.py
-│    └── 🔧 ambiente.env
+│    └── 🔧 environment.env
 │
 └── 🐍 Youscript.py
 
@@ -277,6 +277,77 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 
 ## 🔄 Update
 
+### change _init_paths_: V 0.1.9.5
+***(18/11/2024)***
+Updates for version 0.1.9.5:
+* **_init_paths_**: change _init_paths_ 
+    ```
+        ├── 📁 CoreApp
+            ├── 🐍 _init_paths_.py
+                Before:
+                ```python
+                load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "ambiente.env"))
+                load_dotenv(find_dotenv('ambiente.env'), override=True)
+                ```
+                Now:
+                ```python
+                load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "environment.env"))
+                load_dotenv(find_dotenv('environment.env'), override=True)
+                ```
+    ```
+#
+### change AI_ByteManager_Company_CEO: V 0.1.9.4
+***(18/11/2024)***
+Updates for version 0.1.9.4:
+* **AI_ByteManager_Company_CEO**: change AI_ByteManager_Company_CEO 
+    ```
+        ├── 📁 CoreApp
+            ├── 📁 Agents
+                ├── 📁 Company_CEO
+                    ├── 🐍 AI_ByteManager_Company_CEO.py
+                        Before:
+                        ```python
+                        load_dotenv(dotenv_path=r"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\ambiente.env")
+                        ```
+                        Now:
+                        ```python
+
+                            def load_env(self):
+                                """
+                                Method to load the .env file located in the two folders above the script.
+                                """
+                                # Caminho relativo para o .env
+                                script_dir = os.path.dirname(__file__)
+                                env_path = os.path.abspath(os.path.join(script_dir, "../..", "environment.env"))
+                                
+                                # Carregar o arquivo .env se ele existir
+                                if os.path.exists(env_path):
+                                    load_dotenv(env_path)
+                                    print(f".env carregado de: {env_path}")
+                                else:
+                                    print(f"Erro: Arquivo environment.env não encontrado em {env_path}")
+                                    
+                            self.load_env()
+                            
+                        ```
+    ```
+#
+### change name ambiente: V 0.1.9.3
+***(18/11/2024)***
+Updates for version 0.1.9.3:
+* **ambiente**: change ambiente to  environment
+    ```
+        ├── 📁 CoreApp
+        ├── 📑 environment.env
+                Before:
+                ```bash
+                ambiente.env
+                ```
+                Now:
+                ```bash
+                environment.env
+                ```
+    ```
 ### Structure: V 0.1.9.2
 ***(18/11/2024)***
 Updates for version 0.1.9.2:
