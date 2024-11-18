@@ -13,7 +13,7 @@
 - [🔄 Info-Update](#-update)
 - [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 - [📊 Flowchart](CoreApp/Flowchart)
-- [📁 Project Structure](#-structure)
+- [📁 Project Structure](#-softwareai-structure)
 - [🤝 Contributing](#-contributing)
 #
 ⚠️ **Note**: SoftwareAI is in beta phase and does not currently reflect the final product.
@@ -353,7 +353,7 @@ environment.env
 ***(18/11/2024)***
 Updates for version 0.1.9.2:
 * **Structure**: improvement 
-    - [📁 Project Structure](#-structure)
+    - [📁 Project Structure](#-softwareai-structure)
 #
 ### SoftwareAI-Roadmap improviments: V 0.1.9.1
 ***(17/11/2024)***
