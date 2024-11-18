@@ -1,5 +1,3 @@
-
-# Importa todos os agentes necessários
 from .Agents.Company_CEO.AI_ByteManager_Company_CEO import ByteManager
 from .Agents.Software_Planning.AI_Bob_Software_Planning import Gerente_de_projeto
 from .Agents.Software_Documentation.AI_CloudArchitect_Software_Documentation import Software_Documentation
@@ -13,12 +11,11 @@ from .Agents.Pre_Project.AI_Tigrao_Pre_Project import Pre_Project_Document
 from .Agents.Software_Development.AI_NexGenCoder_Software_Development import SoftwareDevelopment_NexGenCoder
 
 class AgentInitializer:
-    # Dicionário para armazenar instâncias de agentes
     _agents = {}
 
     @classmethod
     def initialize_agents(cls):
-        """Inicializa todos os agentes e armazena no dicionário _agents."""
+        """Initializes all agents and stores them in the _agents dictionary."""
         cls._agents['Gerente_de_projeto'] = Gerente_de_projeto()
         cls._agents['Company_Managers'] = Company_Managers() 
         cls._agents['Pre_Project_Document'] = Pre_Project_Document() 
@@ -43,11 +40,9 @@ class AgentInitializer:
             cls._agents['SoftwareDevelopment']
         )
 
-
     @classmethod
     def get_agent(cls, agent_name):
-        """Retorna uma instância do agente pelo nome."""
+        """Returns an agent instance by name."""
         return cls._agents.get(agent_name)
 
-# Inicializar todos os agentes ao importar este módulo
 AgentInitializer.initialize_agents()
