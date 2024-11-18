@@ -1,3 +1,4 @@
+# IMPORT SoftwareAI Core 
 from .SoftwareAI.Core import (
         AutenticateAgent,
         ResponseAgent,
@@ -5,4 +6,4 @@ from .SoftwareAI.Core import (
         Agent_files,
         Agent_files_update
 )
-
+#########################################
