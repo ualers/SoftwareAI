@@ -20,6 +20,7 @@ from ...SoftwareAI.Tools._init_tools_ import *
 #########################################
 
 
+
 class ByteManager:
     def __init__(self, 
                 Company_Managers,
@@ -37,7 +38,23 @@ class ByteManager:
         self.Softwareanaysis = Softwareanaysis
         self.SoftwareDevelopment = SoftwareDevelopment
 
-    ##############################################################################################
+
+    def load_env(self):
+        """
+        Method to load the .env file located in the two folders above the script.
+        """
+        # Caminho relativo para o .env
+        script_dir = os.path.dirname(__file__)
+        env_path = os.path.abspath(os.path.join(script_dir, "../..", "environment.env"))
+        
+        # Carregar o arquivo .env se ele existir
+        if os.path.exists(env_path):
+            load_dotenv(env_path)
+            print(f".env carregado de: {env_path}")
+        else:
+            print(f"Erro: Arquivo environment.env não encontrado em {env_path}")
+
+    
     def AI_1_ByteManager_Company_Owners(self,mensagem):
         """Nome da IA: ByteManager \n
         Função: Dono de Empresa de Software \n
@@ -188,11 +205,12 @@ class ByteManager:
                 "PATH_ANALISE_ENV": os.path.join(base_path, "Software_Requirements_Analysis", "analise.txt")
             }
 
-            envvv = "CoreApp/ambiente.env"
+            envvv = "CoreApp/environment.env"
             flag = python_functions.update_multiple_env_variables(new_paths, envvv)
 
-            from dotenv import load_dotenv
-            load_dotenv(dotenv_path=r"C:\Users\Media Cuts Studio\Desktop\Saas do site\Projetos de codigo aberto\SoftwareAI\CoreApp\ambiente.env")
+         
+            self.load_env()
+
 
             if flag:
                 print(flag)
