@@ -2,24 +2,19 @@
 
 ![Version](https://img.shields.io/badge/version-0.1.8-blue)
 ![Status](https://img.shields.io/badge/status-beta-yellow)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-Apache-green)
 
 # 📜 Index
-- [📖 Sobre](#About)
-- [🚀 Starting](#Getting-Started)
-- [💡 Features](#Features)
+- [📖 About](#about)
+- [🚀 Starting](#getting-started)
+- [💡 Features](#features)
 - [📁 Index Docs](#Index-Docs)
 - [🔄 Info-Update](#Update)
 - [👥 Index-Team](#Index-Team)
 - [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
 - [📊 Flowchart](CoreApp/Flowchart)
 
-* **Current Version**: ![Version](https://img.shields.io/badge/version-0.1.8-blue)
-
-  * SoftwareAI is in beta phase and does not currently reflect the final product: Beta V 0.1.8
-    ```bash
-    git clone https://github.com/ualers/SoftwareAI
-    ```
+⚠️ **Note**: This project is in beta phase and does not reflect the final product.
 
 
 ## 🚀 Getting Started
