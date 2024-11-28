@@ -1,0 +1,173 @@
+{
+    "QMainWindow": [
+        {
+            "tittle":"Software AI",
+            "icon":":/feather/icons/feather/user.png",
+            "frameless": true,
+            "transluscentBg": true
+            
+        },
+        {
+			"shadow":[
+				{
+					"color": "#555",
+					"blurRadius": 20,
+					"xOffset": 0,
+					"yOffset": 0,
+					"centralWidget": "centralwidget"
+				}
+			]
+		},
+        {
+			"navigation":[
+				{
+					"moveWindow": "frame_4"
+				},
+				{
+                    "minimize":"minimize_window_button",
+					"close": "close_window_button",
+					"restore":[
+						{	
+							"buttonName": "restore_window_button",
+							"normalIcon": ":/feather/icons/feather/maximize-2.png",
+							"maximizedIcon": ":/feather/icons/feather/minimize-2.png"
+						}
+					]
+				}
+
+			]
+		}
+    ],
+	"QPushButton": [
+		{
+			"name": "settings_agent",
+			"defaultStyle": [
+				"border-style: solid;",
+				"border-width: 2px;",
+				"border-radius: 3px;",
+				"color: #d3dae3;",
+				"padding: 5px;"
+			]
+		}
+	],
+    "QCustomCheckBox":[
+        {
+			"name":"checkBox_2",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+		{
+			"name":"checkBox",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+        {
+			"name":"checkBox_3",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+        {
+			"name":"checkBox_4",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+        {
+			"name":"checkBox_5",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+        {
+			"name":"checkBox_6",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		},
+        {
+			"name":"checkBox_7",
+			"bgColor":"#2e3739",
+			"circleColor":"#1dbf73",
+			"activeColor":"#7b7b7b",
+			"animationEasingCurve":"InOutCubic",
+			"animationDuration":500
+		}
+
+        
+	],
+    "QCustomQStackedWidget":[
+		{
+			"name":"stackedWidget_2",
+			"navigation":[
+				{
+					"nextPage":"settings_agent",
+					"previousPage": "pushButton_5"
+
+				}
+			]
+
+		}
+	],
+    "QCustomSlideMenu": [{
+            "name": "widget",
+            "defaultSize": [{
+                "width": 110,
+                "height": 711
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": 711
+            }],
+            "expandedSize": [{
+                "width": 108,
+                "height": 711
+            }],
+
+            "toggleButton": [{
+                "buttonName": "pushButton_16",
+                "icons": [{
+                    "whenMenuIsCollapsed": ":/feather/icons/feather/align-center.png",
+                    "whenMenuIsExpanded": ":/feather/icons/feather/chevrons-left.png"
+                }]
+
+            }]
+        }
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": [
+                        {
+                            "Background-color": "#16191d",
+                            "Text-color": "#fff",
+                            "Accent-color": "#03C3C3",
+                            "Theme-name": "Dark-Blue",
+                            "Default-Theme": true
+                        }
+                    ]
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "Urobot Software",
+                "ApplicationName": "SoftwareAI",
+                "OrginizationDormain": "UrobotSoftware.org"
+            }
+        }
+    ]
+}
