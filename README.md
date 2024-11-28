@@ -11,8 +11,8 @@
 - [📁 Index Docs](#-index-docs)
 - [👥 Index-Team](#-index-team)
 - [🔄 Info-Update](#-update)
-- [🗺️ Roadmaps](CoreApp/Roadmaps/SoftwareAI-Roadmap.md)
-- [📊 Flowchart](CoreApp/Flowchart)
+- [🗺️ Roadmaps](Roadmaps/SoftwareAI-Roadmap.md)
+- [📊 Flowchart](Flowchart/Fluxogram-beta-v-0.1.8.pdf)
 - [📁 Project Structure](#-softwareai-structure)
 - [🤝 Contributing](#-contributing)
 #
@@ -80,6 +80,14 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 
 ## 📚 SoftwareAI Structure
 ```
+📁 Docs/
+    └── 📖 doc-tools.md
+📁 Examples/
+    └── 🐍 exemple_1.py
+📁 Flowchart/
+    └── 🗺️ Fluxogram beta v 0.1.8.pdf
+📁 Roadmaps/
+    └── 📖 SoftwareAI-Roadmap.md
 📁CoreApp/
 │    ├── 📁Agents/
 │    │       ├── 📁 Company_CEO/
@@ -111,11 +119,6 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 │    │       ├── 📁 Software_Requirements_Analysis/
 │    │       │    └── 🐍 AI_SynthOperator_Software_Requirements_Analysis.py
 │    │       │
-│    ├── 📁 Examples/
-│    │    └── 🐍 exemple_1.py
-│    │
-│    ├── 📁 Flowchart/
-│    │    └── 🗺️ Fluxogram beta v 0.1.8.pdf
 │    │
 │    ├── 📁 KeysFirebase/
 │    │    └── 🐍 keys.py
@@ -125,9 +128,6 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
 │    │
 │    ├── 📁 KeysOpenAI/
 │    │    └── 🐍 keys.py
-│    │
-│    ├── 📁 Roadmaps/
-│    │ └── 📖 SoftwareAI-Roadmap.md
 │    │
 │    ├── 📁 SoftwareAI/
 │    │       ├── 📁 Functions/
@@ -277,6 +277,7 @@ While SoftwareAI is primarily AI-driven, we welcome contributions from the commu
 - [AI Team Support](#AI-Team-Support)
 
 ## 🔄 Update
+
 
 ### change _init_paths_: V 0.1.9.5
 ***(18/11/2024)***
