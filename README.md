@@ -6,7 +6,9 @@
 
 # 📜 Table of Contents
 - [📖 About](#-about)
-- [🚀 Starting](#-getting-started)
+- [🚀 Starting Without Ui](#-getting-started-softwareai-without-ui)
+- [🚀 Starting With Ui](#-start-softwareai-with-ui)
+
 - [💡 Features](#-features)
 - [📁 Index Docs](#-index-docs)
 - [👥 Index-Team](#-index-team)
@@ -19,7 +21,26 @@
 ⚠️ **Note**: SoftwareAI is in beta phase and does not currently reflect the final product.
 #
 
-## 🚀 Getting Started
+
+## 🚀 Start SoftwareAI with UI
+⚠️ **Note**: This is just the first version of the example, there are no teams yet and it is only possible to talk to "MatrixAI"
+![UI](Gifs/2024-11-28-12-21-01.gif)
+
+### Installation
+```bash
+git clone https://github.com/ualers/SoftwareAI
+```
+### Basic Usage
+```bash
+SoftwareAIChat.py
+```
+
+#
+
+
+
+
+## 🚀 Get started SoftwareAI without UI
 
 ### Installation
 ```bash
@@ -88,7 +109,58 @@ Thu, July 18th at 4:17 pm OPENAI launched the GPT-4o mini, 60% cheaper than othe
     └── 🗺️ Fluxogram beta v 0.1.8.pdf
 📁 Roadmaps/
     └── 📖 SoftwareAI-Roadmap.md
-📁CoreApp/
+📁 CoreUi/
+│    ├── 📁 ChatSoftwareAI/
+│    │       ├── 📁 Chat/
+│    │       │    └── 🐍 AIQthread.py
+│    │       │    └── 🐍 Message_Reeceive.py
+│    │       ├── 📁 generated-files/
+│    │       │      ├── 📁 css/
+│    │       │      │    └── 🎨 main.css
+│    │       │      ├── 📁 json/
+│    │       │      │    └── 🛠️ cliente_and_chat.json
+│    │       │      │    └── 🛠️ interface.json
+│    │       │      ├── 📁 ui/
+│    │       │      │    └── ✨ new_cliente_and_chat.ui
+│    │       │      │    └── ✨ new_interface.ui
+│    │       ├── 📁 JsonStyle/
+│    │       │      └── 🛠️ style.json
+│    │       ├── 📁 logs/
+│    │       │      └── 🔍 custom_widgets.log
+│    │       ├── 📁 Qss/
+│    │       │      ├── 📁 icons/
+│    │       │      │    └── 📦 _icons.qrc
+│    │       │      │    ├── 📁 icons/
+│    │       │      │    │   ├── 📁 feather/
+│    │       │      │    │   │   └── 🖼️ icons.png
+│    │       │      │    │   ├── 📁 font_awesome/
+│    │       │      │    │   │      └── 🖼️ icons.png
+│    │       │      │    │   ├── 📁 material_design/
+│    │       │      │    │   │      └── 🖼️ icons.png
+│    │       │      │    ├── 📁 03C3C3/
+│    │       │      │    │   ├── 📁 feather/
+│    │       │      │    │   │   └── 🖼️ icons.png
+│    │       │      │    │   ├── 📁 font_awesome/
+│    │       │      │    │   │      └── 🖼️ icons.png
+│    │       │      │    │   ├── 📁 material_design/
+│    │       │      │    │   │      └── 🖼️ icons.png
+│    │       │      ├── 📁 scss/
+│    │       │      │    └── ✂️ _styles.scss
+│    │       │      │    └── ✂️ _variables.scss
+│    │       │      │    └── ✂️ defaultStyle.scss
+│    │       │      │    └── ✂️ main.scss
+│    │       ├── 📁 src_/
+│    │       │    └── 🐍 icons_interpreter.py
+│    │       │    └── 🐍 ui_cliente_and_chat.py
+│    │       │    └── 🐍 ui_interface.py
+│    │       ├── 📁 ui/
+│    │       │    └── 🎨 cliente_and_chat.ui
+│    │       │    └── 🎨 interface.ui
+│    │       │
+│    │       └── 🐍 Convert.py
+│    │       └── 🐍 main.py
+│    │
+📁 CoreApp/
 │    ├── 📁Agents/
 │    │       ├── 📁 Company_CEO/
 │    │       │    └── 🐍 AI_ByteManager_Company_CEO.py
