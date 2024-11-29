@@ -26,14 +26,19 @@
 ⚠️ **Note**: This is just the first version of the example, there are no teams yet and it is only possible to talk to "MatrixAI"
 ![UI](Gifs/2024-11-28-12-21-01.gif)
 
-### Installation
+### Installation 1
 ```bash
 git clone https://github.com/ualers/SoftwareAI
+```
+### Installation 2
+```bash
+pip install -r requirements.txt
 ```
 ### Basic Usage
 ```bash
 SoftwareAIChat.py
 ```
+
 
 #
 
@@ -42,11 +47,14 @@ SoftwareAIChat.py
 
 ## 🚀 Get started SoftwareAI without UI
 
-### Installation
+### Installation 1
 ```bash
 git clone https://github.com/ualers/SoftwareAI
 ```
-
+### Installation 2
+```bash
+pip install -r requirements.txt
+```
 ### Basic Usage
 ```python
 # Importing SoftwareAI Agents
