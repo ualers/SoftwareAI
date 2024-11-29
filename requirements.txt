@@ -7,7 +7,7 @@ PySide2extn
 firebase-admin
 
 # Concurrent processing
-concurrent.futures
+futures
 
 # Asynchronous programming
 asyncio
