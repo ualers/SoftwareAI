@@ -64,13 +64,10 @@ pip install -r requirements.txt
 ```bash
 SoftwareAIChat.py
 ```
-
-
 #
-
-
-
-
+#
+#
+#
 ## 🚀 Get started SoftwareAI without UI
 
 ### Installation SoftwareAI
@@ -106,8 +103,8 @@ print(owner_response)
 - 🔄 GitHub repository management
 - ⚡ Loop of 5 automatic improvements
 - 📚 Repository on github generated with the example above: https://github.com/A-I-O-R-G/solana-analyzer
-
-
+#
+#
 ## 📖 About
 # * **🤔💭What is SoftwareAI?**
 * SoftwareAI is an AI framework with the aim of creating a software/application development company/organization governed by AI, its purpose is not only to create the software with updates, landing page, technical and github documentation, schedules and spreadsheets, SoftwareAI is able to govern a software company completely with a CEO team, accounting team, support team, and all the teams that make up a software company
