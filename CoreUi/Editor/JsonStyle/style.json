@@ -1,0 +1,176 @@
+{
+    "QMainWindow": [
+        {
+            "tittle":"Software AI Editor",
+            "frameless": true,
+            "transluscentBg": true
+            
+        },
+        {
+			"shadow":[
+				{
+					"color": "#555",
+					"blurRadius": 20,
+					"xOffset": 0,
+					"yOffset": 0,
+					"centralWidget": "centralwidget"
+				}
+			]
+		},
+        {
+			"navigation":[
+				{
+					"moveWindow": "centralwidget"
+				},
+				{
+                    "minimize":"minimize_window_button",
+					"close": "close_window_button",
+					"restore":[
+						{	
+							"buttonName": "restore_window_button",
+							"normalIcon": ":/feather/icons/feather/maximize-2.png",
+							"maximizedIcon": ":/feather/icons/feather/window_minimize.png"
+						}
+					]
+				}
+
+			]
+		}
+    ],
+
+    "QCustomQStackedWidget":[
+		{
+			"name":"myStackedWidget",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"Editor_instructions": "page",
+							"Editor_functions": "page_2",
+							"CreateAgents_menu": "page_settings"
+						}
+					]
+				}
+			],
+			"transitionAnimation":[
+				{
+					
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"stackedWidget_instruction",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"Add_new_instructions_button_edit": "page_4",
+							"BacktoEditinstruction_create": "page_3"
+							
+						}
+					]
+				}
+			],
+			"transitionAnimation":[
+				{
+					
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"stackedWidget_SettingsCreate",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"PromptSettings": "page_7",
+							"InstructionSettings": "page_5",
+							"FunctionsSettings": "page_8",
+							"pushButton_2": "page_6",
+							"pushButton": "page_6",
+							"BackToSettings": "page_6"
+						}
+					]
+				}
+			],
+			"transitionAnimation":[
+				{
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			]
+		}
+
+	],
+    "QCustomSlideMenu": [{
+            "name": "menu_widget",
+            "defaultSize": [{
+                "width": 39,
+                "height": 491
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": 491
+            }],
+            "expandedSize": [{
+                "width": 39,
+                "height": 491
+            }],
+
+            "toggleButton": [{
+                "buttonName": "open_close_side_bar_btn",
+                "icons": [{
+                    "whenMenuIsCollapsed": ":/material_design/icons/material_design/start.png",
+                    "whenMenuIsExpanded": ":/material_design/icons/material_design/arrow_back.png"
+                }]
+
+            }]
+        }
+    ],
+    "QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": [
+                        {
+                            "Background-color": "#16191d",
+                            "Text-color": "#fff",
+                            "Accent-color": "#03C3C3",
+                            "Theme-name": "Dark-Blue",
+                            "Default-Theme": true
+                        }
+                    ]
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "Urobot Software",
+                "ApplicationName": "SoftwareAI",
+                "OrginizationDormain": "UrobotSoftware.org"
+            }
+        }
+    ]
+}
