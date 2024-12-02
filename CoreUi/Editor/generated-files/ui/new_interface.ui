@@ -1,0 +1,2643 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>781</width>
+    <height>502</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:white</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QCustomQPushButton" name="open_close_side_bar_btn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>35</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>35</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+      </property>
+      <property name="text">
+       <string />
+      </property>
+      <property name="icon">
+       <iconset resource="../Qss/icons/_icons.qrc">
+        <normaloff>:/material_design/icons/material_design/arrow_back.png</normaloff>:/material_design/icons/material_design/arrow_back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>29</width>
+        <height>29</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Maximum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>580</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="3">
+       <widget class="QPushButton" name="close_window_button">
+        <property name="styleSheet">
+         <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+        </property>
+        <property name="text">
+         <string />
+        </property>
+        <property name="icon">
+         <iconset resource="../Qss/icons/_icons.qrc">
+          <normaloff>:/feather/icons/feather/window_close.png</normaloff>:/feather/icons/feather/window_close.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>21</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="restore_window_button">
+        <property name="styleSheet">
+         <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+        </property>
+        <property name="text">
+         <string />
+        </property>
+        <property name="icon">
+         <iconset resource="../Qss/icons/_icons.qrc">
+          <normaloff>:/feather/icons/feather/maximize-2.png</normaloff>:/feather/icons/feather/maximize-2.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>21</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="minimize_window_button">
+        <property name="styleSheet">
+         <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+        </property>
+        <property name="text">
+         <string />
+        </property>
+        <property name="icon">
+         <iconset resource="../Qss/icons/_icons.qrc">
+          <normaloff>:/feather/icons/feather/window_minimize.png</normaloff>:/feather/icons/feather/window_minimize.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>21</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCustomSlideMenu" name="menu_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>39</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>39</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="CreateAgents_menu">
+         <property name="styleSheet">
+          <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+         </property>
+         <property name="text">
+          <string />
+         </property>
+         <property name="icon">
+          <iconset resource="../Qss/icons/_icons.qrc">
+           <normaloff>:/material_design/icons/material_design/people_alt.png</normaloff>:/material_design/icons/material_design/people_alt.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>26</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Editor_instructions">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+         </property>
+         <property name="text">
+          <string />
+         </property>
+         <property name="icon">
+          <iconset resource="../Qss/icons/_icons.qrc">
+           <normaloff>:/material_design/icons/material_design/integration_instructions.png</normaloff>:/material_design/icons/material_design/integration_instructions.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>27</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Editor_functions">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+         </property>
+         <property name="text">
+          <string />
+         </property>
+         <property name="icon">
+          <iconset resource="../Qss/icons/_icons.qrc">
+           <normaloff>:/material_design/icons/material_design/settings_suggest.png</normaloff>:/material_design/icons/material_design/settings_suggest.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>27</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>300</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="2" colspan="2">
+     <widget class="QCustomQStackedWidget" name="myStackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>650</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QWidget {
+    background-color: white;
+}
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="5" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>152</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" rowspan="2" colspan="2">
+         <widget class="QTextEdit" name="html_chat_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>246</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">            QTextEdit {
+          
+                border: 1px solid #E0E0E0;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto preto */
+                font-family: Arial;
+                font-size: 14px;
+            }</string>
+          </property>
+          <property name="placeholderText">
+           <string>Current Function...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;  /* Borda arredondada */
+    color: black;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 5px 10px;  /* Espaçamento interno */
+}
+
+QComboBox:hover {
+    background-color: #EDEDED; /* Fundo ao passar o mouse */
+}
+
+QComboBox:pressed {
+    background-color: #DCDCDC; /* Fundo ao pressionar */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #EDEDED;
+    selection-color: black;
+    border-radius: 10px;  /* Borda arredondada para a lista */
+    font-size: 16px; /* Ajuste de fonte para itens */
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Functions</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_22">
+          <property name="rightMargin">
+           <number>11</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QTextEdit" name="mensage_input_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>694</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>685</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+            </property>
+            <property name="placeholderText">
+             <string>New Function...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCustomQPushButton" name="send_mensage_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+            </property>
+            <property name="text">
+             <string />
+            </property>
+            <property name="icon">
+             <iconset resource="../Qss/icons/_icons.qrc">
+              <normaloff>:/feather/icons/feather/send.png</normaloff>:/feather/icons/feather/send.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>41</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QCustomQStackedWidget" name="stackedWidget_instruction">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_3">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="2">
+             <widget class="QComboBox" name="comboBox_list_instruction_edit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>571</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>571</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;  /* Borda arredondada */
+    color: black;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 5px 10px;  /* Espaçamento interno */
+}
+
+QComboBox:hover {
+    background-color: #EDEDED; /* Fundo ao passar o mouse */
+}
+
+QComboBox:pressed {
+    background-color: #DCDCDC; /* Fundo ao pressionar */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #EDEDED;
+    selection-color: black;
+    border-radius: 10px;  /* Borda arredondada para a lista */
+    font-size: 16px; /* Ajuste de fonte para itens */
+}
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="4">
+             <widget class="QTextEdit" name="Current_instuction_html_edit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">            QTextEdit {
+          
+                border: 1px solid #E0E0E0;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto preto */
+                font-family: Arial;
+                font-size: 14px;
+            }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Current Instruction</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCustomQPushButton" name="Add_new_instructions_button_edit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+              </property>
+              <property name="text">
+               <string />
+              </property>
+              <property name="icon">
+               <iconset resource="../Qss/icons/_icons.qrc">
+                <normaloff>:/material_design/icons/material_design/add.png</normaloff>:/material_design/icons/material_design/add.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Instruction</string>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="4">
+             <layout class="QGridLayout" name="gridLayout_8">
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>1</number>
+              </property>
+              <property name="horizontalSpacing">
+               <number>6</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>9</number>
+              </property>
+              <item row="1" column="2">
+               <widget class="QTextEdit" name="instruction_input_edit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>676</width>
+                  <height>52</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>676</width>
+                  <height>52</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                </property>
+                <property name="placeholderText">
+                 <string>New Instruction...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QCustomQPushButton" name="change_instruction_button_edit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+                </property>
+                <property name="text">
+                 <string />
+                </property>
+                <property name="icon">
+                 <iconset resource="../Qss/icons/_icons.qrc">
+                  <normaloff>:/material_design/icons/material_design/edit_note.png</normaloff>:/material_design/icons/material_design/edit_note.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>40</width>
+                  <height>47</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_4">
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0" colspan="2">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <property name="horizontalSpacing">
+               <number>2</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Name For instruction</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QComboBox" name="comboBox_list_agent_for_create_instruction_create">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>172</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;  /* Borda arredondada */
+    color: black;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 5px 10px;  /* Espaçamento interno */
+}
+
+QComboBox:hover {
+    background-color: #EDEDED; /* Fundo ao passar o mouse */
+}
+
+QComboBox:pressed {
+    background-color: #DCDCDC; /* Fundo ao pressionar */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #EDEDED;
+    selection-color: black;
+    border-radius: 10px;  /* Borda arredondada para a lista */
+    font-size: 16px; /* Ajuste de fonte para itens */
+}
+</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="NameForInstruction_create">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>172</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true" />
+                </property>
+                <property name="placeholderText">
+                 <string>Bob</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Instruction For Agent</string>
+                </property>
+                <property name="indent">
+                 <number>34</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="QComboBox" name="comboBox_category_instruction_create">
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;  /* Borda arredondada */
+    color: black;  /* Cor do texto */
+    font-size: 16px;  /* Tamanho da fonte */
+    padding: 5px 10px;  /* Espaçamento interno */
+}
+
+QComboBox:hover {
+    background-color: #EDEDED; /* Fundo ao passar o mouse */
+}
+
+QComboBox:pressed {
+    background-color: #DCDCDC; /* Fundo ao pressionar */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #EDEDED;
+    selection-color: black;
+    border-radius: 10px;  /* Borda arredondada para a lista */
+    font-size: 16px; /* Ajuste de fonte para itens */
+}
+</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" colspan="2">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Instruction Category</string>
+                </property>
+                <property name="indent">
+                 <number>113</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>271</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="horizontalSpacing">
+               <number>6</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QCustomQPushButton" name="BacktoEditinstruction_create">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+                </property>
+                <property name="text">
+                 <string />
+                </property>
+                <property name="icon">
+                 <iconset resource="../Qss/icons/_icons.qrc">
+                  <normaloff>:/material_design/icons/material_design/keyboard_backspace.png</normaloff>:/material_design/icons/material_design/keyboard_backspace.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>27</width>
+                  <height>27</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QTextEdit" name="New_instruction_html_create">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>641</width>
+                  <height>45</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>641</width>
+                  <height>45</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                </property>
+                <property name="placeholderText">
+                 <string>New Instruction...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QCustomQPushButton" name="CreateInstructionbutton_create">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+                </property>
+                <property name="text">
+                 <string />
+                </property>
+                <property name="icon">
+                 <iconset resource="../Qss/icons/_icons.qrc">
+                  <normaloff>:/material_design/icons/material_design/create.png</normaloff>:/material_design/icons/material_design/create.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>37</width>
+                  <height>41</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_settings">
+       <layout class="QGridLayout" name="gridLayout_17">
+        <item row="0" column="0">
+         <widget class="QCustomQStackedWidget" name="stackedWidget_SettingsCreate">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_6">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Initial Settings</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_16">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <property name="leftMargin">
+                  <number>6</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>8</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>33</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>15</number>
+                 </property>
+                 <item row="5" column="0" colspan="2">
+                  <widget class="QPushButton" name="InstructionSettings">
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 11px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Instruction Settings</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/person_pin.png</normaloff>:/material_design/icons/material_design/person_pin.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>18</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>Model Select</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>Key In Firebase</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="2">
+                  <widget class="QPushButton" name="PromptSettings">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 11px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Prompt Settings</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/settings.png</normaloff>:/material_design/icons/material_design/settings.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>15</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QComboBox" name="AgentCategory">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>23</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>23</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QComboBox {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;  /* Borda arredondada */
+    color: black;  /* Cor do texto */
+    font-size: 12px;  /* Tamanho da fonte */
+    padding: 5px 10px;  /* Espaçamento interno */
+}
+
+QComboBox:hover {
+    background-color: #EDEDED; /* Fundo ao passar o mouse */
+}
+
+QComboBox:pressed {
+    background-color: #DCDCDC; /* Fundo ao pressionar */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #EDEDED;
+    selection-color: black;
+    border-radius: 10px;  /* Borda arredondada para a lista */
+    font-size: 16px; /* Ajuste de fonte para itens */
+}
+</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>Agent Category</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>Name Agent</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QTextEdit" name="NameAgent">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 2px;
+                border-radius: 5px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="html">
+                    <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Dallas2&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Dallas</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QTextEdit" name="KeyInFirebase">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 2px;
+                border-radius: 5px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="html">
+                    <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;AgentForPlanningDallas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>AgentForPlanningDallas</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QTextEdit" name="ModelSelect">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>190</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 2px;
+                border-radius: 5px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="html">
+                    <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;gpt-4o-mini-2024-07-18&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>gpt-4o-mini-2024-07-18</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0" colspan="2">
+                  <widget class="QPushButton" name="FunctionsSettings">
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 11px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Functions Settings</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/settings_input_component.png</normaloff>:/material_design/icons/material_design/settings_input_component.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>18</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>VectorStore</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <property name="rightMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>15</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>23</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_9">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Vectorstore in assistant</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QTextEdit" name="VectorstoreinThread">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>177</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>177</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>vs_USBolYuyy7cVX....</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="VectorstoreinThreadByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/library_add.png</normaloff>:/material_design/icons/material_design/library_add.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>23</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>Vectorstore in Thread</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QTextEdit" name="Vectorstoreinassistant">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>177</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>177</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>vs_USBolYuyy7cVX....</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="3">
+                  <widget class="QCustomCheckBox" name="UseVectorstoreToGenerateFiles">
+                   <property name="text">
+                    <string>Use Vectorstore To Generate Files</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>26</width>
+                     <height>64</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="VectorstoreinassistantByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/library_add.png</normaloff>:/material_design/icons/material_design/library_add.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>23</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>Upload</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_14">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <property name="leftMargin">
+                  <number>1</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>8</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>59</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>8</number>
+                 </property>
+                 <item row="3" column="1">
+                  <widget class="QTextEdit" name="Uploadlistfileforcodeinterpreterinthread">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>path/test.py,path/test2.txt</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_12">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Upload 1 file in message</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QTextEdit" name="Upload1imageforvisioninThread">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>path/test.png</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="UploadlistfileforcodeinterpreterinthreadByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/upload_file.png</normaloff>:/material_design/icons/material_design/upload_file.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_11">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Upload 1 file in Thread</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_14">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Upload 1 image for vision in Thread</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QTextEdit" name="Upload1fileinmessage">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>path/test.py</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_13">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>Upload list file for code interpreter in thread</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QTextEdit" name="Upload1fileinThread">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>388</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>path/test.py</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="Upload1imageforvisioninThreadByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/image_search.png</normaloff>:/material_design/icons/material_design/image_search.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QPushButton" name="Upload1fileinmessageByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/attach_file.png</normaloff>:/material_design/icons/material_design/attach_file.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="Upload1fileinThreadByUser">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+                   </property>
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/material_design/icons/material_design/attach_file.png</normaloff>:/material_design/icons/material_design/attach_file.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>27</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QPushButton" name="CreateAgent">
+              <property name="styleSheet">
+               <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+</string>
+              </property>
+              <property name="text">
+               <string>Create Agent</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Qss/icons/_icons.qrc">
+                <normaloff>:/material_design/icons/material_design/person_add_alt_1.png</normaloff>:/material_design/icons/material_design/person_add_alt_1.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_7">
+           <layout class="QGridLayout" name="gridLayout_26">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>Prompt main</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_19">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="Promptmain">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;decida oque o usuario esta solicitando com base na mensagem recebida&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="title">
+               <string>Prompt Rules</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_21">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="PromptRules">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;regras de teste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QGroupBox" name="groupBox_6">
+              <property name="title">
+               <string>Sample response provided to the agent</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_20">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="PromptExample">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;Caso seja solicitado algum script ou software Responda no formato JSON Exemplo:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;{'solicitadoalgumcodigo': 'solicitacao...'} &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="3">
+             <widget class="QPushButton" name="BackToSettings">
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+              </property>
+              <property name="text">
+               <string>Back To Settings</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Qss/icons/_icons.qrc">
+                <normaloff>:/material_design/icons/material_design/arrow_back.png</normaloff>:/material_design/icons/material_design/arrow_back.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>39</width>
+                <height>29</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_5">
+           <layout class="QGridLayout" name="gridLayout_28">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_8">
+              <property name="title">
+               <string>Instructions</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_24">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="InstructionAgentCreate">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>322</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>322</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;Seu Nome é Dallas, Voce Faz parte da Equipe de Solucoes da empresa Urobotsoftware, seu objetivo é Planejar um Roadmap do Projeto com base no Cronograma,Planilha e Documento Pre Projeto &lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;Responda o Roadmap do Projeto no formato JSON&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;Exemplo:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;{&amp;quot;Roadmap&amp;quot;: &amp;quot;Roadmap do Projeto ...&amp;quot;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;{&amp;quot;nome_do_Roadmap&amp;quot;: &amp;quot;nome_do_Roadmap_do_projeto ...&amp;quot;}&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>Aditional Instructions</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_25">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="AditionalInstructionsAgentCreate">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>322</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>322</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QPushButton" name="pushButton">
+              <property name="styleSheet">
+               <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+              </property>
+              <property name="text">
+               <string>Back To Settings</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Qss/icons/_icons.qrc">
+                <normaloff>:/material_design/icons/material_design/arrow_back.png</normaloff>:/material_design/icons/material_design/arrow_back.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>36</width>
+                <height>36</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_8">
+           <layout class="QGridLayout" name="gridLayout_31">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="title">
+               <string>Agent Tools</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_27">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="AgentTools">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1f1f1f;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    {&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;function&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;function&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: {&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;&lt;/span&gt;&lt;span style=" font-size:8pt;"&gt;pegar_hora&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;Retorna a data e hora atual no formato YYYY-MM-DD HH:MM:SS.&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;parameters&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: {&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;object&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;properties&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: {},&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;required&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: []&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            }&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        }&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    } &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_11">
+              <property name="title">
+               <string>Function Python</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <item row="0" column="1">
+                <widget class="QTextEdit" name="namefunction_agentcreate">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>22</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 3px;
+                border-radius: 3px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;pegar_hora&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QTextEdit" name="FunctionPython">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;def pegar_hora():&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;     import datetime&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;     current_datetime = datetime.datetime.now()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;     formatted_datetime = current_datetime.strftime('%Y-%m-%d %H:%M:%S')&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-size:8pt;"&gt;     return f&amp;quot;{formatted_datetime}&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="title">
+               <string>Function Python Output</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_30">
+               <item row="0" column="0">
+                <widget class="QTextEdit" name="FunctionPythonOutput">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">            QTextEdit {
+                border: 1px solid #E0E0E0;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #F7F7F7;
+                color: black;  /* Cor do texto alterada para preto */
+            }</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#1f1f1f;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#569cd6;"&gt;def&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;submit_output_&lt;/span&gt;&lt;span style=" font-size:8pt;"&gt;pegar_hora&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;(&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;function_name&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;function_arguments&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_call&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;threead_id&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;client&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;run&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;                            ):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#569cd6;"&gt;global&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;if&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;function_name&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;==&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;'&lt;/span&gt;&lt;span style=" font-size:8pt;"&gt;pegar_hora&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;'&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;resultado&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;get_current_datetime&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;.&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;append&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;({&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;tool_call_id&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_call&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;.id,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;output&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;: &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;resultado&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        })&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#6a9955;"&gt;# Submit all tool outputs at once after collecting them in a list&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;if&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;try&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;run&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;client&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;.beta.threads.runs.submit_tool_outputs_and_poll(&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;thread_id&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;threead_id&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;run_id&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;run&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;.id,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            )&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;print&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;(&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;Tool outputs submitted successfully.&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;tool_outputs&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#d4d4d4;"&gt;=&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; []&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;return&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#569cd6;"&gt;True&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;except&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#4ec9b0;"&gt;Exception&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;as&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt; &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;e&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;            &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;print&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;(&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;Failed to submit tool outputs:&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;, &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#9cdcfe;"&gt;e&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;    &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#c586c0;"&gt;else&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;        &lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#dcdcaa;"&gt;print&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;(&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#ce9178;"&gt;&amp;quot;No tool outputs to submit.&amp;quot;&lt;/span&gt;&lt;span style=" font-family:'Consolas,Courier New,monospace'; font-size:8pt; color:#cccccc;"&gt;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string />
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="3">
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="styleSheet">
+               <string notr="true">            QPushButton {
+                background-color: white;
+
+                border-radius: 13px;  /* Borda arredondada (círculo) */
+                color: black;  /* Cor do texto alterada para preto */
+                font-size: 16px;  /* Ajuste do tamanho do ícone */
+            }
+            QPushButton:hover {
+                background-color: #EDEDED;
+            }
+            QPushButton:pressed {
+                background-color: #DCDCDC;
+            }
+</string>
+              </property>
+              <property name="text">
+               <string>Back To Settings</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../Qss/icons/_icons.qrc">
+                <normaloff>:/material_design/icons/material_design/arrow_back.png</normaloff>:/material_design/icons/material_design/arrow_back.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>35</width>
+                <height>33</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomQStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">Custom_Widgets.QCustomQStackedWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.QCustomSlideMenu.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomQPushButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">Custom_Widgets.QCustomQPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header location="global">Custom_Widgets.QCustomCheckBox.h</header>
+  </customwidget>
+ <customwidget><class>QPushButton</class><extends>QPushButton</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget><customwidget><class>QLabel</class><extends>QLabel</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget></customwidgets>
+ <connections />
+</ui>
