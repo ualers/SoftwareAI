@@ -44,6 +44,32 @@ SoftwareAIChat.py
 
 
 
+## 🚀 Start SoftwareAI-Editor with UI
+
+### Installation SoftwareAI
+```bash
+git clone https://github.com/ualers/SoftwareAI
+```
+### Installation requirements
+```bash
+pip install -r requirements.txt
+```
+### Extract icons
+```bash
+CoreUi/Editor/Qss/icons/icons/font_awesome.zip
+```
+```bash
+CoreUi/Editor/Qss/icons/icons/material_design.zip
+```
+### Basic Usage
+```bash
+Editor.py
+```
+
+
+#
+
+
 
 ## 🚀 Get started SoftwareAI without UI
 
