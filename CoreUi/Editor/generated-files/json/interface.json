@@ -1,0 +1,106 @@
+{
+  "QCustomQPushButton": [
+    {
+      "name": "open_close_side_bar_btn",
+      "icon": "Qss/icons/icons/material_design/arrow_back.png"
+    },
+    {
+      "name": "send_mensage_2",
+      "icon": "Qss/icons/icons/feather/send.png"
+    },
+    {
+      "name": "Add_new_instructions_button_edit",
+      "icon": "Qss/icons/icons/material_design/add.png"
+    },
+    {
+      "name": "change_instruction_button_edit",
+      "icon": "Qss/icons/icons/material_design/edit_note.png"
+    },
+    {
+      "name": "BacktoEditinstruction_create",
+      "icon": "Qss/icons/icons/material_design/keyboard_backspace.png"
+    },
+    {
+      "name": "CreateInstructionbutton_create",
+      "icon": "Qss/icons/icons/material_design/create.png"
+    }
+  ],
+  "QPushButton": [
+    {
+      "name": "close_window_button",
+      "icon": "Qss/icons/icons/feather/window_close.png"
+    },
+    {
+      "name": "restore_window_button",
+      "icon": "Qss/icons/icons/feather/maximize-2.png"
+    },
+    {
+      "name": "minimize_window_button",
+      "icon": "Qss/icons/icons/feather/window_minimize.png"
+    },
+    {
+      "name": "CreateAgents_menu",
+      "icon": "Qss/icons/icons/material_design/people_alt.png"
+    },
+    {
+      "name": "Editor_instructions",
+      "icon": "Qss/icons/icons/material_design/integration_instructions.png"
+    },
+    {
+      "name": "Editor_functions",
+      "icon": "Qss/icons/icons/material_design/settings_suggest.png"
+    },
+    {
+      "name": "InstructionSettings",
+      "icon": "Qss/icons/icons/material_design/person_pin.png"
+    },
+    {
+      "name": "PromptSettings",
+      "icon": "Qss/icons/icons/material_design/settings.png"
+    },
+    {
+      "name": "FunctionsSettings",
+      "icon": "Qss/icons/icons/material_design/settings_input_component.png"
+    },
+    {
+      "name": "VectorstoreinThreadByUser",
+      "icon": "Qss/icons/icons/material_design/library_add.png"
+    },
+    {
+      "name": "VectorstoreinassistantByUser",
+      "icon": "Qss/icons/icons/material_design/library_add.png"
+    },
+    {
+      "name": "UploadlistfileforcodeinterpreterinthreadByUser",
+      "icon": "Qss/icons/icons/material_design/upload_file.png"
+    },
+    {
+      "name": "Upload1imageforvisioninThreadByUser",
+      "icon": "Qss/icons/icons/material_design/image_search.png"
+    },
+    {
+      "name": "Upload1fileinmessageByUser",
+      "icon": "Qss/icons/icons/material_design/attach_file.png"
+    },
+    {
+      "name": "Upload1fileinThreadByUser",
+      "icon": "Qss/icons/icons/material_design/attach_file.png"
+    },
+    {
+      "name": "CreateAgent",
+      "icon": "Qss/icons/icons/material_design/person_add_alt_1.png"
+    },
+    {
+      "name": "BackToSettings",
+      "icon": "Qss/icons/icons/material_design/arrow_back.png"
+    },
+    {
+      "name": "pushButton",
+      "icon": "Qss/icons/icons/material_design/arrow_back.png"
+    },
+    {
+      "name": "pushButton_2",
+      "icon": "Qss/icons/icons/material_design/arrow_back.png"
+    }
+  ]
+}
