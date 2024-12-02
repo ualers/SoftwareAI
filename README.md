@@ -6,9 +6,9 @@
 
 # 📜 Table of Contents
 - [📖 About](#-about)
-- [🚀 Starting Without Ui](#-getting-started-softwareai-without-ui)
+- [🚀 Starting Without Ui](#-get-started-softwareai-without-ui)
 - [🚀 Starting With Ui](#-start-softwareai-with-ui)
-
+- [🚀 Starting SoftwareAI Editor Ui](#-start-softwareai-editor-with-ui)
 - [💡 Features](#-features)
 - [📁 Index Docs](#-index-docs)
 - [👥 Index-Team](#-index-team)
@@ -20,28 +20,6 @@
 #
 ⚠️ **Note**: SoftwareAI is in beta phase and does not currently reflect the final product.
 #
-
-
-## 🚀 Start SoftwareAI with UI
-⚠️ **Note**: This is just the first version of the example, there are no teams yet and it is only possible to talk to "MatrixAI"
-![UI](Gifs/2024-11-28-12-21-01.gif)
-
-### Installation SoftwareAI
-```bash
-git clone https://github.com/ualers/SoftwareAI
-```
-### Installation requirements
-```bash
-pip install -r requirements.txt
-```
-### Basic Usage
-```bash
-SoftwareAIChat.py
-```
-
-
-#
-
 
 
 ## 🚀 Start SoftwareAI-Editor with UI
@@ -65,9 +43,31 @@ CoreUi/Editor/Qss/icons/icons/material_design.zip
 ```bash
 Editor.py
 ```
+#
+#
+#
+#
+
+## 🚀 Start SoftwareAI with UI
+⚠️ **Note**: This is just the first version of the example, there are no teams yet and it is only possible to talk to "MatrixAI"
+![UI](Gifs/2024-11-28-12-21-01.gif)
+
+### Installation SoftwareAI
+```bash
+git clone https://github.com/ualers/SoftwareAI
+```
+### Installation requirements
+```bash
+pip install -r requirements.txt
+```
+### Basic Usage
+```bash
+SoftwareAIChat.py
+```
 
 
 #
+
 
 
 
